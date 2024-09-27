@@ -21,6 +21,10 @@ class ManageBrowsers {
                 return
             }
             let browser = await puppeteer.launch({
+                executablePath:
+                    process.env.NODE_ENV === "production"
+                        ? process.env.PUPPETEER.EXECUTABLE_PATH
+                        : puppeteer.executablePath(),
                 headless: true,
                 args: [
                     '--no-sandbox',
