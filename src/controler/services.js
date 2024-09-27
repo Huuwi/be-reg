@@ -82,7 +82,9 @@ class Services {
 
             for (let i = 0; i < listIpCountString.length; i++) {
                 try {
-                    listIpCounts.push(JSON.parse(listIpCountString[i]))
+                    if (listIpCountString[i]) {
+                        listIpCounts.push(JSON.parse(listIpCountString[i]))
+                    }
 
                 } catch (error) {
                     console.log("error when logToCountBlackIpFile JSON.parse");
