@@ -359,8 +359,10 @@ class Controler {
 
 
             let data = await globalThis.ManageBrowsers.getInforFromTokenUrlHaui(token_url);
+            let name = data?.name;
+            let Cookie = data?.Cookie;
+            let kverify = data?.kverify;
 
-            let { name, Cookie, kverify } = data;
 
             let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify }));
 

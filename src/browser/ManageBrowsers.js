@@ -22,7 +22,18 @@ class ManageBrowsers {
             }
             let browser = await puppeteer.launch({
                 headless: true,
-                args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security', '--disable-gpu', '--disable-dev-shm-usage']
+                args: [
+                    '--no-sandbox',
+                    '--disable-setuid-sandbox',
+                    '--disable-dev-shm-usage', // Sử dụng tmpfs thay vì disk-based shared memory.
+                    '--disable-accelerated-2d-canvas',
+                    '--no-first-run',
+                    '--no-zygote',
+                    '--disable-gpu', // Tắt GPU rendering.
+                    '--single-process', // Tất cả thao tác trong một quy trình để giảm RAM.
+                    '--window-size=1280,800', // Giảm kích thước cửa sổ.
+                    '--disable-features=site-per-process', // Tắt các tính năng site isolation.
+                ]
             })
 
 
@@ -32,14 +43,14 @@ class ManageBrowsers {
 
             // Chặn tải hình ảnh và CSS để tiết kiệm tài nguyên
             await page.setRequestInterception(true);
-            page.on('request', request => {
-                if (request.resourceType() === 'image' || request.resourceType() === 'stylesheet') {
-                    request.abort(); // Bỏ qua các yêu cầu hình ảnh và CSS
+            page.on('request', (request) => {
+                const resourceType = request.resourceType();
+                if (resourceType === 'image' || resourceType === 'stylesheet' || resourceType === 'font') {
+                    request.abort(); // Chặn tải hình ảnh, CSS, font.
                 } else {
                     request.continue();
                 }
             });
-
             await page.goto(url)
 
 
