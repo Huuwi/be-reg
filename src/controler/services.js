@@ -19,7 +19,7 @@ class Services {
             return "none"
         }
     }
-    generatorRefreshToken(payLoad, refresh_token_key = process.env.SECRECT_KEY_JWT_refresh_TOKEN) {
+    generatorRefreshToken(payLoad, refresh_token_key = process.env.SECRECT_KEY_JWT_REFRESH_TOKEN) {
         try {
             return jwt.sign(
                 payLoad,
@@ -39,7 +39,7 @@ class Services {
             return "access token invalid!"
         }
     }
-    verifyRefreshToken(access_token, refresh_token_key = process.env.SECRECT_KEY_JWT_refresh_TOKEN) {
+    verifyRefreshToken(access_token, refresh_token_key = process.env.SECRECT_KEY_JWT_REFRESH_TOKEN) {
         try {
             return jwt.verify(access_token, refresh_token_key)
         } catch (error) {
