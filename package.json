@@ -11,7 +11,7 @@
     "mysql2": "^3.11.3",
     "node-rsa": "^1.1.1",
     "nodemon": "^3.1.7",
-    "puppeteer": "^21.11.0"
+    "puppeteer": "^23.4.1"
   },
   "name": "backend",
   "version": "1.0.0",
