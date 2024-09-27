@@ -118,6 +118,35 @@ class Services {
         }
     }
 
+    encodeRSA(data) {
+
+        try {
+
+            try {
+                const publicKey = fs.readFileSync('./src/public.pem', 'utf8');
+                const bufferData = Buffer.from(data, 'utf8');
+                const encryptedData = crypto.publicEncrypt(
+                    {
+                        key: publicKey,
+                        padding: crypto.constants.RSA_PKCS1_OAEP_PADDING,
+                        oaepHash: 'sha256',
+                    },
+                    bufferData
+                );
+                return encryptedData.toString('base64');
+            } catch (err) {
+                throw new Error(err)
+            }
+
+
+
+        } catch (error) {
+            console.log("encode RSA false" + error);
+            return "encode RSA false" + error
+        }
+
+
+    }
 
     decodeRSA(encryptedData) {
         try {
@@ -147,6 +176,25 @@ class Services {
             return "decode RSA false" + error
         }
     }
+
+    encodeAES(data, key = process.env.KEY_AES, iv = process.env.IV_AES) {
+        key = Buffer.from(key.padEnd(32, '0').slice(0, 32)); // Đảm bảo khóa 32 byte
+        iv = Buffer.from(iv.padEnd(16, '0').slice(0, 16));
+        const cipher = crypto.createCipheriv('aes-256-cbc', key, iv);
+        let encrypted = cipher.update(data, 'utf8', 'hex');
+        encrypted += cipher.final('hex');
+        return encrypted;
+    }
+
+    decodeAES(encryptedData, key = process.env.KEY_AES, iv = process.env.IV_AES) {
+        key = Buffer.from(key.padEnd(32, '0').slice(0, 32)); // Đảm bảo khóa 32 byte
+        iv = Buffer.from(iv.padEnd(16, '0').slice(0, 16));
+        const decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
+        let decrypted = decipher.update(encryptedData, 'hex', 'utf8');
+        decrypted += decipher.final('utf8');
+        return decrypted;
+    }
+
 
     async getTokenUrlHaui(userNameHaui, passWordHaui) {
         try {

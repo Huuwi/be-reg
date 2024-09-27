@@ -308,6 +308,8 @@ class Controler {
             //sha256(username + randomnumber +  secrect_key)
             let secrect_key = process.env.SECRECT_KEY_VERIFY_CODE;
             let verifyCodeOfBackend = services.sha256(username + rdn + secrect_key);
+            console.log(verifyCodeOfBackend);
+
 
             //get rsneOfBackend 
             let rsnOfBackend = services.decodeRSA(rsne)
@@ -350,7 +352,7 @@ class Controler {
 
         try {
 
-            let { userNameHaui, passWordHaui } = req.body
+            let { userNameHaui, passWordHaui } = req.body;
 
 
             let token_url = await services.getTokenUrlHaui(userNameHaui, passWordHaui);
@@ -358,17 +360,19 @@ class Controler {
 
             let data = await globalThis.ManageBrowsers.getInforFromTokenUrlHaui(token_url);
 
-            let accounts = [
-                { userName: "2022603737", passWord: "Hieu10101964@@" },
-                // { userName: "2022604453", passWord: '2022604453@6' },
-                // { userName: "2022606395", passWord: "2022606395@1" },
-                { userName: "2022605509", passWord: "Okok1234567@" }
-            ]
+            let { name, Cookie, kverify } = data;
+
+            let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify }));
+
+
+            res.cookie("enKC", enKC, { httpOnly: true })
+
+
 
 
 
             res.status(200).json({
-                message: "ok", data
+                message: "ok", name
             })
 
         } catch (error) {

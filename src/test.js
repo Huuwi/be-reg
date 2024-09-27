@@ -1,21 +1,7 @@
-const fs = require('fs');
-const crypto = require('crypto');
+const axios = require("axios")
 
-const privateKey = fs.readFileSync('private.pem', 'utf8');
-const encryptedData = "";
+axios.post("https://banca90.com/api/0.0/Home/GetCaptchaForLogin")
+    .then((data) => {
+        console.log(data);
 
-try {
-    // Giải mã dữ liệu sử dụng private key
-    const decryptedData = crypto.privateDecrypt(
-        {
-            key: privateKey,
-            padding: crypto.constants.RSA_PKCS1_PADDING
-        },
-        Buffer.from(encryptedData, 'base64') // Convert dữ liệu mã hóa về Buffer
-    );
-
-    // Trả về dữ liệu đã giải mã
-    console.log({ decryptedData: decryptedData.toString() });
-} catch (err) {
-    console.log({ error: 'Giải mã thất bại' });
-}
+    })
