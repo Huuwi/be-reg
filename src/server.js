@@ -6,7 +6,7 @@ const configServer = require("./config/configServer.js");
 const api = require("./api/api.js");
 const OneBrowser = require("./browser/OneBrowser.js")
 
-globalThis.ManageBrowsers = new OneBrowser()
+globalThis.ManageBrowsers = new ManageBrowsers()
 
 //init app
 const app = express();
