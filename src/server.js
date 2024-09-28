@@ -4,12 +4,13 @@ const express = require("express");
 const { connection } = require("./database/connection.js");
 const configServer = require("./config/configServer.js");
 const api = require("./api/api.js");
-const bodyParser = require('body-parser');
+const OneBrowser = require("./browser/OneBrowser.js")
 
-globalThis.ManageBrowsers = new ManageBrowsers()
+globalThis.ManageBrowsers = new OneBrowser()
 
 //init app
 const app = express();
+
 
 
 
@@ -19,6 +20,11 @@ const app = express();
 
 
 configServer(app);
+
+
+
+
+
 
 
 

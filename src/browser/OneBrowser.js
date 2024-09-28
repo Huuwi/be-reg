@@ -42,10 +42,10 @@ class OneBrowser {
 
     async getInforFromTokenUrlHaui(url) {
 
-        console.log({
-            curent: this.curent_quantity_contexts,
-            browserNull_: !this.browser
-        });
+        // console.log({
+        //     curent: this.curent_quantity_contexts,
+        //     browserNull_: !this.browser
+        // });
 
 
         try {
@@ -62,7 +62,14 @@ class OneBrowser {
             this.curent_quantity_contexts++;
 
 
-            const context = await this.browser.createBrowserContext();
+            let context = await this.browser.createBrowserContext();
+            if (!context) {
+                console.log("browser : ", this.browser);
+                console.log("context : ", this.context);
+
+                await this.initBrowser();
+                context = await this.browser.createBrowserContext();
+            }
             const page = await context.newPage();
             await page.goto(url);
 
@@ -87,12 +94,14 @@ class OneBrowser {
             const kverify = await page.evaluate(() => {
                 return window.kverify;
             });
+
             await context.close()
             this.curent_quantity_contexts--;
 
             if (this.curent_quantity_contexts == 0) {
                 await this.closeBrowser()
             }
+
 
             return {
                 name, Cookie, kverify
@@ -115,7 +124,7 @@ class OneBrowser {
 
     async closeBrowser() {
         try {
-            await this.browser.close();
+            await this?.browser?.close();
             this.browser = null
             this.curent_quantity_contexts = 0;
             this.isRunning = false;

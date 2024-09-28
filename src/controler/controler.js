@@ -1,12 +1,10 @@
 const { connection } = require('../database/connection.js')
 const Services = require('./services.js')
-const MiddleWare = require('../middleware/middleware.js')
 const bcrypt = require("bcryptjs")
 const fs = require("fs")
 
 
 const services = new Services()
-const middleware = new MiddleWare()
 
 
 class Controler {

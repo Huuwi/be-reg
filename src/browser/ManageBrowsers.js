@@ -10,16 +10,12 @@ class ManageBrowsers {
     }
 
     async getInforFromTokenUrlHaui(url) {
+        if (this.curent_quantity_browser >= this.max_quantity_browsers) {
+            console.log("max browser cant service");
+            return
+        }
         this.curent_quantity_browser++
-
-
         try {
-
-
-            if (this.curent_quantity_browser >= this.max_quantity_browsers) {
-                console.log("max browser cant service");
-                return
-            }
             let browser = await puppeteer.launch({
                 executablePath:
                     process.env.NODE_ENV === "production"
