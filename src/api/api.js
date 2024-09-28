@@ -42,6 +42,9 @@ api.post("/getNewAccessToken", controler.getNewAccessToken)
 //auth_api
 api.get("/auth/getInforUser", controler.getInforUser) // font end make request for data user
 api.post("/auth/loginHaui", controler.loginHaui) // login haui sv
-
+api.post("/auth/getListordered", controler.getListordered) // list ordered
+api.post("/auth/removeClass", controler.removeClass)
+api.post("/auth/registerClass", controler.registerClass) // chưa hoàn thiện logic để trừ tiền tài khoản
+api.post("/auth/getInforClass", controler.getInforClass)
 
 module.exports = api

@@ -269,6 +269,172 @@ class Services {
 
     }
 
+    async listOrdered(kverify, Cookie) {
+
+        return new Promise(async (reslove, reject) => {
+            const url = `https://sv.haui.edu.vn/ajax/register/action.htm?cmd=listorder&v=${kverify}`;
+            const payload = qs.stringify({
+                fid: "a"
+            });
+
+            // Cấu hình request
+            const config = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'Accept': 'application/json, text/javascript, */*; q=0.01',
+                    'Accept-Encoding': 'gzip, deflate, br, zstd',
+                    'Accept-Language': 'en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5',
+                    'Cookie': Cookie,
+                    'Origin': 'https://sv.haui.edu.vn',
+                    'Referer': 'https://sv.haui.edu.vn/register/',
+                    'Sec-CH-UA': '"Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"',
+                    'Sec-CH-UA-Mobile': '?0',
+                    'Sec-CH-UA-Platform': '"Windows"',
+                    'Sec-Fetch-Dest': 'empty',
+                    'Sec-Fetch-Mode': 'cors',
+                    'Sec-Fetch-Site': 'same-origin',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            };
+
+            await axios.post(url, payload, config)
+                .then(response => {
+                    reslove(response.data)
+                })
+                .catch(error => {
+                    reject(error)
+                });
+        })
+
+
+    }
+
+
+    async removeClass(kverify, Cookie, classCode) {
+        return new Promise(async (reslove, resject) => {
+            const url = `https://sv.haui.edu.vn/ajax/register/action.htm?cmd=removeclass&v=${kverify}`;
+            const payload = qs.stringify({
+                class: classCode,
+                ctdk: 863,
+            });
+
+
+            const config = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'Accept': 'application/json, text/javascript, */*; q=0.01',
+                    'Accept-Encoding': 'gzip, deflate, br, zstd',
+                    'Accept-Language': 'en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5',
+                    'Cookie': Cookie,
+                    'Origin': 'https://sv.haui.edu.vn',
+                    'Referer': 'https://sv.haui.edu.vn/register/',
+                    'Sec-CH-UA': '"Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"',
+                    'Sec-CH-UA-Mobile': '?0',
+                    'Sec-CH-UA-Platform': '"Windows"',
+                    'Sec-Fetch-Dest': 'empty',
+                    'Sec-Fetch-Mode': 'cors',
+                    'Sec-Fetch-Site': 'same-origin',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            };
+
+            await axios.post(url, payload, config)
+                .then(response => {
+                    reslove(response.data)
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                    resject(error)
+                });
+        })
+    }
+
+
+    async addClass(kverify, Cookie, classCode) {
+        return new Promise(async (reslove, resject) => {
+            const url = `https://sv.haui.edu.vn/ajax/register/action.htm?cmd=addclass&v=${kverify}`;
+            const payload = qs.stringify({
+                class: classCode,
+                ctdk: 863,
+            });
+
+
+            const config = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'Accept': 'application/json, text/javascript, */*; q=0.01',
+                    'Accept-Encoding': 'gzip, deflate, br, zstd',
+                    'Accept-Language': 'en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5',
+                    'Cookie': Cookie,
+                    'Origin': 'https://sv.haui.edu.vn',
+                    'Referer': 'https://sv.haui.edu.vn/register/',
+                    'Sec-CH-UA': '"Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"',
+                    'Sec-CH-UA-Mobile': '?0',
+                    'Sec-CH-UA-Platform': '"Windows"',
+                    'Sec-Fetch-Dest': 'empty',
+                    'Sec-Fetch-Mode': 'cors',
+                    'Sec-Fetch-Site': 'same-origin',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            };
+
+            await axios.post(url, payload, config)
+                .then(response => {
+                    reslove(response.data)
+
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                    resject(error)
+                });
+        })
+
+    }
+
+
+    async getInforClass(kverify, Cookie, id) {
+
+        return new Promise(async (reslove, reject) => {
+            const url = `https://sv.haui.edu.vn/ajax/register/action.htm?cmd=classbymodulesid&v=${kverify}`;
+
+            const payload = qs.stringify({
+                fid: id
+            });
+
+            const config = {
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                    'Accept': 'application/json, text/javascript, */*; q=0.01',
+                    'Accept-Encoding': 'gzip, deflate, br, zstd',
+                    'Accept-Language': 'en,vi-VN;q=0.9,vi;q=0.8,fr-FR;q=0.7,fr;q=0.6,en-US;q=0.5',
+                    'Cookie': Cookie,
+                    'Origin': 'https://sv.haui.edu.vn',
+                    'Referer': 'https://sv.haui.edu.vn/register/',
+                    'Sec-CH-UA': '"Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"',
+                    'Sec-CH-UA-Mobile': '?0',
+                    'Sec-CH-UA-Platform': '"Windows"',
+                    'Sec-Fetch-Dest': 'empty',
+                    'Sec-Fetch-Mode': 'cors',
+                    'Sec-Fetch-Site': 'same-origin',
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36',
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            };
+
+
+            // Thực hiện request POST
+            await axios.post(url, payload, config)
+                .then(response => {
+                    reslove(response.data)
+                })
+                .catch(error => {
+                    reject(error)
+                });
+        })
+    }
 
 
 

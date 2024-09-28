@@ -388,7 +388,194 @@ class Controler {
 
     }
 
+    async getListordered(req, res) {
+        try {
 
+            let enKC = req?.cookies?.enKC;
+
+            if (!enKC) {
+                res.status(400).json({
+                    message: "can't find your Haui account , you should login Haui account again!"
+                })
+                return
+            }
+
+            let { Cookie, kverify } = JSON.parse(services.decodeAES(enKC))
+
+            let data_ordered = await services.listOrdered(kverify, Cookie) || "none";
+
+
+
+            res.status(200).json({
+                message: "ok", data_ordered
+            })
+
+
+
+        } catch (error) {
+            res.status(500).json({
+                message: "have wrong!"
+            })
+            console.log("err when getListordered : ", error);
+            services.appendError500("error when getListordered : " + error)
+
+        }
+    }
+
+
+    async removeClass(req, res) {
+
+        try {
+
+            let enKC = req?.cookies?.enKC;
+
+            if (!enKC) {
+                res.status(400).json({
+                    message: "can't find your Haui account , you should login Haui account again!"
+                })
+                return
+            }
+
+            let { Cookie, kverify } = JSON.parse(services.decodeAES(enKC))
+
+            let { classCode } = req.body;
+
+            if (!classCode) {
+                res.status(400).json({
+                    message: "can't find classCode , try again!"
+                })
+                return
+            }
+
+            let result = await services.removeClass(kverify, Cookie, classCode) || "none";
+
+            res.status(200).json({
+                message: "ok",
+                result
+            })
+
+        } catch (error) {
+
+            console.log("err when removeClass : ", error);
+            services.appendError500("error when removeClass : " + error)
+        }
+
+    }
+    async registerClass(req, res) {
+
+        try {
+
+            let enKC = req?.cookies?.enKC;
+
+
+
+            if (!enKC) {
+                res.status(400).json({
+                    message: "can't find your Haui account , you should login Haui account again!"
+                })
+                return
+            }
+
+            let { Cookie, kverify } = JSON.parse(services.decodeAES(enKC));
+
+            let { classCode } = req.body;
+
+            if (!classCode) {
+                res.status(400).json({
+                    message: "can't find classCode , try again!"
+                })
+                return
+            }
+
+
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
+
+
+            //querry database
+
+            let user = await connection.excuteQuery(`select * from user where userId = ${userId}`)
+                .then((data) => {
+                    return data[0];
+                })
+                .catch((err) => {
+                    throw new Error(err)
+                })
+            let balance = user?.balance;
+
+            if (!balance) {
+                res.status(400).json({
+                    message: "balance invalid!!"
+                })
+                return
+            }
+            balance = Number(balance)
+            if (balance < 49) {
+                res.status(400).json({
+                    message: "balance not enough!"
+                })
+                return
+            }
+
+
+            let result = await services.addClass(kverify, Cookie, classCode) || "none";
+
+            res.status(200).json({
+                message: "ok",
+                result, balance
+            })
+
+
+        } catch (error) {
+
+            console.log("err when registerClass : ", error);
+            services.appendError500("error when registerClass : " + error)
+        }
+
+    }
+
+
+    async getInforClass(req, res) {
+
+        try {
+
+            let enKC = req?.cookies?.enKC;
+
+            if (!enKC) {
+                res.status(400).json({
+                    message: "can't find your Haui account , you should login Haui account again!"
+                })
+                return
+            }
+
+            let { Cookie, kverify } = JSON.parse(services.decodeAES(enKC));
+
+            let { id } = req.body;
+
+            if (!id) {
+                res.status(400).json({
+                    message: "can't find id subject , try again!"
+                })
+                return
+            }
+
+
+            let result = await services.getInforClass(kverify, Cookie, id) || "none";
+
+            res.status(200).json({
+                message: "ok",
+                result
+            })
+
+
+        } catch (error) {
+
+            console.log("err when getInforClass : ", error);
+            services.appendError500("error when getInforClass : " + error)
+        }
+
+
+    }
 
 }
 

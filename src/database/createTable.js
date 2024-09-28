@@ -30,17 +30,17 @@ const main = async () => {
     //     }) //done
 
 
-    // await connection.excuteQuery(
-    //     `UPDATE user
-    //     SET balance = 999999, isAdmin = 1
-    //     WHERE userId = 13;`
-    // )
-    //     .then((res) => {
-    //         console.log(res);
-    //     })
-    //     .catch((e) => {
-    //         console.log(e);
-    //     }) // done
+    await connection.excuteQuery(
+        `UPDATE user
+        SET balance = 10
+        WHERE userId = 14;`
+    )
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((e) => {
+            console.log(e);
+        }) // done
 
 
     // for (let i = 10; i <= 12; i++) {
