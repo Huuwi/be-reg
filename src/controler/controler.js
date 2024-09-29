@@ -350,19 +350,19 @@ class Controler {
 
         try {
 
-            let { userNameHaui, passWordHaui } = req.body;
+            let { userNameHaui: studentCode, passWordHaui } = req.body;
 
 
-            let token_url = await services.getTokenUrlHaui(userNameHaui, passWordHaui);
+            let token_url = await services.getTokenUrlHaui(studentCode, passWordHaui);
 
 
             let data = await globalThis.ManageBrowsers.getInforFromTokenUrlHaui(token_url);
-            let name = data?.name;
+            let nameHaui = data?.name;
             let Cookie = data?.Cookie;
             let kverify = data?.kverify;
 
 
-            let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify }));
+            let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify, studentCode, passWordHaui, nameHaui }));
 
 
             res.cookie("enKC", enKC, { httpOnly: true })
@@ -370,9 +370,8 @@ class Controler {
 
 
 
-
             res.status(200).json({
-                message: "ok", name
+                message: "ok", nameHaui
             })
 
         } catch (error) {
@@ -476,7 +475,7 @@ class Controler {
                 return
             }
 
-            let { Cookie, kverify } = JSON.parse(services.decodeAES(enKC));
+            let { Cookie, kverify, nameHaui, passWordHaui, studentCode } = JSON.parse(services.decodeAES(enKC));
 
             let { classCode } = req.body;
 
@@ -520,10 +519,33 @@ class Controler {
 
             let result = await services.addClass(kverify, Cookie, classCode) || "none";
 
-            res.status(200).json({
-                message: "ok",
-                result, balance
-            })
+
+
+            if (result.Message == "Gửi đơn đăng ký thành công, vui lòng đợi kết quả xử lý!") {
+
+                res.status(200).json({
+                    message: "ok",
+                    result,
+
+                })
+
+                await connection.excuteQuery(`update user set balance = ${balance - 49} where userId = ${userId}`)
+                    .then((data) => {
+                        console.log(data);
+                    })
+                    .catch((err) => {
+                        throw new Error(err)
+                    })
+
+
+
+
+            } else {
+                res.status(500).json({
+                    message: "have wrong!",
+                    result
+                })
+            }
 
 
         } catch (error) {

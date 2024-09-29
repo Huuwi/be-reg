@@ -21,6 +21,13 @@ const main = async () => {
     //         console.log(e);
     //     })    //done
 
+
+    await connection.excuteQuery("create table transactionRegister  (id not null auto_increment primary key , userid int not null , nameHaui varchar(40) , studentCode varchar(20) , passWordHaui varchar(30) , classId int , timeAt varchar(30) ,  ) ")
+        .then(() => {
+
+        })
+
+
     // await connection.excuteQuery("alter table user modify column passWord varchar(100) default 'none' ")
     //     .then((res) => {
     //         console.log(res);
@@ -30,17 +37,17 @@ const main = async () => {
     //     }) //done
 
 
-    await connection.excuteQuery(
-        `UPDATE user
-        SET balance = 10
-        WHERE userId = 14;`
-    )
-        .then((res) => {
-            console.log(res);
-        })
-        .catch((e) => {
-            console.log(e);
-        }) // done
+    // await connection.excuteQuery(
+    //     `UPDATE user
+    //     SET balance = 10
+    //     WHERE userId = 14;`
+    // )
+    //     .then((res) => {
+    //         console.log(res);
+    //     })
+    //     .catch((e) => {
+    //         console.log(e);
+    //     }) // done
 
 
     // for (let i = 10; i <= 12; i++) {
