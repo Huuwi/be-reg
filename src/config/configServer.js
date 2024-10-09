@@ -1,17 +1,18 @@
 const cors = require("cors");
 const express = require("express");
-const cookieParser = require('cookie-parser')
+const cookieParser = require('cookie-parser');
+let url = process.env.FONTEND_URL
+const allowedOrigins = [url, 'http://localhost:5173'];
 
 function configServer(app) {
-    app.use(cors());
     app.use(cors({
-        origin: '*', // Cho phép tất cả các nguồn
+        origin: allowedOrigins,
+        credentials: true
     }));
+
     app.use(express.json());
-    app.use(express.urlencoded({ extended: true }))
-    app.use(cookieParser())
-
+    app.use(express.urlencoded({ extended: true }));
+    app.use(cookieParser());
 }
-
 
 module.exports = configServer;

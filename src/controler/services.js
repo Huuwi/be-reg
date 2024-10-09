@@ -69,8 +69,7 @@ class Services {
 
     checkIpInBlackList(ip) {
         let listBlackips = fs.readFileSync("./src/blackListIps.txt", "utf-8").split("\n")
-        return listBlackips.includes(ip);
-
+        return listBlackips.includes(ip) && ip !== "::1";
     }
 
     async logToCountBlackIpFile(ip) {
@@ -105,7 +104,7 @@ class Services {
                 }) + "\n")
                 return
             } else {
-                if (ipFound.count > 0) {
+                if (ipFound.count > 3) {
                     fs.appendFileSync("./src/blackListIps.txt", ip + "\n");
                     return
                 }

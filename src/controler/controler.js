@@ -194,18 +194,18 @@ class Controler {
             let { passWord: pw, timeCreate, ...userData } = user
 
             //set accestoken and refresh token
-            res.cookie("at", access_token, { httpOnly: true });
-            res.cookie("rt", refresh_token, { httpOnly: true });
+            res.cookie("at", access_token, { httpOnly: true, maxAge: 3600000 * 12 });
+            res.cookie("rt", refresh_token, { httpOnly: true, maxAge: 3600000 * 24 });
 
             //fake cookie
             let fc = "bearer " + services.sha256(Date.now() + "cookie fake:))" + Math.random(), "base64")// fake cookie
-            res.cookie("secur", fc, { httpOnly: true });
+            res.cookie("secur", fc, { httpOnly: true, maxAge: 3600000 * 12 });
 
             //respone if success
             res.status(200).json({
                 message: "login successfully!",
                 userData,
-                rf: refresh_token,
+                rt: refresh_token,
                 fc
             })
 
@@ -243,8 +243,6 @@ class Controler {
                 })
 
 
-
-
             res.status(200).json({
                 message: "ok",
                 userData
@@ -268,8 +266,11 @@ class Controler {
             //get random number and verifyCode
             let { rdn, verifyCode, rsn, rsne } = req?.body;
 
+
+
             //get refresh token
             let { rt } = req?.cookies;
+
 
             //check rt,rdn, verifyCode existed?
             if (!rt || !rdn || !verifyCode || !rsn || !rsne) {
@@ -299,15 +300,12 @@ class Controler {
                     throw new Error("err when getNewAccessToken query db", err)
                 })
 
-            let { username } = user;
             let { passWord, timeCreate, ...userData } = user
 
 
             //sha256(username + randomnumber +  secrect_key)
             let secrect_key = process.env.SECRECT_KEY_VERIFY_CODE;
-            let verifyCodeOfBackend = services.sha256(username + rdn + secrect_key);
-            console.log(verifyCodeOfBackend);
-
+            let verifyCodeOfBackend = services.sha256(rdn + secrect_key);
 
             //get rsneOfBackend 
             let rsnOfBackend = services.decodeRSA(rsne)
@@ -330,7 +328,7 @@ class Controler {
             })
 
             //set newaccesstoken
-            res.cookie("at", newAccessToken, { httpOnly: true })
+            res.cookie("at", newAccessToken, { httpOnly: true, maxAge: 3600000 * 12 })
 
             // respone
             res.status(200).json({
@@ -365,7 +363,7 @@ class Controler {
             let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify, studentCode, passWordHaui, nameHaui }));
 
 
-            res.cookie("enKC", enKC, { httpOnly: true })
+            res.cookie("enKC", enKC, { httpOnly: true, maxAge: 3600000 * 2 })
 
 
 

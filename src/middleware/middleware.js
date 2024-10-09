@@ -14,10 +14,10 @@ class MiddleWare {
         try {
             req.decodeAccessToken = undefined
             let client_access_token = req?.cookies?.at
-            // console.log(client_access_token);
+            // console.log("client_access_token", client_access_token);
 
             if (!client_access_token) {
-                res.status(403).json({
+                res.status(401).json({
                     message: "unauthorized access!"
                 })
                 return "don't have accessToken"
@@ -25,7 +25,7 @@ class MiddleWare {
 
             let decodeAccessToken = services.verifyAccessToken(client_access_token)
             if (decodeAccessToken == "access token invalid!") {
-                res.status(403).json({
+                res.status(401).json({
                     message: "accessToken invalid"
                 })
                 return "accessToken invalid!"

@@ -1,7 +1,7 @@
-khi truy cập vào url api/getNewAccessToken phải gửi lên 2 giá trị :
+khi truy cập vào url api/getNewAccessToken phải gửi lên các giá trị :
 -thứ 1 là refesh token //trong cookie
--thứ 2 là 1 verifyCode : là sha256(userName + randomnumber + secrect_key) //trong req.body
--thứ 3 randomnumber // công thức tạo : Date.now() + Math.random() //trong req.body
+-thứ 2 là 1 verifyCode : là sha256(rdn + secrect_key) //trong req.body
+-thứ 3 rdn // công thức tạo : Date.now() + Math.random() //trong req.body
 -thứ 4 là rsn //rsaNumber tạo bằng công thức Date.now() + Math.random() //trong req.body
 -thứ 5 là rsne // chính là rsn sau khi đã được mã hóa bằng khóa công khai RSA //trong req.body
 
@@ -12,7 +12,7 @@ server tiến hành kiểm tra verifyCode bằng cách :
 -lấy ra verifyCode từ req.body
 -lấy rsn và rsne trong req.body
 
--return ( sha256(userName + randomnumber + secrect_key) ==  verifyCode && rsne == RSA(rsn) )
+-return ( sha256(  rdn + secrect_key) ==  verifyCode && rsne == RSA(rsn) )
 
 
 //login Haui

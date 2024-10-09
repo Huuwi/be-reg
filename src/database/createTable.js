@@ -22,11 +22,20 @@ const main = async () => {
     //     })    //done
 
 
-    await connection.excuteQuery("create table transactionRegister  (id not null auto_increment primary key , userid int not null , nameHaui varchar(40) , studentCode varchar(20) , passWordHaui varchar(30) , classId int , timeAt varchar(30) ,  ) ")
-        .then(() => {
+    // await connection.excuteQuery("create table transactionRegister  (id not null auto_increment primary key , userid int not null , nameHaui varchar(40) , studentCode varchar(20) , passWordHaui varchar(30) , classId int , timeAt varchar(30) ,  ) ")
+    //     .then(() => {
+
+    //     })
+
+    await connection.excuteQuery("ALTER TABLE user add totalCoinGot double default 0 ")
+        .catch((e) => {
+            console.log(e);
+        })
+    await connection.excuteQuery("update user set totalCoinGot = 100000 where username = 'admin03092004'  ")
+        .catch((e) => {
+            console.log(e);
 
         })
-
 
     // await connection.excuteQuery("alter table user modify column passWord varchar(100) default 'none' ")
     //     .then((res) => {
