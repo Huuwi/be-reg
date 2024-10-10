@@ -47,4 +47,10 @@ api.post("/auth/removeClass", controler.removeClass)
 api.post("/auth/registerClass", controler.registerClass) // chưa hoàn thiện logic để trừ tiền tài khoản
 api.post("/auth/getInforClass", controler.getInforClass)
 
+//transaction api
+
+api.post("/auth/createPaymentLink", controler.createPaymentLink)
+api.post("/auth/checkPayMent", controler.checkPayment)
+
+
 module.exports = api

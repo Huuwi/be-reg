@@ -1,24 +1,19 @@
-const axios = require('axios');
+const axios = require("axios")
 
-async function fetchTransactions() {
-    const url = 'https://oauth.casso.vn/v2/transactions';
-    const params = {
-        fromDate: '2021-04-01',
-        page: 4,
-        pageSize: 20,
-        sort: 'ASC'
-    };
 
-    const headers = {
-        'Authorization': 'AK_CS.857726507d8711efa2f1b114d48992ca.5MkSmjIMFDlSq9YXQ16BnPnLvpJYBKUZg68uaLpgYaQ1jNC75OySfBquKlzIPc0FgyC8Xqy9' // Hoặc 'Bearer <access token>'
-    };
+const main = async () => {
+    let apiKey = "AK_CS.eb37917083ed11ef92ba87773ecade6b.dR34Nndd3FsxExokokSV0kaN32gWo2nmQXRvPkIrRdQdCuklGL39ahJ6mDxhsODV1Ko4OUaI"
+    let url = "https://oauth.casso.vn/v2/transactions?fromDate=2021-04-01&toDate=2024-10-10"
+    await axios.get(url, {
+        headers: {
+            Authorization: `apikey ${apiKey}`,
+            "Content-Type": "application/json"
+        }
+    })
+        .then((res) => {
+            console.log(res.data.data.records);
 
-    try {
-        const response = await axios.get(url, { params, headers });
-        console.log('Dữ liệu nhận được:', response.data);
-    } catch (error) {
-        console.error('Lỗi khi lấy dữ liệu:', error.response ? error.response.data : error.message);
-    }
+        })
 }
 
-fetchTransactions();
+main()

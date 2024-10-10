@@ -63,7 +63,7 @@ class Controler {
                     throw new Error("err when get user from database -- api_register" + err)
                 })
 
-            console.log("user--------- : ", user);
+
             if (user?.length > 0) {
                 res.status(400).json({
                     message: "username already existed"
@@ -91,8 +91,8 @@ class Controler {
 
             //save to db
             await connection.excuteQuery(`insert into user (username,password,timeCreate,referralCode) Values ('${newUser.userName}', '${newUser.hashedPass}', '${newUser.timeCreate}', '${newUser.referralCode}' )`)
-                .then((respone) => {
-                    console.log(respone);
+                .then(() => {
+                    console.log("save new user to db : ", userName);
                     try {
                         fs.appendFileSync("./src/database/logRegisterDatabase.txt",
                             `${JSON.stringify(newUser)} \n \n`
@@ -170,7 +170,6 @@ class Controler {
             }
             //get user if existed
             user = user[0]
-            console.log("user got from login", user);
 
             //check password
             if (!bcrypt.compareSync(passWord, user.passWord)) {
@@ -528,8 +527,8 @@ class Controler {
                 })
 
                 await connection.excuteQuery(`update user set balance = ${balance - 49} where userId = ${userId}`)
-                    .then((data) => {
-                        console.log(data);
+                    .then(() => {
+                        console.log("userId : " + userId + " vừa dky môn học");
                     })
                     .catch((err) => {
                         throw new Error(err)
@@ -595,6 +594,156 @@ class Controler {
         }
 
 
+    }
+
+
+
+    //transaction
+    async createPaymentLink(req, res) {
+
+        try {
+
+            let { amount, description } = req.body
+
+            if (!amount || !description) {
+                res.status(400).json({
+                    message: "missing data!"
+                })
+                return
+            }
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
+
+            let userData = await connection.excuteQuery(`select * from user where userId = ${userId}`)
+                .then((data) => {
+                    let { passWord, timeCreate, ...userData } = data[0];
+                    return userData;
+                })
+                .catch((err) => {
+                    throw new Error(err)
+                })
+
+
+            if (!userData) {
+                res.status(401).json({
+                    message: "missing data! login again!"
+                })
+                return
+            }
+
+            let curCount = fs.readFileSync("./src/countIdtrans.txt", "utf-8")
+            console.log(curCount);
+
+            if (curCount) {
+                curCount = JSON.parse(curCount).count
+                curCount++;
+                fs.writeFileSync("./src/countIdtrans.txt", JSON.stringify({ count: curCount }))
+            }
+
+            let returnUrl = process.env.FONTEND_URL + "/paymentSuccess"
+            let cancelUrl = process.env.FONTEND_URL + "/dashBoard"
+
+
+
+            let dataFromCreatePaymentLink = await services.create_payment_link({ orderCode: curCount, amount, description, cancelUrl, returnUrl })
+
+            if (!dataFromCreatePaymentLink?.data?.paymentLinkId) {
+                res.status(500).json({
+                    message: "chưa thể khởi tạo giao dịch"
+                })
+                return
+            }
+
+
+            res.status(200).json({
+                message: "ok",
+                dataFromCreatePaymentLink
+            })
+
+        } catch (error) {
+            res.status(500).json({
+                message: "have wrong!"
+            })
+            console.log("err when createPaymentLink : ", error);
+            services.appendError500("error when createPaymentLink : " + error)
+
+        }
+
+
+    }
+
+
+    async checkPayment(req, res) {
+        try {
+
+
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
+
+            let { edt } = req.body // = RSAENCODE(JSON.stringify({ transId, username, Referral })) 
+
+
+            let userData = await connection.excuteQuery(`select * from user where userId = ${userId}`)
+                .then((data) => {
+                    let { passWord, timeCreate, ...userData } = data[0];
+                    return userData;
+                })
+                .catch((err) => {
+                    throw new Error(err)
+                })
+
+            if (!edt || !userData) {
+                res.status(400).json({
+                    message: "missing data!!"
+                })
+                return
+            }
+
+            let dataCheckPayment = JSON.parse(services.decodeRSA(edt))
+
+            let checkPayment = await services.checkPayMent(dataCheckPayment.transId)
+
+
+            //kiểm tra status có thành công hay không ?
+
+
+            //nếu không thành công trả về thanh toán không thành công , return
+
+
+            //nếu thành công , kiểm tra xem bảng giao dịch đã có giao dịch nào có Id như này chưa?
+
+
+
+            //nếu có transid như này rồi , thì trả về , giao dịch này đã được thực hiện trước đó , return
+
+
+
+            //nếu chưa có transid như này , thì cộng tiền vào user , lưu trans vào bảng giao dịch các thông tin sau :  transid , amount , userId, thời gian giao dịch
+
+
+
+            // sau đó tìm kiếm user có mã giới thiệu như đã được gửi lên
+
+
+
+            //nếu không có user thì không cộng , kết thúc làm việc
+
+
+            //nếu có thì lấy user đầu tiên, so sánh mã giới thiệu từ client và thuộc tính mã giới thiệu của user (để tránh bị tấn công sql injection) nếu == thì cộng , không thì return
+
+
+
+
+
+            res.status(200).json({
+                message: "ok",
+                checkPayment
+            })
+
+
+        } catch (error) {
+
+        }
     }
 
 }
