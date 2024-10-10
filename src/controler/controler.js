@@ -94,7 +94,7 @@ class Controler {
                 .then(() => {
                     console.log("save new user to db : ", userName);
                     try {
-                        fs.appendFileSync("./src/logs/logRegisterDatabase.txt",
+                        fs.appendFileSync("./src/logs/tmp/logRegisterDatabase.txt",
                             `${JSON.stringify(newUser)} \n \n`
                         )
                     } catch (error) {
@@ -631,13 +631,13 @@ class Controler {
                 return
             }
 
-            let curCount = fs.readFileSync("./src/logs/countIdtrans.txt", "utf-8")
+            let curCount = fs.readFileSync("./src/logs/tmp/countIdtrans.txt", "utf-8")
             console.log(curCount);
 
             if (curCount) {
                 curCount = JSON.parse(curCount).count
                 curCount++;
-                fs.writeFileSync("./src/logs/countIdtrans.txt", JSON.stringify({ count: curCount }))
+                fs.writeFileSync("./src/logs/tmp/countIdtrans.txt", JSON.stringify({ count: curCount }))
             }
 
             let returnUrl = process.env.FONTEND_URL + "/paymentSuccess"
