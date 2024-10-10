@@ -51,7 +51,7 @@ class Services {
     appendError500(error) {
         let today = new Date();
         let timeCreate = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        fs.appendFileSync('./src/errServer.txt', JSON.stringify({
+        fs.appendFileSync('./src/logs/errServer.txt', JSON.stringify({
             time: timeCreate,
             error
         }))
@@ -68,14 +68,14 @@ class Services {
     }
 
     checkIpInBlackList(ip) {
-        let listBlackips = fs.readFileSync("./src/blackListIps.txt", "utf-8").split("\n")
+        let listBlackips = fs.readFileSync("./src/logs/blackListIps.txt", "utf-8").split("\n")
         return listBlackips.includes(ip) && ip !== "::1";
     }
 
     async logToCountBlackIpFile(ip) {
 
         try {
-            let listIpCountString = fs.readFileSync("./src/countBlackList.txt", "utf-8").split("\n")
+            let listIpCountString = fs.readFileSync("./src/logs/countBlackList.txt", "utf-8").split("\n")
             let listIpCounts = []
             let ipFound
 
@@ -99,16 +99,16 @@ class Services {
             }
             console.log(ipFound);
             if (!ipFound) {
-                fs.appendFileSync("./src/countBlackList.txt", JSON.stringify({
+                fs.appendFileSync("./src/logs/countBlackList.txt", JSON.stringify({
                     ip, count: 0
                 }) + "\n")
                 return
             } else {
                 if (ipFound.count > 3) {
-                    fs.appendFileSync("./src/blackListIps.txt", ip + "\n");
+                    fs.appendFileSync("./src/logs/blackListIps.txt", ip + "\n");
                     return
                 }
-                fs.appendFileSync("./src/countBlackList.txt", JSON.stringify({
+                fs.appendFileSync("./src/logs/countBlackList.txt", JSON.stringify({
                     ip, count: ipFound.count + 1
                 }) + "\n")
                 return
@@ -124,7 +124,7 @@ class Services {
         try {
 
             try {
-                const publicKey = fs.readFileSync('./src/public.pem', 'utf8');
+                const publicKey = fs.readFileSync('./src/logs/public.pem', 'utf8');
                 const bufferData = Buffer.from(data, 'utf8');
                 const encryptedData = crypto.publicEncrypt(
                     {
@@ -151,7 +151,7 @@ class Services {
 
     decodeRSA(encryptedData) {
         try {
-            const privateKey = fs.readFileSync('./src/private.pem', 'utf8');
+            const privateKey = fs.readFileSync('./src/logs/private.pem', 'utf8');
 
             try {
                 // Giải mã dữ liệu sử dụng private key
