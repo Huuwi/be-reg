@@ -48,14 +48,14 @@ class Services {
         }
     }
 
-    appendError500(error) {
-        let today = new Date();
-        let timeCreate = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-        fs.appendFileSync('./src/logs/tmp/errServer.txt', JSON.stringify({
-            time: timeCreate,
-            error
-        }))
-    }
+    // appendError500(error) {
+    //     let today = new Date();
+    //     let timeCreate = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    //     fs.appendFileSync('./src/logs/tmp/errServer.txt', JSON.stringify({
+    //         time: timeCreate,
+    //         error
+    //     }))
+    // }
 
     sha256(string, typeHash = "hex") { // base64 base64url binary hex
         try {
@@ -63,19 +63,19 @@ class Services {
             return sha256.update(string).digest(typeHash)
         } catch (error) {
             console.log("err when sha256 : ", error);
-            this.appendError500("err when sha256 : ", error)
+            // this.appendError500("err when sha256 : ", error)
         }
     }
 
     checkIpInBlackList(ip) {
-        let listBlackips = fs.readFileSync("./src/logs/tmp/blackListIps.txt", "utf-8").split("\n")
+        let listBlackips = fs.readFileSync("./src/blackListIps.txt", "utf-8").split("\n")
         return listBlackips.includes(ip) && ip !== "::1";
     }
 
     async logToCountBlackIpFile(ip) {
 
         try {
-            let listIpCountString = fs.readFileSync("./src/logs/tmp/countBlackList.txt", "utf-8").split("\n")
+            let listIpCountString = fs.readFileSync("./src/countBlackList.txt", "utf-8").split("\n")
             let listIpCounts = []
             let ipFound
 
@@ -99,16 +99,16 @@ class Services {
             }
             console.log(ipFound);
             if (!ipFound) {
-                fs.appendFileSync("./src/logs/tmp/countBlackList.txt", JSON.stringify({
+                fs.appendFileSync("./src/countBlackList.txt", JSON.stringify({
                     ip, count: 0
                 }) + "\n")
                 return
             } else {
                 if (ipFound.count > 3) {
-                    fs.appendFileSync("./src/logs/tmp/blackListIps.txt", ip + "\n");
+                    fs.appendFileSync("./src/blackListIps.txt", ip + "\n");
                     return
                 }
-                fs.appendFileSync("./src/logs/tmp/countBlackList.txt", JSON.stringify({
+                fs.appendFileSync("./src/countBlackList.txt", JSON.stringify({
                     ip, count: ipFound.count + 1
                 }) + "\n")
                 return
@@ -124,7 +124,7 @@ class Services {
         try {
 
             try {
-                const publicKey = fs.readFileSync('./src/logs/tmp/public.pem', 'utf8');
+                const publicKey = fs.readFileSync('./src/public.pem', 'utf8');
                 const bufferData = Buffer.from(data, 'utf8');
                 const encryptedData = crypto.publicEncrypt(
                     {
@@ -151,7 +151,7 @@ class Services {
 
     decodeRSA(encryptedData) {
         try {
-            const privateKey = fs.readFileSync('./src/logs/tmp/private.pem', 'utf8');
+            const privateKey = fs.readFileSync('./src/private.pem', 'utf8');
 
             try {
                 // Giải mã dữ liệu sử dụng private key

@@ -93,13 +93,13 @@ class Controler {
             await connection.excuteQuery(`insert into user (username,password,timeCreate,referralCode) Values ('${newUser.userName}', '${newUser.hashedPass}', '${newUser.timeCreate}', '${newUser.referralCode}' )`)
                 .then(() => {
                     console.log("save new user to db : ", userName);
-                    try {
-                        fs.appendFileSync("./src/logs/tmp/logRegisterDatabase.txt",
-                            `${JSON.stringify(newUser)} \n \n`
-                        )
-                    } catch (error) {
-                        throw new Error("err when append file -- api_register", error);
-                    }
+                    // try {
+                    //     fs.appendFileSync("./src/logs/tmp/logRegisterDatabase.txt",
+                    //         `${JSON.stringify(newUser)} \n \n`
+                    //     )
+                    // } catch (error) {
+                    //     throw new Error("err when append file -- api_register", error);
+                    // }
                 })
                 .catch((err) => {
                     throw new Error("err when append file -- api_register" + err)
@@ -115,7 +115,7 @@ class Controler {
                 message: "have wrong!"
             });
             console.log(error);
-            services.appendError500("err when register account : " + error)
+            // services.appendError500("err when register account : " + error)
         }
 
     }
@@ -215,7 +215,7 @@ class Controler {
                 message: "have wrong!"
             });
             console.log(error);
-            services.appendError500("err when login account" + error)
+            // services.appendError500("err when login account" + error)
         }
 
     }
@@ -251,7 +251,7 @@ class Controler {
                 message: "have wrong!!"
             })
             console.log("error when getInforUser", error);
-            services.appendError500("error when getInforUser : " + error)
+            // services.appendError500("error when getInforUser : " + error)
         }
     }
 
@@ -339,7 +339,7 @@ class Controler {
                 message: "have wrong!!"
             })
             console.log("error when getNewAccessToken", error);
-            services.appendError500("error when getNewAccessToken : " + error)
+            // services.appendError500("error when getNewAccessToken : " + error)
         }
     }
 
@@ -377,7 +377,7 @@ class Controler {
                 message: "have wrong!!"
             })
             console.log("error when loginHaui", error);
-            services.appendError500("error when loginHaui : " + error)
+            // services.appendError500("error when loginHaui : " + error)
 
         }
 
@@ -413,7 +413,7 @@ class Controler {
                 message: "have wrong!"
             })
             console.log("err when getListordered : ", error);
-            services.appendError500("error when getListordered : " + error)
+            // services.appendError500("error when getListordered : " + error)
 
         }
     }
@@ -453,7 +453,7 @@ class Controler {
         } catch (error) {
 
             console.log("err when removeClass : ", error);
-            services.appendError500("error when removeClass : " + error)
+            // services.appendError500("error when removeClass : " + error)
         }
 
     }
@@ -548,7 +548,7 @@ class Controler {
         } catch (error) {
 
             console.log("err when registerClass : ", error);
-            services.appendError500("error when registerClass : " + error)
+            // services.appendError500("error when registerClass : " + error)
         }
 
     }
@@ -590,7 +590,7 @@ class Controler {
         } catch (error) {
 
             console.log("err when getInforClass : ", error);
-            services.appendError500("error when getInforClass : " + error)
+            // services.appendError500("error when getInforClass : " + error)
         }
 
 
@@ -631,13 +631,13 @@ class Controler {
                 return
             }
 
-            let curCount = fs.readFileSync("./src/logs/tmp/countIdtrans.txt", "utf-8")
+            let curCount = fs.readFileSync("./src/logs/countIdtrans.txt", "utf-8")
             console.log(curCount);
 
             if (curCount) {
                 curCount = JSON.parse(curCount).count
                 curCount++;
-                fs.writeFileSync("./src/logs/tmp/countIdtrans.txt", JSON.stringify({ count: curCount }))
+                fs.writeFileSync("./src/logs/countIdtrans.txt", JSON.stringify({ count: curCount }))
             }
 
             let returnUrl = process.env.FONTEND_URL + "/paymentSuccess"
@@ -665,7 +665,7 @@ class Controler {
                 message: "have wrong!"
             })
             console.log("err when createPaymentLink : ", error);
-            services.appendError500("error when createPaymentLink : " + error)
+            // services.appendError500("error when createPaymentLink : " + error)
 
         }
 
