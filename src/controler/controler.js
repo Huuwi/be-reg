@@ -193,12 +193,12 @@ class Controler {
             let { passWord: pw, timeCreate, ...userData } = user
 
             //set accestoken and refresh token
-            res.cookie("at", access_token, { httpOnly: true, maxAge: 3600000 * 12 });
-            res.cookie("rt", refresh_token, { httpOnly: true, maxAge: 3600000 * 24 });
+            res.cookie("at", access_token, { httpOnly: true, maxAge: 3600000 * 12, sameSite: "none" });
+            res.cookie("rt", refresh_token, { httpOnly: true, maxAge: 3600000 * 24, sameSite: "none" });
 
             //fake cookie
             let fc = "bearer " + services.sha256(Date.now() + "cookie fake:))" + Math.random(), "base64")// fake cookie
-            res.cookie("secur", fc, { httpOnly: true, maxAge: 3600000 * 12 });
+            res.cookie("secur", fc, { httpOnly: true, maxAge: 3600000 * 12, sameSite: "none" });
 
             //respone if success
             res.status(200).json({
@@ -327,7 +327,7 @@ class Controler {
             })
 
             //set newaccesstoken
-            res.cookie("at", newAccessToken, { httpOnly: true, maxAge: 3600000 * 12 })
+            res.cookie("at", newAccessToken, { httpOnly: true, maxAge: 3600000 * 12, sameSite: "none" })
 
             // respone
             res.status(200).json({
@@ -362,7 +362,7 @@ class Controler {
             let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify, studentCode, passWordHaui, nameHaui }));
 
 
-            res.cookie("enKC", enKC, { httpOnly: true, maxAge: 3600000 * 2 })
+            res.cookie("enKC", enKC, { httpOnly: true, maxAge: 3600000 * 2, sameSite: "none" })
 
 
 
