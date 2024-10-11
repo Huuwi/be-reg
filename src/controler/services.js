@@ -448,6 +448,10 @@ class Services {
         try {
             const signature = this.createSignature({ orderCode, amount, description, cancelUrl, returnUrl }, checksumKey);
 
+            console.log({ orderCode, amount, description, cancelUrl, returnUrl });
+            console.log(checksumKey);
+
+
             const response = await axios.post("https://api-merchant.payos.vn/v2/payment-requests", {
                 orderCode,
                 amount,
