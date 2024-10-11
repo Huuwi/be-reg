@@ -18,7 +18,7 @@ api.get("/", (req, res) => {
 //use middleware
 
 //check ip black list
-api.use("*", middleware.checkIpAdress)
+// api.use("*", middleware.checkIpAdress)
 
 
 

@@ -276,7 +276,7 @@ class Controler {
                 res.status(403).json({
                     message: "are you cheating me?"
                 })
-                services.logToCountBlackIpFile(ip)
+                // services.logToCountBlackIpFile(ip)
                 return
             }
 
@@ -286,7 +286,7 @@ class Controler {
                 res.status(403).json({
                     message: "are you cheating me?"
                 })
-                services.logToCountBlackIpFile(ip)
+                // services.logToCountBlackIpFile(ip)
                 return
             }
 
@@ -317,7 +317,7 @@ class Controler {
                 res.status(403).json({
                     message: "are you cheating me? stop it RIGHTNOW!!"
                 })
-                services.logToCountBlackIpFile(ip)
+                // services.logToCountBlackIpFile(ip)
                 return
             }
 
@@ -637,7 +637,7 @@ class Controler {
             if (curCount) {
                 curCount = JSON.parse(curCount).count
                 curCount++;
-                fs.writeFileSync("./src/logs/countIdtrans.txt", JSON.stringify({ count: curCount }))
+                fs.appendFileSync("./src/logs/countIdtrans.txt", JSON.stringify({ count: curCount }))
             }
 
             let returnUrl = process.env.FONTEND_URL + "/paymentSuccess"
