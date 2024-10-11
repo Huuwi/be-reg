@@ -448,9 +448,6 @@ class Services {
         try {
             const signature = this.createSignature({ orderCode, amount, description, cancelUrl, returnUrl }, checksumKey);
 
-            console.log({ orderCode, amount, description, cancelUrl, returnUrl });
-            console.log(checksumKey);
-
 
             const response = await axios.post("https://api-merchant.payos.vn/v2/payment-requests", {
                 orderCode,
@@ -492,6 +489,30 @@ class Services {
             console.log("errr when checkPayMent", error);
 
         }
+    }
+
+
+    getInforFromTotal(toTal, arrValue0) {
+        let arrValue = arrValue0.map((e) => { return e.toTal })
+        if (Number(toTal) == NaN || toTal < 0) {
+            return {
+                curentLevel: -1,
+                curBonus: 0,
+            }
+        }
+        for (let i = 0; i < arrValue.length - 1; i++) {
+            if (toTal >= arrValue[i] && toTal < arrValue[i + 1]) {
+                return {
+                    curentLevel: i,
+                    curBonus: arrValue0[i].curBonus,
+                }
+            }
+        }
+        return {
+            curentLevel: arrValue.length,
+            curBonus: 1,
+        }
+
     }
 
 

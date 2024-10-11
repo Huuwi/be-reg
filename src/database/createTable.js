@@ -27,15 +27,16 @@ const main = async () => {
 
     //     })
 
-    await connection.excuteQuery("ALTER TABLE user add totalCoinGot double default 0 ")
-        .catch((e) => {
-            console.log(e);
-        })
-    await connection.excuteQuery("update user set totalCoinGot = 100000 where username = 'admin03092004'  ")
-        .catch((e) => {
-            console.log(e);
+    // await connection.excuteQuery("ALTER TABLE user add totalCoinGot double default 0 ")
+    //     .catch((e) => {
+    //         console.log(e);
+    //     })
+    // await connection.excuteQuery("update user set totalCoinGot = 100000 where username = 'admin03092004'  ")
+    //     .catch((e) => {
+    //         console.log(e);
 
-        })
+    //     })
+
 
     // await connection.excuteQuery("alter table user modify column passWord varchar(100) default 'none' ")
     //     .then((res) => {
@@ -59,16 +60,16 @@ const main = async () => {
     //     }) // done
 
 
-    // for (let i = 10; i <= 12; i++) {
-    //     await connection.excuteQuery(`delete from user where userId = ${i}`)
-    //         .then((res) => {
-    //             console.log(res);
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //         })
-    // }
 
+    // await connection.excuteQuery("create table transactionPayment (id varchar(50)  primary key ,  amount int , time varchar(40) ,addCoin boolean , userName varchar(20)  ) ").catch((e) => {
+    //     console.log(e);
+    // })
+
+
+    //     await connection.excuteQuery(`ALTER TABLE transactionPayment
+    // DROP COLUMN addCoin;`).catch((e) => {
+    //         console.log(e);
+    //     })
 
 
 

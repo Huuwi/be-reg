@@ -682,6 +682,10 @@ class Controler {
     async checkPayment(req, res) {
         try {
 
+            console.log("check payMent : ");
+
+
+
 
             let decodeAccessToken = req.decodeAccessToken;
             let userId = decodeAccessToken.userId; //get userId
@@ -691,8 +695,7 @@ class Controler {
 
             let userData = await connection.excuteQuery(`select * from user where userId = ${userId}`)
                 .then((data) => {
-                    let { passWord, timeCreate, ...userData } = data[0];
-                    return userData;
+                    return data[0];
                 })
                 .catch((err) => {
                     throw new Error(err)
@@ -707,43 +710,151 @@ class Controler {
 
             let dataCheckPayment = JSON.parse(services.decodeRSA(edt))
 
-            let checkPayment = await services.checkPayMent(dataCheckPayment.transId)
 
+            let checkPayment = await services.checkPayMent(dataCheckPayment.transId)
 
             //kiểm tra status có thành công hay không ?
 
-
             //nếu không thành công trả về thanh toán không thành công , return
+            if (checkPayment?.data?.status != "PAID") {
+                res.status(400).json({
+                    message: "thanh toán không thành công",
+                    time: checkPayment?.data?.createdAt
+                })
+                return
+
+            }
+
+
 
 
             //nếu thành công , kiểm tra xem bảng giao dịch đã có giao dịch nào có Id như này chưa?
-
-
-
             //nếu có transid như này rồi , thì trả về , giao dịch này đã được thực hiện trước đó , return
 
 
 
-            //nếu chưa có transid như này , thì cộng tiền vào user , lưu trans vào bảng giao dịch các thông tin sau :  transid , amount , userId, thời gian giao dịch
+            let lastPayment = await connection.excuteQuery(`select * from transactionPayment where id = '${checkPayment?.data?.id}'`)
+                .catch((e) => {
+                    console.log(e);
+                })
+
+            if (lastPayment.length > 0) {
+                res.status(400).json({
+                    message: "giao dịch này đã cộng xu rồi",
+                    time: checkPayment?.data?.createdAt
+                })
+                return
+            }
+
+
+
+            // tính toán xem user này đã lên lv mới hay chưa , nếu lên rồi thì trả về 1 kết quả là upLv = true
+            let upLv = false
+            let arrValue = [
+                { toTal: 0, referraBonus: 0, curBonus: 0 },
+                { toTal: 50, referraBonus: 0, curBonus: 0 },
+                { toTal: 80, referraBonus: 0, curBonus: 0 },
+                { toTal: 100, referraBonus: 0, curBonus: .1 },
+                { toTal: 130, referraBonus: 0, curBonus: .15 },
+                { toTal: 160, referraBonus: 0, curBonus: .2 },
+                { toTal: 200, referraBonus: 0, curBonus: .25 },
+                { toTal: 250, referraBonus: 0, curBonus: .30 },
+                { toTal: 300, referraBonus: 0, curBonus: .35 },
+                { toTal: 350, referraBonus: 0, curBonus: .4 },
+                { toTal: 500, referraBonus: 0, curBonus: .45 },
+                { toTal: 1000, referraBonus: 0, curBonus: .50 },
+                { toTal: 151010, referraBonus: 0, curBonus: 1 }
+            ]
+            let { totalCoinGot: total, balance } = userData;
+
+            let inforLevelBeforePay = services.getInforFromTotal(total, arrValue);
+
+            let newTotal = total + checkPayment?.data?.amountPaid / 1000 + checkPayment?.data?.amountPaid * inforLevelBeforePay.curBonus / 1000;
+
+            let newBalance = balance + checkPayment?.data?.amountPaid / 1000 + checkPayment?.data?.amountPaid * inforLevelBeforePay.curBonus / 1000;
+
+
+            let inforLevelAfterPay = services.getInforFromTotal(newTotal, arrValue);
+            if (inforLevelAfterPay.curentLevel > inforLevelBeforePay.curentLevel) {
+                upLv = true
+            }
+
+
+            //nếu chưa có transid như này thì cộng tiền vào user , lưu trans vào bảng giao dịch các thông tin sau :  transid , amount , username, thời gian giao dịch
+
+
+            await connection.excuteQuery(`UPDATE user SET balance = ${newBalance} , totalCoinGot = ${newTotal}  WHERE userId = ${userId}`)
+                .catch((e) => {
+                    console.log(e);
+                })
+
+            await connection.excuteQuery(`insert into transactionPayment (id , amount , time , userName) values ('${checkPayment?.data?.id}' , ${checkPayment?.data?.amountPaid} , '${checkPayment?.data?.createdAt}' , '${userData.username}') `)
+                .catch((e) => {
+                    console.log(e);
+                })
 
 
 
             // sau đó tìm kiếm user có mã giới thiệu như đã được gửi lên
+            let referralMessage = "ok"
+
+            let referralUser = await connection.excuteQuery(`select * from user where referralCode = '${dataCheckPayment.Referral}'`)
+                .then((res) => {
+                    return res[0]
+                })
+                .catch((e) => {
+                    console.log(e);
+                })
+
+            if (referralUser) {
 
 
+                if (referralUser.referralCode != dataCheckPayment.Referral || referralUser.userId == userId) {
+                    referralMessage = "The referral code to receive the bonus cannot be the same as your referral code!!"
+                    console.log("this case : ");
+                    console.log("referralUser.referralCode : ", referralUser.referralCode);
+                    console.log("userId", userId);
 
-            //nếu không có user thì không cộng , kết thúc làm việc
+                } else {
+                    let costTable = [
+                        { id: 0, amount: 10, salesReferral: 0 },
+                        { id: 1, amount: 20, salesReferral: 0.1 },
+                        { id: 2, amount: 30, salesReferral: .15 },
+                        { id: 3, amount: 40, salesReferral: .2 },
+                        { id: 4, amount: 50, salesReferral: .25 },
+                        { id: 5, amount: 100, salesReferral: .35 },
+                    ]
+                    let salesReferral = costTable.find((e) => {
+                        return e.amount == checkPayment?.data?.amountPaid / 1000
+                    })?.salesReferral || 0
 
 
-            //nếu có thì lấy user đầu tiên, so sánh mã giới thiệu từ client và thuộc tính mã giới thiệu của user (để tránh bị tấn công sql injection) nếu == thì cộng , không thì return
+                    let referralCoinBonus = checkPayment?.data?.amountPaid * salesReferral / 1000 || 0
+
+                    let { totalCoinGot: totalRef, balance: balanceRef } = referralUser
+                    let newtotalRef = totalRef + referralCoinBonus
+                    let newBalanceRef = balanceRef + referralCoinBonus
 
 
+                    await connection.excuteQuery(`UPDATE user SET balance = ${newBalanceRef} , totalCoinGot = ${newtotalRef}  WHERE userId = ${referralUser.userId}`)
+                        .catch((e) => {
+                            console.log(e);
+                        })
+                    referralMessage = "users with this Referral Code have been rewarded!! "
+
+                }
+
+
+            } else {
+                referralMessage = "not found user have this ReferralCode!!"
+            }
 
 
 
             res.status(200).json({
                 message: "ok",
-                checkPayment
+                referralMessage,
+                upLv
             })
 
 
