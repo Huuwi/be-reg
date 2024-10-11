@@ -631,21 +631,27 @@ class Controler {
                 return
             }
 
-            let curCount = fs.readFileSync("./src/logs/countIdtrans.txt", "utf-8")
-            console.log(curCount);
+            // let curCount = fs.readFileSync("./src/logs/countIdtrans.txt", "utf-8")
+            // console.log(curCount);
 
-            if (curCount) {
-                curCount = JSON.parse(curCount).count
-                curCount++;
-                fs.appendFileSync("./src/logs/countIdtrans.txt", JSON.stringify({ count: curCount }))
-            }
+            // if (curCount) {
+            //     curCount = JSON.parse(curCount).count
+            //     curCount++;
+            //     fs.appendFileSync("./src/logs/countIdtrans.txt", JSON.stringify({ count: curCount }))
+            // }
+
+            let d = Date.now()
+            let orderCode = Number(d.toString().slice(2) + Math.floor(Math.random() * Math.pow(10, Math.floor(Math.random() * 4))).toString());
+
+
+
 
             let returnUrl = process.env.FONTEND_URL + "/paymentSuccess"
             let cancelUrl = process.env.FONTEND_URL + "/dashBoard"
 
 
 
-            let dataFromCreatePaymentLink = await services.create_payment_link({ orderCode: curCount, amount, description, cancelUrl, returnUrl })
+            let dataFromCreatePaymentLink = await services.create_payment_link({ orderCode, amount, description, cancelUrl, returnUrl })
 
             if (!dataFromCreatePaymentLink?.data?.paymentLinkId) {
                 res.status(500).json({
