@@ -343,6 +343,61 @@ class Controler {
         }
     }
 
+
+
+    async pingHaui(req, res) {
+
+        try {
+            let enKC = req?.cookies?.enKC;
+
+            if (!enKC) {
+                res.status(400).json({
+                    message: "can't find your Haui account , you should login Haui account again!"
+                })
+                return
+            }
+
+            let data = {}
+            try {
+                data = JSON.parse(services.decodeAES(enKC))
+            } catch (error) {
+                res.status(400).json({
+                    message: "data not valid!"
+                })
+                return
+            }
+
+            let { Cookie, kverify } = data
+
+            let ping = await services.scan(kverify, Cookie, 2000);
+
+            if (ping?.err !== 0) {
+                res.status(400).json({
+                    message: "data not valid!!!"
+                })
+                return
+            }
+
+            res.status(200).json({
+                message: "ok",
+                ping
+            })
+
+
+
+        } catch (error) {
+            if (!enKC) {
+                res.status(500).json({
+                    message: "have wrong!!"
+                })
+                return
+            }
+        }
+
+    }
+
+
+
     async loginHaui(req, res) {
 
         try {
@@ -352,15 +407,21 @@ class Controler {
 
             let token_url = await services.getTokenUrlHaui(studentCode, passWordHaui);
 
-            console.log(token_url);
 
+
+            if (!token_url.includes("token=")) {
+                res.status(400).json({
+                    message: "invalid studentCode or password!"
+                })
+                return
+            }
 
             let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url)
 
             let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify, studentCode, passWordHaui, nameHaui }));
 
 
-            res.cookie("enKC", enKC, { httpOnly: true, maxAge: 3600000 * 2, sameSite: "none", secure: true, })
+            res.cookie("enKC", enKC, { httpOnly: true, maxAge: 3600 * 1000 * 2, sameSite: "none", secure: true, })
 
 
             res.status(200).json({
@@ -373,7 +434,6 @@ class Controler {
                 message: "have wrong!!"
             })
             console.log("error when loginHaui", error);
-            // services.appendError500("error when loginHaui : " + error)
 
         }
 
@@ -591,6 +651,8 @@ class Controler {
 
 
     }
+
+
 
 
 

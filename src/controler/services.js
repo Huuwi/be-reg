@@ -524,6 +524,33 @@ class Services {
             console.error("Error when creating payment link:", error);
         }
     }
+    async scan(kverify, Cookie, i) {
+        const url = `https://sv.haui.edu.vn/ajax/register/action.htm?cmd=classbymodulesid&v=${kverify}`;
+        const payload = qs.stringify({
+            fid: i
+        });
+
+        const config = {
+            headers: {
+                'Cookie': Cookie,
+                'Origin': 'https://sv.haui.edu.vn',
+                'Referer': 'https://sv.haui.edu.vn/register/',
+            }
+        };
+        let ping = ''
+
+        await axios.post(url, payload, config)
+            .then(response => {
+                ping = response.data
+            })
+            .catch((e) => {
+                console.log("err when scan ", e);
+
+            })
+
+        return ping
+
+    }
 
 
     async checkPayMent(transId, x_client_id = process.env.x_client_id, x_api_key = process.env.x_api_key) {

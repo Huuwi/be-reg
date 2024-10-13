@@ -46,6 +46,8 @@ api.post("/auth/getListordered", controler.getListordered) // list ordered
 api.post("/auth/removeClass", controler.removeClass)
 api.post("/auth/registerClass", controler.registerClass) // chưa hoàn thiện logic để trừ tiền tài khoản
 api.post("/auth/getInforClass", controler.getInforClass)
+api.post("/auth/pingHaui", controler.pingHaui)
+
 
 //transaction api
 
