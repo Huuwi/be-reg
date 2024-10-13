@@ -3,6 +3,9 @@ const fs = require("fs")
 const crypto = require("crypto")
 const axios = require('axios');
 const qs = require('qs');
+const { CookieJar } = require('tough-cookie');
+const { wrapper } = require('axios-cookiejar-support');
+const cheerio = require('cheerio');
 
 
 class Services {
@@ -48,14 +51,6 @@ class Services {
         }
     }
 
-    // appendError500(error) {
-    //     let today = new Date();
-    //     let timeCreate = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    //     fs.appendFileSync('./src/logs/tmp/errServer.txt', JSON.stringify({
-    //         time: timeCreate,
-    //         error
-    //     }))
-    // }
 
     sha256(string, typeHash = "hex") { // base64 base64url binary hex
         try {
@@ -267,6 +262,65 @@ class Services {
 
 
     }
+
+
+    async dataFomTokenUrl(token_url) {
+        try {
+
+            const jar = new CookieJar();
+            const axiosInstance = wrapper(
+                axios.create({
+                    jar,
+                    withCredentials: true,
+                    headers: {
+                        'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/9.0 Mobile/15E148 Safari/604.1'
+                    }
+                })
+            );
+
+            // Bước 1: Gửi yêu cầu đầu tiên với token
+            const initialResponse = await axiosInstance.get(token_url);
+
+
+            // Bước 2: Thực hiện chuyển hướng thủ công đến "/"
+            const redirectResponse = await axiosInstance.get('https://sv.haui.edu.vn/');
+
+            // In ra dữ liệu cuối cùng
+
+            // Bước 3: Lấy cookie từ response cuối cùng
+            const finalCookies = jar.toJSON();
+            const Cookie = finalCookies.cookies
+                .map(({ key, value }) => `${key}=${value}`)
+                .join('; ');
+
+
+
+            //extract data
+
+            // Load HTML vào Cheerio
+            const $ = cheerio.load(redirectResponse.data);
+
+            // Trích xuất username
+            let nameHaui = $('.user-name').text().trim();
+            nameHaui = nameHaui.slice(0, Math.floor(nameHaui.length / 2))
+
+            // Trích xuất kverify từ script
+            const kverifyMatch = redirectResponse.data.match(/var kverify = '(.*?)';/);
+            const kverify = kverifyMatch ? kverifyMatch[1] : '';
+
+
+
+            return { nameHaui, kverify, Cookie }
+
+
+
+        } catch (error) {
+            console.error('Có lỗi xảy ra:', error);
+        }
+
+
+    }
+
 
     async listOrdered(kverify, Cookie) {
 

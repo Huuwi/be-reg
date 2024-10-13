@@ -31,7 +31,7 @@ const main = async () => {
     //     .catch((e) => {
     //         console.log(e);
     //     })
-    // await connection.excuteQuery("update user set totalCoinGot = 100000 where username = 'admin03092004'  ")
+    // await connection.excuteQuery("update user set username = 'admin'  where username = 'admin03092004'  ")
     //     .catch((e) => {
     //         console.log(e);
 

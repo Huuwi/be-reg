@@ -1,18 +1,11 @@
 require('dotenv').config({ path: "./src/.env" }); // path from pakage.json (when run command npm start)
-const ManageBrowsers = require("./browser/ManageBrowsers.js")
 const express = require("express");
 const { connection } = require("./database/connection.js");
 const configServer = require("./config/configServer.js");
 const api = require("./api/api.js");
-const OneBrowser = require("./browser/OneBrowser.js")
-
-globalThis.ManageBrowsers = new ManageBrowsers()
 
 //init app
 const app = express();
-
-
-
 
 
 //config server

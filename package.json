@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "axios": "^1.7.7",
+    "axios-cookiejar-support": "^5.0.3",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
+    "cheerio": "^1.0.0",
     "config": "^3.3.12",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -13,8 +15,8 @@
     "mysql2": "^3.11.3",
     "node-rsa": "^1.1.1",
     "nodemon": "^3.1.7",
-    "puppeteer": "^22.0.0",
-    "qs": "^6.13.0"
+    "qs": "^6.13.0",
+    "tough-cookie": "^5.0.0"
   },
   "name": "backend",
   "version": "1.0.0",

@@ -352,19 +352,15 @@ class Controler {
 
             let token_url = await services.getTokenUrlHaui(studentCode, passWordHaui);
 
+            console.log(token_url);
 
-            let data = await globalThis.ManageBrowsers.getInforFromTokenUrlHaui(token_url);
-            let nameHaui = data?.name;
-            let Cookie = data?.Cookie;
-            let kverify = data?.kverify;
 
+            let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url)
 
             let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify, studentCode, passWordHaui, nameHaui }));
 
 
             res.cookie("enKC", enKC, { httpOnly: true, maxAge: 3600000 * 2, sameSite: "none", secure: true, })
-
-
 
 
             res.status(200).json({
@@ -682,10 +678,6 @@ class Controler {
     async checkPayment(req, res) {
         try {
 
-            console.log("check payMent : ");
-
-
-
 
             let decodeAccessToken = req.decodeAccessToken;
             let userId = decodeAccessToken.userId; //get userId
@@ -712,6 +704,7 @@ class Controler {
 
 
             let checkPayment = await services.checkPayMent(dataCheckPayment.transId)
+
 
             //kiểm tra status có thành công hay không ?
 
@@ -775,8 +768,10 @@ class Controler {
 
 
             let inforLevelAfterPay = services.getInforFromTotal(newTotal, arrValue);
+            let newLv = 0
             if (inforLevelAfterPay.curentLevel > inforLevelBeforePay.curentLevel) {
                 upLv = true
+                newLv = inforLevelAfterPay.curentLevel
             }
 
 
@@ -849,12 +844,24 @@ class Controler {
                 referralMessage = "not found user have this ReferralCode!!"
             }
 
+            //return updated userData
+            userData = await connection.excuteQuery(`select * from user where userId = ${userId}`)
+                .then((data) => {
+                    let { passWord, timeCreate, ...other } = data[0]
+                    return other;
+                })
+                .catch((err) => {
+                    throw new Error(err)
+                })
+
 
 
             res.status(200).json({
                 message: "ok",
                 referralMessage,
-                upLv
+                upLv,
+                newLv,
+                userData
             })
 
 
