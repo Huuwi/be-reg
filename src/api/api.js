@@ -7,12 +7,14 @@ let controler = new Controler()
 let middleware = new MiddleWare()
 
 //test api
-api.get("/", (req, res) => {
-    res.cookie("test", "test", {
+api.get("/ping", (req, res) => {
+    res.cookie("ping", "ok", {
         httpOnly: true
     });
 
-    res.send("hello from backend");
+    res.status(200).json({
+        message: "ok from backend!"
+    });
 })
 
 //use middleware

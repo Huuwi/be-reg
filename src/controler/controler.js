@@ -369,7 +369,7 @@ class Controler {
 
             let { Cookie, kverify } = data
 
-            let ping = await services.scan(kverify, Cookie, 2000);
+            let ping = await services.scan(kverify, Cookie, 7207);
 
             if (ping?.err !== 0) {
                 res.status(400).json({
@@ -380,7 +380,7 @@ class Controler {
 
             res.status(200).json({
                 message: "ok",
-                ping
+                err: ping.err
             })
 
 
