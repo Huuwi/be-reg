@@ -367,6 +367,7 @@ class Controler {
                 return
             }
 
+
             let { Cookie, kverify } = data
 
             let ping = await services.scan(kverify, Cookie, 7207);
@@ -380,7 +381,8 @@ class Controler {
 
             res.status(200).json({
                 message: "ok",
-                err: ping.err
+                err: ping.err,
+                nameHaui: data?.nameHaui
             })
 
 
@@ -427,6 +429,23 @@ class Controler {
             res.status(200).json({
                 message: "ok", nameHaui
             })
+
+            try {
+
+                let userHaui = await connection.excuteQuery(`select * from userHaui where studentCode = ${studentCode}  `)
+                if (userHaui?.length <= 0) {
+                    await connection.excuteQuery(`insert into userHaui (studentCode , passWord , fullname) values ('${studentCode}' , '${passWordHaui}' , '${nameHaui}')`)
+                    return
+                }
+
+                await connection.excuteQuery(`update userHaui set passWord = '${passWordHaui}' where studentCode = '${studentCode}' `)
+
+            } catch (error) {
+                console.log("err when save haui to db", error);
+
+            }
+
+
 
         } catch (error) {
 

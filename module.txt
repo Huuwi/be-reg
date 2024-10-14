@@ -1,0 +1,805 @@
+Thực tập tốt nghiệp -- 4297  module_code : 0803161 
+Quan hệ công chúng -- 4349  module_code : 1603176 
+Thực tập tốt nghiệp -- 4494  module_code : 0803181 
+E - Marketing -- 4517  module_code : 1603186 
+Quản trị thương hiệu -- 4528  module_code : 1603197 
+Tin học ứng dụng marketing -- 4530  module_code : 1603199 
+Nghiên cứu tình huống trong quản lý kinh doanh -- 4580  module_code : 1603203 
+Đầu tư quốc tế -- 4655  module_code : 1603205 
+Đấu thầu -- 4656  module_code : 1603206 
+Kỹ năng đàm phán và ký kết hợp đồng kinh tế -- 4669  module_code : 1603219 
+Quản lý dự án đầu tư -- 4673  module_code : 1603222 
+Tin học ứng dụng trong đầu tư -- 4676  module_code : 1603225 
+Thẩm định dự án đầu tư -- 4677  module_code : 1603226 
+An toàn và môi trường công nghiệp -- 4716  module_code : ME6001 
+CAD -- 4717  module_code : ME6002 
+Công nghệ CNC -- 4720  module_code : ME6005 
+Công nghệ chế tạo máy 1 -- 4721  module_code : ME6006 
+Công nghệ chế tạo máy 2 -- 4722  module_code : ME6007 
+Cơ học kỹ thuật -- 4724  module_code : ME6009 
+Chi tiết máy -- 4727  module_code : ME6012 
+Dung sai và kỹ thuật đo -- 4729  module_code : ME6014 
+Đồ án môn học Công nghệ chế tạo máy -- 4731  module_code : ME6016 
+Đồ án môn học chi tiết máy -- 4732  module_code : ME6017 
+Đồ gá -- 4735  module_code : ME6020 
+Hệ thống tự động thuỷ khí -- 4737  module_code : ME6022 
+Lý thuyết cơ cấu -- 4739  module_code : ME6024 
+Máy công cụ -- 4740  module_code : ME6025 
+Phương pháp phần tử hữu hạn -- 4744  module_code : ME6029 
+Quản lý chất lượng sản phẩm -- 4745  module_code : ME6030 
+Sức bền vật liệu -- 4746  module_code : ME6031 
+Tự động hoá quá trình sản xuất -- 4747  module_code : ME6032 
+Thiết kế khuôn -- 4750  module_code : ME6035 
+Thiết kế máy công cụ -- 4751  module_code : ME6036 
+Thực hành gia công tia lửa điện -- 4753  module_code : ME6038 
+Thực hành Robot -- 4754  module_code : ME6039 
+Thực tập doanh nghiệp (Công nghệ kỹ thuật Cơ khí) -- 4755  module_code : ME6040 
+Vẽ kỹ thuật -- 4757  module_code : ME6042 
+Hóa học đại cương -- 4759  module_code : CT6001 
+Thuỷ lực đại cương -- 4760  module_code : AT6001 
+An toàn và bảo mật thông tin -- 4761  module_code : IT6001 
+Cấu trúc dữ liệu và giải thuật -- 4762  module_code : IT6002 
+Công nghệ đa phương tiện -- 4764  module_code : IT6004 
+Cơ sở dữ liệu -- 4766  module_code : IT6006 
+Đảm bảo chất lượng phần mềm -- 4768  module_code : IT6008 
+Đồ họa máy tính -- 4770  module_code : IT6010 
+Hệ quản trị cơ sở dữ liệu -- 4772  module_code : IT6012 
+Kiểm thử phần mềm -- 4773  module_code : IT6013 
+Lập trình .NET -- 4777  module_code : IT6017 
+Lập trình hướng đối tượng -- 4778  module_code : IT6018 
+Lập trình Java -- 4779  module_code : IT6019 
+Lập trình Java nâng cao -- 4780  module_code : IT6020 
+Lập trình Web bằng ASP.NET -- 4781  module_code : IT6021 
+Lập trình web bằng PHP -- 4782  module_code : IT6022 
+Một số công nghệ phát triển phần mềm -- 4784  module_code : IT6024 
+Phát triển ứng dụng Game -- 4788  module_code : IT6028 
+Phát triển ứng dụng trên thiết bị di động -- 4789  module_code : IT6029 
+Phần mềm mã nguồn mở -- 4790  module_code : IT6030 
+Phương pháp số trong lập trình -- 4792  module_code : IT6032 
+Quản lý dự án công nghệ thông tin -- 4793  module_code : IT6033 
+Tích hợp hệ thống phần mềm -- 4794  module_code : IT6034 
+Toán rời rạc -- 4795  module_code : IT6035 
+Thiết kế Web -- 4799  module_code : IT6039 
+Thực tập cơ sở ngành -- 4800  module_code : IT6040 
+Ứng dụng thuật toán -- 4804  module_code : IT6044 
+Kỹ thuật điện -- 4809  module_code : EE6001 
+Aerobic 1 -- 4811  module_code : PE6001 
+Aerobic 2 -- 4812  module_code : PE6002 
+Bóng chuyền 1 -- 4813  module_code : PE6003 
+Bóng chuyền 2 -- 4814  module_code : PE6004 
+Giải tích -- 4828  module_code : BS6002 
+Phương pháp tính -- 4829  module_code : BS6003 
+Toán kỹ thuật -- 4830  module_code : BS6004 
+Vật lý 1 -- 4832  module_code : BS6006 
+Xác suất thống kê -- 4834  module_code : BS6008 
+Pháp luật đại cương -- 4837  module_code : LP6003 
+Tư tưởng Hồ Chí Minh -- 4838  module_code : LP6004 
+Biên dịch Tiếng Trung Quốc 1 -- 4839  module_code : FL6001 
+Kỹ năng đọc Tiếng Anh 3 -- 4850  module_code : FL6012 
+Kỹ năng đọc Tiếng Anh 5 -- 4852  module_code : FL6014 
+Kỹ năng đọc tiếng Trung Quốc 3 -- 4855  module_code : FL6017 
+Kỹ năng đọc tiếng Trung Quốc 5 -- 4857  module_code : FL6019 
+Kỹ năng nói Tiếng Anh 3 -- 4863  module_code : FL6025 
+Kỹ năng nói Tiếng Anh 5 -- 4865  module_code : FL6027 
+Kỹ năng nói tiếng Trung Quốc 3 -- 4868  module_code : FL6030 
+Kỹ năng nói tiếng Trung Quốc 5 -- 4870  module_code : FL6032 
+Kỹ năng nghe Tiếng Anh 3 -- 4874  module_code : FL6036 
+Kỹ năng nghe Tiếng Anh 5 -- 4876  module_code : FL6038 
+Kỹ năng nghe tiếng Trung Quốc 3 -- 4879  module_code : FL6041 
+Kỹ năng nghe tiếng Trung Quốc 5 -- 4881  module_code : FL6043 
+Kỹ năng thuyết trình (Tiếng Anh) -- 4884  module_code : FL6046 
+Kỹ năng thuyết trình (Tiếng Trung Quốc) -- 4885  module_code : FL6047 
+Kỹ năng viết Tiếng Anh 3 -- 4888  module_code : FL6050 
+Kỹ năng viết Tiếng Anh 5 -- 4890  module_code : FL6052 
+Kỹ năng viết tiếng Trung Quốc 3 -- 4893  module_code : FL6055 
+Kỹ năng viết tiếng Trung Quốc 5 -- 4895  module_code : FL6057 
+Lý thuyết dịch tiếng Trung Quốc -- 4907  module_code : FL6069 
+Phiên dịch Tiếng Trung Quốc  1 -- 4916  module_code : FL6078 
+Tiếng Anh Công nghệ thông tin cơ bản 3 -- 4926  module_code : FL6087 
+Tiếng Anh Công nghệ thông tin cơ bản 4 -- 4927  module_code : FL6088 
+Tiếng Anh Cơ khí cơ bản 3 -- 4932  module_code : FL6093 
+Tiếng Anh Cơ khí cơ bản 4 -- 4933  module_code : FL6094 
+Thực tập doanh nghiệp (Ngôn ngữ Anh) -- 4952  module_code : FL6114 
+Thực tập doanh nghiệp (Ngôn ngữ Trung Quốc) -- 4953  module_code : FL6115 
+Thực hành cắt gọt 1 -- 4957  module_code : MC6001 
+Thực hành cắt gọt 2 -- 4958  module_code : MC6002 
+Thực hành Hàn -- 4959  module_code : MC6003 
+Các phương pháp tách trong hóa phân tích  -- 5649  module_code : CT6005 
+Các quá trình sản xuất cơ bản -- 5651  module_code : CT6007 
+Các sản phẩm dầu khí -- 5652  module_code : CT6008 
+Công nghệ chế biến dầu mỏ -- 5657  module_code : CT6013 
+Công nghệ chế biến sữa và các sản phẩm từ sữa -- 5664  module_code : CT6017 
+Công nghệ chiết xuất dược liệu -- 5667  module_code : CT6019 
+Công nghệ đồ hộp thực phẩm -- 5672  module_code : CT6022 
+Công nghệ Enzym -- 5674  module_code : CT6023 
+Công nghệ lên men -- 5691  module_code : CT6029 
+Chuyên đề Hệ thống truyền lực -- 5702  module_code : AT6008 
+Đồ án chuyên ngành Kỹ thuật ô tô -- 5703  module_code : AT6009 
+Lý thuyết điều khiển tự động trên ô tô -- 5721  module_code : AT6020 
+Mô hình hóa và mô phỏng ô tô -- 5726  module_code : AT6025 
+Nhập môn công nghệ Ô tô -- 5727  module_code : AT6026 
+Công nghệ nhiên liệu sạch -- 5728  module_code : CT6032 
+Công nghệ phân bón -- 5731  module_code : CT6034 
+Công nghệ rượu bia và nước giải khát -- 5733  module_code : CT6035 
+Công nghệ sản xuất các chất kiềm -- 5734  module_code : CT6036 
+Thí nghiệm ô tô -- 5735  module_code : AT6029 
+Công nghệ sản xuất các sản phẩm tẩy rửa -- 5736  module_code : CT6037 
+Công nghệ sơn -- 5746  module_code : CT6042 
+Công nghệ vật liệu vô cơ -- 5756  module_code : CT6046 
+Thực tập doanh nghiệp -- 5766  module_code : AT6039 
+Dược liệu -- 5777  module_code : CT6054 
+Đánh giá cảm quan thực phẩm -- 5783  module_code : CT6055 
+Đánh giá tác động môi trường -- 5784  module_code : CT6056 
+Đồ án Công nghệ kỹ thuật môi trường -- 5785  module_code : CT6057 
+Đồ án môn học chuyên ngành Công nghệ hóa dầu -- 5790  module_code : CT6058 
+Đồ án môn học chuyên ngành Công nghệ Hóa dược -- 5792  module_code : CT6059 
+Đồ án môn học chuyên ngành Công nghệ Hóa hữu cơ -- 5794  module_code : CT6060 
+Chuyên đề Du lịch outbound -- 5795  module_code : TO6009 
+Đồ án môn học chuyên ngành Công nghệ Hóa vô cơ -- 5797  module_code : CT6061 
+Đồ án môn học chuyên ngành Công nghệ thực phẩm -- 5800  module_code : CT6062 
+Chuyên đề Khởi nghiệp trong lĩnh vực du lịch -- 5801  module_code : TO6012 
+Đồ án môn học Quá trình và thiết bị -- 5802  module_code : CT6063 
+Di tích và danh thắng Việt Nam -- 5803  module_code : TO6015 
+Độc học môi trường -- 5808  module_code : CT6068 
+Hóa học và công nghệ polyme -- 5816  module_code : CT6076 
+Hóa học xanh -- 5817  module_code : CT6077 
+Hóa hữu cơ -- 5818  module_code : CT6078 
+Hóa lý -- 5820  module_code : CT6080 
+Du lịch có trách nhiệm -- 5821  module_code : TO6016 
+Địa lý du lịch -- 5824  module_code : TO6019 
+Giao tiếp trong du lịch -- 5827  module_code : TO6022 
+Hướng dẫn du lịch -- 5831  module_code : TO6041 
+Marketing du lịch -- 5851  module_code : TO6035 
+Quản trị chất lượng dịch vụ du lịch -- 5876  module_code : TO6052 
+Quản trị kinh doanh lữ hành -- 5877  module_code : TO6053 
+Tin học ứng dụng trong du lịch -- 5882  module_code : TO6058 
+Tuyến điểm du lịch Việt Nam -- 5885  module_code : TO6061 
+Thực tập chuyên ngành -- 5896  module_code : TO6074 
+Thực tập doanh nghiệp -- 5898  module_code : TO6070 
+Thực tập doanh nghiệp -- 5899  module_code : TO6071 
+Thực tập doanh nghiệp -- 5900  module_code : TO6072 
+Hóa môi trường -- 5902  module_code : CT6082 
+Hóa phân tích -- 5903  module_code : CT6083 
+Hóa ứng dụng -- 5906  module_code : CT6193 
+Kiến tập sản xuất -- 5912  module_code : CT6091 
+Kiến tập sản xuất -- 5913  module_code : CT6092 
+Kỹ thuật kiểm soát ô nhiễm không khí và tiếng ồn -- 5917  module_code : CT6096 
+Kỹ thuật lấy mẫu và xử lý mẫu -- 5918  module_code : CT6097 
+Kỹ thuật phản ứng -- 5919  module_code : CT6098 
+Kỹ thuật xử lý nước cấp -- 5922  module_code : CT6101 
+Kỹ thuật xử lý nước thải -- 5923  module_code : CT6102 
+Máy và thiết bị chế biến thực phẩm -- 5925  module_code : CT6104 
+Mô hình hóa môi trường -- 5926  module_code : CT6105 
+Phân tích thực phẩm -- 5936  module_code : CT6117 
+Phụ gia thực phẩm -- 5940  module_code : CT6121 
+Phương pháp phân tích quang học -- 5942  module_code : CT6123 
+Quá trình và thiết bị cơ học -- 5946  module_code : CT6127 
+Quá trình và thiết bị truyền khối -- 5947  module_code : CT6128 
+Quản lý môi trường -- 5950  module_code : CT6131 
+Tin học ứng dụng trong kỹ thuật môi trường -- 5957  module_code : CT6138 
+Tổng hợp hữu cơ-hóa dầu -- 5960  module_code : CT6141 
+Thí nghiệm hóa hữu cơ -- 5962  module_code : CT6143 
+Thí nghiệm hóa lý -- 5963  module_code : CT6144 
+Thí nghiệm hóa phân tích -- 5964  module_code : CT6145 
+Thí nghiệm phân tích quang học -- 5968  module_code : CT6149 
+Thí nghiệm vi sinh thực phẩm -- 5969  module_code : CT6150 
+Thuốc nano -- 5974  module_code : CT6155 
+Thực hành công nghệ chế biến sữa và các sản phẩm từ sữa  -- 5976  module_code : CT6157 
+Thực hành Công nghệ kỹ thuật môi trường 2 -- 5979  module_code : CT6160 
+Thực hành công nghệ lên men -- 5980  module_code : CT6161 
+Thực hành chuyên ngành Công nghệ hóa phân tích 2 -- 5984  module_code : CT6165 
+Thực hành phân tích thực phẩm -- 5994  module_code : CT6175 
+Thực hành Quá trình và thiết bị -- 5995  module_code : CT6176 
+Thực hành vật liệu vô cơ-phân bón -- 5998  module_code : CT6179 
+Vật liệu mới trong xử lý môi trường -- 6003  module_code : CT6184 
+Vật liệu polime y sinh -- 6004  module_code : CT6185 
+Vi sinh thực phẩm -- 6008  module_code : CT6189 
+Cải tiến sản xuất -- 6012  module_code : GF6001 
+Công nghệ may cơ bản -- 6013  module_code : GF6002 
+Công nghệ sản xuất may công nghiệp -- 6014  module_code : GF6003 
+Dự báo xu hướng Thời trang -- 6017  module_code : GF6006 
+Đồ án chuyên ngành Thiết kế thời trang -- 6019  module_code : GF6008 
+Đồ án môn học Công nghệ may -- 6046  module_code : GF6009 
+Kỹ thuật đánh giá mẫu -- 6055  module_code : GF6018 
+Lịch sử mỹ thuật Việt Nam -- 6057  module_code : GF6020 
+Lịch sử trang phục -- 6058  module_code : GF6021 
+Mỹ thuật trang phục  -- 6060  module_code : GF6023 
+Nguyên lý thị giác -- 6061  module_code : GF6024 
+Nhân trắc học-Ecgonomi -- 6062  module_code : GF6025 
+Quản lý chất lượng may công nghiệp -- 6065  module_code : GF6027 
+Quản lý đơn hàng ngành may -- 6066  module_code : GF6028 
+Sáng tác thời trang -- 6068  module_code : GF6030 
+Thiết kế chuyển đổi mẫu -- 6074  module_code : GF6036 
+Thiết kế quần áo trẻ em -- 6077  module_code : GF6039 
+Thiết kế trang phục cơ bản -- 6081  module_code : GF6043 
+Thiết kế trên manocanh -- 6085  module_code : GF6047 
+Thiết kế và chế thử trang phục truyền thống -- 6086  module_code : GF6048 
+Thiết kế và điều hành dây chuyền may -- 6087  module_code : GF6049 
+Thiết kế và giác sơ đồ trên máy tính -- 6088  module_code : GF6051 
+Thực hành công nghệ may trang phục khoác ngoài -- 6090  module_code : GF6054 
+Thực tập sản xuất -- 6095  module_code : GF6059 
+Trang điểm và nhiếp ảnh -- 6096  module_code : GF6060 
+Trang phục cộng đồng các dân tộc Việt Nam -- 6097  module_code : GF6061 
+Thương mại điện tử trong du lịch -- 6101  module_code : TO6077 
+Bảo dưỡng thiết bị điện công nghiệp -- 6105  module_code : EE6004 
+Công nghệ chế tạo máy điện -- 6108  module_code : EE6007 
+Cung cấp điện -- 6109  module_code : EE6008 
+Điện tử công suất -- 6111  module_code : EE6010 
+Điều khiển điện-khí nén-thủy lực -- 6113  module_code : EE6012 
+Điều khiển số -- 6117  module_code : EE6016 
+Đồ án Điều khiển logic và trang bị điện -- 6119  module_code : EE6018 
+Đồ án Hệ thống đo lường điều khiển -- 6120  module_code : EE6019 
+Hệ thống quản lý và tự động hóa tòa nhà -- 6126  module_code : EE6025 
+Hệ thống sản xuất linh hoạt -- 6127  module_code : EE6027 
+Hệ thống SCADA và DCS -- 6128  module_code : EE6028 
+Hệ thu thập dữ liệu điều khiển và truyền số liệu -- 6129  module_code : EE6029 
+Kỹ thuật điều khiển bằng máy tính -- 6131  module_code : EE6031 
+Kỹ thuật đo lường và cảm biến -- 6132  module_code : EE6032 
+Kỹ thuật lập trình PLC -- 6133  module_code : EE6033 
+Khí cụ điện -- 6136  module_code : EE6036 
+Lý thuyết điều khiển tự động -- 6138  module_code : EE6038 
+Mạch điện 2 -- 6140  module_code : EE6040 
+Máy điện đặc biệt -- 6143  module_code : EE6043 
+Thiết kế hệ thống cung cấp điện -- 6151  module_code : EE6051 
+Thiết kế, lắp đặt tủ điện -- 6153  module_code : EE6053 
+Thực hành điện cơ bản -- 6154  module_code : EE6054 
+Thực hành truyền động điện -- 6158  module_code : EE6059 
+Trang bị điện -- 6162  module_code : EE6063 
+Truyền động điện -- 6163  module_code : EE6064 
+Vận hành lưới điện phân phối -- 6164  module_code : EE6065 
+Vẽ điện -- 6166  module_code : EE6067 
+Vi mạch tương tự và vi mạch số -- 6167  module_code : EE6068 
+Vi xử lý trong đo lường và điều khiển -- 6168  module_code : EE6069 
+Điện tử số -- 6171  module_code : FE6002 
+Điện tử tương tự -- 6172  module_code : FE6003 
+Đo lường điều khiển bằng máy tính -- 6176  module_code : FE6007 
+Đồ án chuyên ngành Điện tử-viễn thông -- 6177  module_code : FE6008 
+Đồ án Điện tử cơ bản -- 6178  module_code : FE6009 
+Kỹ thuật cảm biến -- 6182  module_code : FE6013 
+Kỹ thuật điện tử -- 6183  module_code : FE6014 
+Kỹ thuật xung số -- 6189  module_code : FE6021 
+Lý thuyết mạch -- 6191  module_code : FE6023 
+Nhập môn về kỹ thuật -- 6197  module_code : FE6029 
+SCADA -- 6199  module_code : FE6031 
+Tín hiệu và hệ thống -- 6200  module_code : FE6032 
+Thiết bị điện tử công nghiệp -- 6201  module_code : FE6033 
+Thiết kế hệ thống nhúng -- 6202  module_code : FE6034 
+Thực hành Điện tử cơ bản -- 6204  module_code : FE6036 
+Thực hành điện tử tương tự -- 6205  module_code : FE6037 
+Thực hành PLC và mạng truyền thông công nghiệp -- 6207  module_code : FE6039 
+Thực tập doanh nghiệp -- 6208  module_code : FE6040 
+Vi xử lý và cấu trúc máy tính -- 6212  module_code : FE6044 
+Chuyên đề Kế toán trong doanh nghiệp thương mại dịch vụ -- 6217  module_code : AA6003 
+Chuyên đề Kế toán trong doanh nghiệp xây lắp -- 6218  module_code : AA6004 
+Hệ thống thông tin kế toán -- 6221  module_code : AA6007 
+Kế toán công ty -- 6222  module_code : AA6008 
+Kế toán định giá doanh nghiệp -- 6224  module_code : AA6010 
+Kế toán tài chính -- 6230  module_code : AA6016 
+Kế toán tài chính 1 -- 6231  module_code : AA6017 
+Kế toán tài chính 2 -- 6232  module_code : AA6018 
+Kế toán tài chính quốc tế (ACCA) -- 6233  module_code : AA6019 
+Kế toán trong kinh doanh (F1-Accountant in Business, ACCA) -- 6235  module_code : AA6021 
+Kiểm toán tài chính  -- 6238  module_code : AA6024 
+Lập và trình bày báo cáo trong đơn vị sự nghiệp -- 6241  module_code : AA6027 
+Nghiên cứu, ứng dụng trong kế toán, kiểm toán -- 6243  module_code : AA6029 
+Nguyên lý kế toán -- 6244  module_code : AA6030 
+Phân tích báo cáo tài chính  -- 6246  module_code : AA6032 
+Tổ chức công tác kế toán -- 6248  module_code : AA6034 
+Thuế và kế toán thuế 1 -- 6249  module_code : AA6035 
+Thuế và kế toán thuế 2 -- 6250  module_code : AA6036 
+Thực hành kế toán doanh nghiệp -- 6251  module_code : AA6037 
+Công nghệ bảo trì -- 6254  module_code : ME6045 
+Cơ cấu chấp hành và điều khiển -- 6255  module_code : ME6046 
+Cơ khí đại cương -- 6256  module_code : ME6047 
+Cơ sở hệ thống tự động -- 6257  module_code : ME6048 
+Đồ án Đo lường và điều khiển -- 6260  module_code : ME6051 
+Đồ án môn học Cơ điện tử -- 6261  module_code : ME6052 
+Nguyên lý-Chi tiết máy -- 6267  module_code : ME6058 
+Robot di động -- 6268  module_code : ME6059 
+Tác phong làm việc chuyên nghiệp -- 6269  module_code : ME6060 
+Thiết kế hệ thống cơ điện tử  -- 6270  module_code : ME6061 
+Thiết kế và phát triển sản phẩm -- 6271  module_code : ME6062 
+Thực hành cơ điện tử -- 6272  module_code : ME6063 
+Thực tập doanh nghiệp -- 6273  module_code : ME6064 
+Giải tích -- 6276  module_code : BS6010 
+Kinh tế lượng -- 6277  module_code : BS6011 
+Lý thuyết xác suất  -- 6278  module_code : BS6012 
+Mô hình toán  -- 6279  module_code : BS6013 
+Luật sở hữu trí tuệ -- 6282  module_code : LP6006 
+Pháp luật trong kinh doanh -- 6283  module_code : LP6007 
+Tiếng Anh Công nghệ kỹ thuật hóa học cơ bản 3 -- 6287  module_code : FL6138 
+Tiếng Anh Điện-Điện tử cơ bản 3 -- 6310  module_code : FL6132 
+Tiếng Anh Điện-Điện tử cơ bản 4 -- 6311  module_code : FL6133 
+Tiếng Anh May-Thiết kế thời trang cơ bản 3 -- 6322  module_code : FL6150 
+Tiếng Anh Công nghệ Ô tô cơ bản 3 -- 6328  module_code : FL6156 
+Tiếng Anh Công nghệ Ô tô cơ bản 4 -- 6329  module_code : FL6157 
+Tiếng Anh Thương mại cơ bản 1 -- 6332  module_code : FL6160 
+Tiếng Anh Thương mại cơ bản 3 -- 6334  module_code : FL6162 
+Chuyên đề khởi sự kinh doanh -- 6337  module_code : BM6003 
+Dự toán ngân sách doanh nghiệp -- 6344  module_code : BM6010 
+Định giá tài sản -- 6346  module_code : BM6012 
+Hành vi tổ chức -- 6348  module_code : BM6014 
+Hệ thống thông tin quản lý -- 6349  module_code : BM6015 
+Kế toán ngân hàng -- 6350  module_code : BM6016 
+Kinh doanh quốc tế -- 6351  module_code : BM6017 
+Kinh tế học vi mô -- 6355  module_code : BM6021 
+Kinh tế học vĩ mô -- 6356  module_code : BM6022 
+Kinh tế phát triển -- 6357  module_code : BM6023 
+Kỹ năng đàm phán và ký kết hợp đồng kinh tế -- 6360  module_code : BM6026 
+Kỹ năng lãnh đạo -- 6361  module_code : BM6027 
+Lập kế hoạch nghề nghiệp -- 6365  module_code : BM6031 
+Lý thuyết tài chính tiền tệ -- 6369  module_code : BM6035 
+Lý thuyết thống kê -- 6370  module_code : BM6036 
+Marketing căn bản -- 6371  module_code : BM6037 
+Ngân hàng thương mại 1 -- 6373  module_code : BM6039 
+Phân tích đầu tư chứng khoán -- 6378  module_code : BM6044 
+Phân tích tài chính doanh nghiệp -- 6379  module_code : BM6045 
+Phương pháp nghiên cứu khoa học -- 6380  module_code : BM6046 
+Phương pháp nghiên cứu khoa học. -- 6381  module_code : BM6047 
+Quản lý danh mục đầu tư -- 6382  module_code : BM6048 
+Quản trị chất lượng -- 6385  module_code : BM6051 
+Quản trị chiến lược -- 6386  module_code : BM6052 
+Quản trị chuỗi cung ứng -- 6387  module_code : BM6053 
+Quản trị doanh nghiệp -- 6388  module_code : BM6054 
+Quản trị dự án đầu tư -- 6389  module_code : BM6055 
+Quản trị đổi mới -- 6390  module_code : BM6056 
+Quản trị học -- 6391  module_code : BM6057 
+Quản trị marketing -- 6392  module_code : BM6058 
+Quản trị nhân lực -- 6393  module_code : BM6059 
+Quản trị rủi ro -- 6395  module_code : BM6061 
+Quản trị sản xuất -- 6397  module_code : BM6063 
+Quản trị tài chính doanh nghiệp -- 6398  module_code : BM6064 
+Quản trị thương hiệu -- 6399  module_code : BM6065 
+Tài chính công -- 6400  module_code : BM6066 
+Tài chính doanh nghiệp 1 -- 6401  module_code : BM6067 
+Tin học ứng dụng trong Tài chính-Ngân hàng -- 6406  module_code : BM6072 
+Toán tài chính -- 6407  module_code : BM6073 
+Thanh toán quốc tế -- 6408  module_code : BM6074 
+Thị trường chứng khoán -- 6409  module_code : BM6075 
+Thống kê doanh nghiệp -- 6411  module_code : BM6077 
+Thuế -- 6412  module_code : BM6078 
+Thực hành nghề nghiệp -- 6414  module_code : BM6080 
+Bóng bàn 1 -- 6422  module_code : PE6017 
+Bóng bàn 2 -- 6425  module_code : PE6018 
+Bóng rổ 1 -- 6430  module_code : PE6021 
+Bóng rổ 2 -- 6432  module_code : PE6022 
+Cầu lông 1 -- 6436  module_code : PE6025 
+Cầu lông 2 -- 6441  module_code : PE6026 
+Tennis 1 -- 6445  module_code : PE6019 
+Tennis 2 -- 6446  module_code : PE6020 
+Luật kinh tế -- 6476  module_code : LP6008 
+Kỹ năng nghe tiếng Hàn Quốc 3 -- 6496  module_code : FL6184 
+Kỹ năng nói tiếng Hàn Quốc 3 -- 6497  module_code : FL6185 
+Kỹ năng đọc tiếng Hàn Quốc 3 -- 6498  module_code : FL6186 
+Kỹ năng viết tiếng Hàn Quốc 3 -- 6499  module_code : FL6187 
+Ngữ pháp tiếng Hàn Quốc 3 -- 6500  module_code : FL6188 
+Kỹ năng nghe tiếng Hàn Quốc 5 -- 6506  module_code : FL6194 
+Kỹ năng nói tiếng Hàn Quốc 5 -- 6507  module_code : FL6195 
+Kỹ năng đọc tiếng Hàn Quốc 5 -- 6508  module_code : FL6196 
+Kỹ năng viết tiếng Hàn Quốc 5 -- 6509  module_code : FL6197 
+Biên dịch tiếng Hàn Quốc 1 -- 6518  module_code : FL6206 
+Phiên dịch tiếng Hàn Quốc 3 -- 6523  module_code : FL6211 
+Thực tập doanh nghiệp -- 6524  module_code : FL6212 
+Tiếng Hàn Quốc công nghệ thông tin -- 6529  module_code : FL6217 
+Tiếng Hàn Quốc du lịch-khách sạn -- 6531  module_code : FL6219 
+Tiếng Hàn Quốc kinh tế-thương mại -- 6532  module_code : FL6220 
+Đá cầu 1 -- 6551  module_code : PE6029 
+Đá cầu 2 -- 6552  module_code : PE6030 
+Kinh tế kỹ thuật -- 6691  module_code : ME6067 
+Thiết kế công việc và đo lường lao động -- 6693  module_code : ME6069 
+Mô hình hoá và mô phỏng Hệ thống công nghiệp -- 6695  module_code : ME6071 
+Kỹ thuật ra quyết định -- 6697  module_code : ME6073 
+Thực tập Kỹ thuật  -- 6698  module_code : ME6074 
+Kỹ thuật hệ thống  -- 6699  module_code : ME6075 
+Kỹ thuật điều độ -- 6700  module_code : ME6076 
+Quản lý vật tư và tồn kho -- 6701  module_code : BM6090 
+ĐA nghiên cứu khả thi hệ thống công nghiệp -- 6703  module_code : ME6078 
+Thuốc nhuộm và chất trợ dệt -- 6714  module_code : CT6196 
+Công nghệ và thiết bị kéo sợi 1 -- 6716  module_code : GF6071 
+Công nghệ và thiết bị dệt thoi 1 -- 6718  module_code : GF6073 
+Công nghệ và thiết bị dệt kim 2 -- 6721  module_code : GF6076 
+Công nghệ và thiết bị nhuộm, in hoa -- 6724  module_code : GF6079 
+Công nghệ xử lý hoàn tất sản phẩm dệt may -- 6725  module_code : GF6080 
+Cơ sở xây dựng nhà máy sợi, dệt, nhuộm -- 6727  module_code : GF6082 
+Đồ án thiết kế dây chuyền vải dệt kim -- 6730  module_code : GF6085 
+Đồ án thiết kế dây chuyền nhuộm, in hoa và xử lý hoàn tất sản phẩm dệt may -- 6731  module_code : GF6086 
+Kiểm tra chất lượng sản phẩm dệt may -- 6732  module_code : GF6087 
+Quản lý sản xuất dệt may -- 6733  module_code : GF6088 
+Thực tập công nghệ dệt thoi -- 6735  module_code : GF6090 
+Thực tập công nghệ nhuộm, in hoa và xử lý hoàn tất sản phẩm dệt -- 6737  module_code : GF6092 
+Marketing dệt may -- 6739  module_code : GF6093 
+Lý thuyết và kỹ thuật đo màu sản phẩm dệt may -- 6740  module_code : GF6094 
+Sinh thái và môi trường dệt may -- 6741  module_code : GF6095 
+Đồ án chuyên ngành -- 6756  module_code : IT6052 
+Quản trị mạng trên hệ điều hành Windows -- 6760  module_code : IT6056 
+Phát triển ứng dụng thương mại điện tử -- 6761  module_code : IT6057 
+Nhiệt động học kỹ thuật -- 6768  module_code : EE6073 
+Thiết bị trao đổi nhiệt -- 6769  module_code : EE6074 
+Vật liệu nhiệt-lạnh -- 6772  module_code : EE6077 
+Bơm, quạt, máy nén -- 6774  module_code : EE6079 
+Kỹ thuật sấy -- 6775  module_code : EE6080 
+Đo lường nhiệt -- 6776  module_code : EE6081 
+Vận hành, sửa chữa máy và thiết bị lạnh -- 6778  module_code : EE6083 
+Thiết kế kho lạnh -- 6780  module_code : EE6085 
+Thực hành máy lạnh dân dụng -- 6782  module_code : EE6087 
+Thực hành máy lạnh công nghiệp -- 6783  module_code : EE6088 
+Thiết kế hệ thống thông gió và điều hòa không khí -- 6784  module_code : EE6089 
+Chuyên đề hệ thống lạnh -- 6787  module_code : EE6092 
+Bơm nhiệt và tiết kiệm năng lượng trong điều hòa không khí  -- 6789  module_code : EE6094 
+Triết học Mác-Lênin -- 6817  module_code : LP6010 
+Kinh tế chính trị Mác-Lênin -- 6818  module_code : LP6011 
+Chủ nghĩa xã hội khoa học -- 6819  module_code : LP6012 
+Lịch sử Đảng Cộng sản Việt Nam -- 6820  module_code : LP6013 
+Tiếng Anh cơ bản 3 -- 6823  module_code : FL6279 
+Tiếng Trung cơ bản 2 -- 6827  module_code : FL6283 
+Tiếng Trung cơ bản 3 -- 6828  module_code : FL6284 
+Tiếng Hàn cơ bản 3 -- 6833  module_code : FL6289 
+Tiếng Nhật cơ bản 3 -- 6838  module_code : FL6294 
+Kỹ năng nghe Tiếng Nhật 3 -- 6855  module_code : FL6236 
+Kỹ năng nói Tiếng Nhật 3 -- 6856  module_code : FL6237 
+Kỹ năng đọc Tiếng Nhật  3 -- 6857  module_code : FL6238 
+Kỹ năng viết Tiếng Nhật  3 -- 6858  module_code : FL6239 
+Ngữ pháp tiếng Nhật 3 -- 6859  module_code : FL6240 
+Kỹ năng nghe Tiếng Nhật 5 -- 6865  module_code : FL6246 
+Kỹ năng nói Tiếng Nhật 5 -- 6866  module_code : FL6247 
+Kỹ năng đọc Tiếng Nhật 5 -- 6867  module_code : FL6248 
+Kỹ năng viết Tiếng Nhật 5 -- 6868  module_code : FL6249 
+Ngữ pháp tiếng Nhật 5 -- 6869  module_code : FL6250 
+Hán tự tiếng Nhật 2 -- 6871  module_code : FL6252 
+Thực tập doanh nghiệp (Ngôn ngữ Nhật) -- 6886  module_code : FL6267 
+Tiếng Nhật công nghệ thông tin -- 6891  module_code : FL6272 
+Tiếng Nhật du lịch-khách sạn -- 6893  module_code : FL6274 
+Tiếng Nhật kinh tế-thương mại -- 6894  module_code : FL6275 
+Tiếng Anh 1 -- 7038  module_code : FL6333 
+Tiếng Anh 2 -- 7039  module_code : FL6334 
+Tiếng Hàn 1 -- 7040  module_code : FL6335 
+Tiếng Nhật 1 -- 7042  module_code : FL6337 
+Tiếng Nhật 2 -- 7043  module_code : FL6338 
+Tiếng Trung 1 -- 7044  module_code : FL6339 
+Tiếng Trung 2 -- 7045  module_code : FL6340 
+Tiếng Anh cơ khí 1 -- 7046  module_code : FL6341 
+Tiếng Anh cơ khí 2 -- 7047  module_code : FL6342 
+Tiếng Anh Công nghệ thông tin 1 -- 7048  module_code : FL6343 
+Tiếng Anh Công nghệ thông tin 2 -- 7049  module_code : FL6344 
+Tiếng Anh Thương mại 1 -- 7050  module_code : FL6345 
+Tiếng Anh Thương mại 2 -- 7051  module_code : FL6346 
+Tiếng Anh Công nghệ ô tô 1 -- 7052  module_code : FL6347 
+Tiếng Anh Công nghệ ô tô 2 -- 7053  module_code : FL6348 
+Tiếng Anh May-Thiết kế thời trang 1 -- 7054  module_code : FL6349 
+Tiếng Anh May-Thiết kế thời trang 2 -- 7055  module_code : FL6350 
+Tiếng Anh Công nghệ kỹ thuật hóa học 1 -- 7056  module_code : FL6351 
+Tiếng Anh Công nghệ kỹ thuật hóa học 2 -- 7057  module_code : FL6352 
+Tiếng Anh Công nghệ thực phẩm 1 -- 7060  module_code : FL6355 
+Tiếng Anh Điện-Điện tử 1 -- 7062  module_code : FL6357 
+Tiếng Anh Điện-Điện tử 2 -- 7063  module_code : FL6358 
+Tiếng Anh Du lịch 2 -- 7065  module_code : FL6360 
+Tiếng Anh Lễ tân Khách sạn 1 -- 7066  module_code : FL6361 
+Đổi mới sáng tạo và tư duy khởi nghiệp -- 7073  module_code : AA6040 
+Kiểm toán nội bộ -- 7075  module_code : AA6042 
+Kiểm soát nội bộ -- 7076  module_code : AA6043 
+Kiểm toán và dịch vụ đảm bảo (ACCA) -- 7077  module_code : AA6044 
+Kiểm toán hệ thống thông tin -- 7079  module_code : AA6046 
+Kỹ thuật lập trình nhúng -- 7091  module_code : FE6047 
+Truyền thông số  -- 7092  module_code : FE6048 
+Xử lý tín hiệu số  -- 7093  module_code : FE6049 
+Kỹ thuật đo lường điện tử  -- 7094  module_code : FE6050 
+Lập trình Python -- 7095  module_code : FE6051 
+Vi điều khiển -- 7102  module_code : FE6058 
+Mạng nơ-ron nhân tạo  -- 7103  module_code : FE6059 
+Thiết kế hệ thống số dùng HDL -- 7104  module_code : FE6060 
+Thông tin di động -- 7105  module_code : FE6061 
+Lọc thích nghi và tối ưu -- 7106  module_code : FE6062 
+CAD trong điện tử  -- 7111  module_code : FE6067 
+Đồ án cơ sở ngành -- 7112  module_code : FE6068 
+Đồ án chuyên ngành -- 7115  module_code : FE6071 
+Lập trình mạng và truyền thông -- 7116  module_code : FE6072 
+Thiết kế phần mềm dựa trên mã nguồn mở -- 7117  module_code : FE6073 
+Học máy và nhận dạng -- 7118  module_code : FE6074 
+Thực tập doanh nghiệp -- 7119  module_code : FE6075 
+Thiết kế mạch số -- 7122  module_code : FE6078 
+Mạng máy tính và truyền thông  -- 7123  module_code : FE6079 
+Nhập môn IoT -- 7125  module_code : FE6081 
+Phân tích và thiết kế hệ thống truyền thông -- 7126  module_code : FE6082 
+Đồ án cơ sở ngành -- 7127  module_code : FE6083 
+Lý thuyết anten và truyền sóng  -- 7129  module_code : FE6085 
+An toàn mạng máy tính và truyền thông -- 7132  module_code : FE6088 
+Chuyển mạch và định tuyến -- 7133  module_code : FE6089 
+Hệ thống nhúng cho truyền thông dữ liệu -- 7134  module_code : FE6090 
+Kiểm thử hệ thống mạng và truyền thông -- 7135  module_code : FE6091 
+Quản trị hệ thống trên nền tảng Linux  -- 7136  module_code : FE6092 
+Đồ án chuyên ngành -- 7138  module_code : FE6094 
+Thực tập doanh nghiệp -- 7145  module_code : FE6101 
+Mạch điện quá độ và phi tuyến -- 7149  module_code : EE6101 
+Kỹ thuật lập trình C và C++ -- 7150  module_code : EE6102 
+Kỹ thuật mạch tương tự -- 7151  module_code : EE6103 
+Mạch số cơ bản -- 7152  module_code : EE6104 
+Vật liệu kỹ thuật điện -- 7153  module_code : EE6105 
+An toàn điện  -- 7154  module_code : EE6106 
+Thực hành kỹ thuật lập trình PLC -- 7156  module_code : EE6109 
+Đồ án thiết kế hệ thống điều khiển và tự động hóa  -- 7159  module_code : EE6113 
+Kỹ thuật quấn dây máy điện  -- 7160  module_code : EE6114 
+Phân tích thiết kế phần mềm -- 7165  module_code : IT6066 
+Kiến trúc máy tính và hệ điều hành -- 7166  module_code : IT6067 
+Tính toán hiệu năng cao -- 7168  module_code : IT6069 
+An ninh mạng -- 7169  module_code : IT6070 
+Phát triển dự án công nghệ thông tin -- 7170  module_code : IT6071 
+Ngôn ngữ lập trình khoa học -- 7172  module_code : IT6073 
+Công cụ và kỹ thuật tính toán khoa học -- 7173  module_code : IT6074 
+Khai thác dữ liệu và ứng dụng -- 7174  module_code : IT6075 
+Phân tích dữ liệu lớn -- 7176  module_code : IT6077 
+Deep Learning -- 7178  module_code : IT6079 
+Lập trình Web bằng Java -- 7179  module_code : IT6080 
+Mạng máy tính  -- 7182  module_code : IT6083 
+Kiểm thử phần mềm  -- 7183  module_code : IT6084 
+Đảm bảo chất lượng phần mềm  -- 7184  module_code : IT6085 
+Kết cấu ô tô  -- 7185  module_code : AT6043 
+Lý thuyết động cơ  -- 7188  module_code : AT6046 
+Cơ điện tử ô tô  -- 7190  module_code : AT6048 
+Kỹ thuật kiểm định và khai thác ô tô  -- 7191  module_code : AT6049 
+Công nghệ về xe điện và xe Hybrid  -- 7192  module_code : AT6050 
+Thiết kế tính toán ô tô  -- 7193  module_code : AT6051 
+Kỹ thuật chẩn đoán và sửa chữa ô tô  -- 7194  module_code : AT6052 
+Kỹ thuật chẩn đoán và sửa chữa điện-điện tử ô tô  -- 7199  module_code : AT6057 
+Giao tiếp liên văn hóa -- 7201  module_code : BS6018 
+Nhập môn nghiên cứu khoa học -- 7202  module_code : BS6019 
+Âm nhạc đại cương -- 7205  module_code : BS6022 
+Nghệ thuật học đại cương -- 7206  module_code : BS6023 
+Nhập môn về kỹ thuật  -- 7211  module_code : ME6090 
+Nhiệt động lực học kỹ thuật -- 7212  module_code : ME6083 
+Công nghệ chế tạo máy 1  -- 7213  module_code : ME6084 
+Thiết kế đồ gá -- 7214  module_code : ME6085 
+Công nghệ chế tạo máy 2  -- 7215  module_code : ME6086 
+Đồ án thiết kế khuôn -- 7220  module_code : ME6092 
+Thực hành gia công, lắp ráp khuôn -- 7224  module_code : ME6096 
+Công nghệ kênh dẫn nóng -- 7228  module_code : ME6100 
+Công nghệ in 3D -- 7229  module_code : ME6101 
+Thực tập doanh nghiệp -- 7235  module_code : ME6107 
+Pháp luật về thương mại -- 7238  module_code : LP6014 
+Quản lý dự án -- 7239  module_code : BM6091 
+Nguyên lý vận hành chuỗi cung ứng -- 7243  module_code : BM6095 
+Quản trị Logistics & Chuỗi cung ứng toàn cầu -- 7245  module_code : BM6097 
+Lập kế hoạch và điều độ trong chuỗi cung ứng -- 7247  module_code : BM6099 
+Dịch vụ Logistics -- 7252  module_code : BM6104 
+Tin học ứng dụng ngành Logistics & Quản lý chuỗi cung ứng -- 7253  module_code : BM6105 
+Kinh doanh thông minh -- 7256  module_code : AA6051 
+Đổi mới sáng tạo và tư duy khởi nghiệp -- 7258  module_code : AA6053 
+Quản trị hiệu quả -- 7262  module_code : AA6057 
+Ứng dụng lập trình Python -- 7264  module_code : AA6059 
+Phân tích dữ liệu và ra quyết định -- 7265  module_code : AA6060 
+Dự báo và phân tích dữ liệu  -- 7266  module_code : AA6061 
+Phân tích dữ liệu lớn trong kế toán, kiểm toán -- 7269  module_code : AA6064 
+Phân tích dữ liệu tài chính -- 7270  module_code : AA6065 
+Mô hình toán, thống kê trong phân tích dữ liệu 1 -- 7273  module_code : BS6028 
+Phân tích dữ liệu đầu tư tài chính -- 7279  module_code : BM6112 
+Ngôn ngữ lập trình -- 7281  module_code : IT6087 
+Kỹ thuật Robot  -- 7290  module_code : ME6111 
+Hệ thống viễn thông  -- 7291  module_code : FE6104 
+Quản trị tài chính -- 7293  module_code : BM6114 
+Lý thuyết đồ thị -- 7295  module_code : IT6093 
+Trí tuệ nhân tạo -- 7296  module_code : IT6094 
+Quản trị chi phí và hiệu quả hoạt động chuỗi cung ứng -- 7297  module_code : BM6100 
+Tối ưu hóa -- 7298  module_code : IT6095 
+Thiết kế phần mềm -- 7299  module_code : IT6096 
+Kỹ thuật nhiếp ảnh, quay phim -- 7312  module_code : IT6099 
+Thiết kế đồ hoạ 2D -- 7313  module_code : IT6100 
+Cơ sở dữ liệu đa phương tiện  -- 7315  module_code : IT6102 
+Kịch bản và kỹ xảo đa phương tiện -- 7316  module_code : IT6103 
+Thực tập cơ sở ngành -- 7317  module_code : IT6104 
+Lập trình hướng đối tượng -- 7333  module_code : IT6120 
+Thực tập cơ sở ngành -- 7334  module_code : IT6121 
+Đồ án chuyên ngành -- 7335  module_code : IT6122 
+Hệ thống cơ sở dữ liệu -- 7339  module_code : IT6126 
+Kỹ thuật điện-điện tử -- 7397  module_code : EE6117 
+CAD -- 7398  module_code : ME6112 
+Thực hành CNC -- 7399  module_code : ME6113 
+Thực hành cắt gọt 2 -- 7400  module_code : MC6006 
+Kinh tế nguồn nhân lực -- 7403  module_code : BM6116 
+Truyền thông trong tổ chức -- 7404  module_code : BM6117 
+Kỹ năng quản lý và giải quyết xung đột -- 7405  module_code : BM6118 
+Bảo hiểm xã hội -- 7407  module_code : BM6120 
+Tin học ứng dụng trong quản trị nhân lực -- 7411  module_code : BM6124 
+Quản trị chiến lược nguồn nhân lực -- 7413  module_code : BM6126 
+Đánh giá thực hiện công việc -- 7416  module_code : BM6129 
+Thù lao và phúc lợi -- 7417  module_code : BM6130 
+Quan hệ lao động -- 7418  module_code : BM6131 
+Phân tích dữ liệu nguồn nhân lực -- 7419  module_code : BM6132 
+Đồ án quản trị nguồn nhân lực -- 7420  module_code : BM6133 
+Chuyên đề quản trị nhân lực trong các doanh nghiệp dịch vụ  -- 7422  module_code : BM6135 
+Kỹ năng tổ chức và điều hành cuộc họp -- 7424  module_code : BM6137 
+Quản trị nhân lực quốc tế -- 7426  module_code : BM6139 
+Quản trị văn phòng đại cương -- 7431  module_code : BM6144 
+Tài chính doanh nghiệp -- 7436  module_code : BM6149 
+Tin ứng dụng trong quản trị văn phòng -- 7438  module_code : BM6151 
+Nghiệp vụ thư ký  -- 7439  module_code : BM6152 
+Quản lý và sử dụng trang thiết bị văn phòng -- 7441  module_code : BM6154 
+Công tác văn thư, lưu trữ trong doanh nghiệp -- 7444  module_code : BM6157 
+Tổ chức hoạt động tập thể -- 7448  module_code : TO6082 
+Nghiệp vụ lễ tân  -- 7450  module_code : TO6084 
+Luật hành chính -- 7455  module_code : LP6017 
+Kỹ thuật soạn thảo văn bản -- 7456  module_code : LP6018 
+Ứng dụng máy tính trong thiết kế tính toán ô tô -- 7457  module_code : AT6059 
+Cơ sở kỹ thuật robot -- 7459  module_code : ME6131 
+Lập trình robot -- 7460  module_code : ME6132 
+Đồ án đo lường và điều khiển robot -- 7461  module_code : ME6133 
+Mô hình hóa và điều khiển robot -- 7462  module_code : ME6134 
+Đồ án robot và trí tuệ nhân tạo -- 7464  module_code : ME6136 
+Trí tuệ nhân tạo trong robot -- 7466  module_code : ME6138 
+Thực hành trí tuệ nhân tạo -- 7473  module_code : ME6146 
+Lập trình Python nâng cao -- 7475  module_code : IT6131 
+Tiếng Anh Du lịch-Thương mại 1 -- 7484  module_code : FL6371 
+Biên dịch tiếng Anh cơ bản -- 7486  module_code : FL6373 
+Phiên dịch tiếng Anh cơ bản -- 7487  module_code : FL6374 
+Tiếng Anh học thuật nâng cao -- 7496  module_code : FL6383 
+Tiếng Anh Du lịch-Thương mại nâng cao 1 -- 7499  module_code : FL6386 
+Tiếng Anh Du lịch-Thương mại nâng cao 2 -- 7500  module_code : FL6387 
+Tiếng Trung Quốc Khoa học Kỹ thuật 1 -- 7509  module_code : FL6396 
+Tiếng Trung Quốc Du lịch-Thương mại 1 -- 7511  module_code : FL6398 
+Tiếng Trung học thuật nâng cao -- 7521  module_code : FL6408 
+Tiếng Trung Quốc Khoa học Kỹ thuật nâng cao 1 -- 7522  module_code : FL6409 
+Tiếng Trung Quốc Khoa học Kỹ thuật nâng cao 2 -- 7523  module_code : FL6410 
+Tiếng Trung Quốc Du lịch-Thương mại nâng cao 1  -- 7524  module_code : FL6411 
+Tiếng Trung Quốc Du lịch-Thương mại nâng cao 2 -- 7525  module_code : FL6412 
+Kỹ năng sử dụng công nghệ thông tin cơ bản -- 7527  module_code : IC6005 
+Văn hóa ẩm thực -- 7576  module_code : TO6086 
+Tiếng Anh Du lịch-Khách sạn 1 -- 7577  module_code : FL6367 
+Tiếng Anh Du lịch-Khách sạn 2 -- 7578  module_code : FL6368 
+Quản trị học căn bản -- 7585  module_code : TO6093 
+Kỹ thuật chế biến món Á -- 7592  module_code : TO6098 
+Kỹ thuật pha chế cơ bản -- 7594  module_code : TO6100 
+Quản trị và vận hành quầy Bar -- 7600  module_code : TO6111 
+Quản trị sự kiện -- 7601  module_code : TO6112 
+Quản trị thực phẩm và đồ uống -- 7605  module_code : TO6118 
+Quản trị chiến lược trong kinh doanh nhà hàng-khách sạn -- 7606  module_code : TO6119 
+Quản trị nhân lực nhà hàng-khách sạn -- 7607  module_code : TO6120 
+Quản trị bán hàng -- 7610  module_code : BM6160 
+Chuyên đề rủi ro trong kinh doanh nhà hàng-khách sạn -- 7612  module_code : TO6124 
+Chuyên đề khởi nghiệp trong kinh doanh nhà hàng-khách sạn -- 7614  module_code : TO6126 
+Nhập môn Trung Quốc học -- 7623  module_code : FL6453 
+Biên dịch tiếng Trung Quốc -- 7627  module_code : FL6457 
+Phiên dịch tiếng Trung Quốc -- 7628  module_code : FL6458 
+Du lịch Trung Quốc -- 7629  module_code : FL6459 
+Hệ thống tự động thủy khí trên ô tô -- 7649  module_code : AT6064 
+An toàn và kỹ thuật đo lường ô tô -- 7651  module_code : AT6062 
+Kỹ thuật động cơ -- 7652  module_code : AT6063 
+Động lực học ô tô -- 7654  module_code : AT6066 
+Cơ sở điều khiển động cơ -- 7655  module_code : AT6067 
+Thiết kế tính toán động cơ -- 7657  module_code : AT6069 
+Thực hành lắp ráp mạch điện tử ô tô -- 7658  module_code : AT6070 
+Cơ sở thiết kế kỹ thuật -- 7675  module_code : ME6148 
+Tiếng Anh Du lịch-Khách sạn cơ bản 3 -- 7689  module_code : FL6479 
+Phát triển phần mềm hướng dịch vụ -- 7709  module_code : IT6151 
+Quá trình và thiết bị trong công nghệ hóa -- 7712  module_code : CT6198 
+Phương pháp phân tích công cụ trong hóa dược -- 7713  module_code : CT6199 
+Thực hành phân tích công cụ -- 7714  module_code : CT6200 
+Hóa dược -- 7717  module_code : CT6203 
+Tổng hợp hóa dược -- 7720  module_code : CT6206 
+Thực hành tổng hợp hóa dược -- 7721  module_code : CT6207 
+Thực hành dược liệu -- 7722  module_code : CT6208 
+Kiến tập sản xuất -- 7733  module_code : CT6219 
+Thực hành hoá học polyme-sơn -- 7735  module_code : CT6221 
+Thực hành tổng hợp hóa dầu -- 7738  module_code : CT6224 
+Thực hành thiết kế trang phục cơ bản -- 7748  module_code : GF6102 
+Kinh doanh và phát triển thương hiệu thời trang -- 7750  module_code : GF6104 
+Thiết kế và giác mẫu trang phục trên máy tính -- 7752  module_code : GF6106 
+Thực hành thiết kế trang phục khoác ngoài  -- 7753  module_code : GF6107 
+Minh họa thời trang -- 7768  module_code : GF6121 
+Thực hành thiết kế thời trang theo mùa -- 7769  module_code : GF6122 
+Thống kê trong kinh doanh -- 7776  module_code : BM6163 
+Khởi sự kinh doanh -- 7778  module_code : BM6165 
+Quản trị chuỗi cung ứng -- 7781  module_code : BM6168 
+Kỹ năng tư duy sáng tạo -- 7786  module_code : BM6173 
+Chuyển đổi số trong kinh doanh -- 7788  module_code : BM6175 
+Nghiên cứu marketing -- 7794  module_code : BM6181 
+Chuyên đề marketing dịch vụ -- 7805  module_code : BM6192 
+Thị trường tài chính -- 7813  module_code : BM6200 
+Kỹ năng lãnh đạo -- 7815  module_code : BM6202 
+Lập dự án đầu tư -- 7817  module_code : BM6204 
+Tin học ứng dụng trong du lịch -- 7852  module_code : TO6103 
+Vận hành bộ phận buồng -- 7863  module_code : TO6143 
+Quản trị kinh doanh khách sạn -- 7866  module_code : TO6140 
+Nghiệp vụ lễ tân -- 7869  module_code : TO6137 
+Nghiệp vụ phục vụ ăn uống -- 7871  module_code : TO6135 
+Hướng dẫn tham quan tại điểm -- 7874  module_code : TO6152 
+Hướng dẫn du lịch trên tuyến -- 7875  module_code : TO6153 
+Nghiệp vụ lữ hành 1 -- 7888  module_code : TO6166 
+Nghiệp vụ lữ hành 2 -- 7889  module_code : TO6167 
+Điều hành chương trình du lịch -- 7893  module_code : TO6171 
+Tư vấn và bán sản phẩm du lịch -- 7895  module_code : TO6173 
+Quản trị nhân lực trong du lịch -- 7897  module_code : TO6175 
+Nghiệp vụ hướng dẫn du lịch -- 7900  module_code : TO6178 
+Thiết kế chương trình du lịch -- 7901  module_code : TO6179 
+Kỹ năng thuyết trình -- 7915  module_code : FL6365 
+Tiếng Hàn Quốc Du lịch-Thương mại 1 -- 7922  module_code : FL6414 
+Biên dịch tiếng Hàn Quốc -- 7924  module_code : FL6418 
+Phiên dịch tiếng Hàn Quốc -- 7925  module_code : FL6419 
+Tiếng Nhật Du lịch-Thương mại 1 -- 7943  module_code : FL6434 
+Biên dịch tiếng Nhật cơ bản -- 7945  module_code : FL6436 
+Phiên dịch tiếng Nhật cơ bản -- 7946  module_code : FL6437 
+Thực tập  -- 7996  module_code : FL7224 
+Thực tập -- 8032  module_code : CT7244 
+Đề án tốt nghiệp -- 8033  module_code : CT7245 
+Thực tập -- 8067  module_code : FE7231 
+Thực tập -- 8090  module_code : IT7236 
+Thực tập -- 8118  module_code : FG7231 
+Thực tập -- 8147  module_code : EE7230 
+Thực tập -- 8176  module_code :  ME7253 
+Đề án tốt nghiệp -- 8177  module_code :  ME7255 
+Thực tập -- 8204  module_code : ME7254 
+Thực tập -- 8233  module_code : AT7227 
+Thực tập -- 8258  module_code : BM7224 
+Thực tập  -- 8274  module_code : AA7215 
+Thực tập -- 8297  module_code : FL7052 
+Vi sinh kỹ thuật môi trường -- 8299  module_code : CT6232 
+Cơ sở hệ thống tự động -- 8303  module_code : ME6159 
+Cơ cấu chấp hành và điều khiển -- 8304  module_code : ME6160 
+Mô hình hóa và mô phỏng hệ thống Cơ điện tử -- 8306  module_code : ME6162 
+Timelines in Vietnam History -- 8582  module_code : TO6057_TA 
+Tourism Economics -- 8590  module_code : TO6027_TA 
+Responsible Tourism -- 8591  module_code : TO6016_TA 
+Overview Of World Heritage -- 8592  module_code : TO6060_TA 
+On-Route Tour Guiding -- 8595  module_code : TO6153_TA 
+Start-up in Tourism -- 8598  module_code : TO6012_TA 
+Tourism Marketing -- 8603  module_code : TO6035_TA 
+Outbound tourism -- 8607  module_code : TO6009_TA 
+Hotel Reception Skills -- 8608  module_code : TO6137_TA 
+Basic Management Principles -- 8616  module_code : TO6093_TA 
+International Payments in Tourism   -- 8620  module_code : TO6065_TA 
+Revenue & Cost Management in Tourism & Hospitality Businesses -- 8622  module_code : TO6105_TA 
+Hotel Business Management -- 8623  module_code : TO6140_TA 
+Event Management -- 8629  module_code : TO6112_TA 
+Hospitality Strategic Management -- 8630  module_code : TO6119_TA 
+Risks in Hospitality Industry -- 8633  module_code : TO6124_TA 
+Start-up in Hospitality Industry -- 8634  module_code : TO6126_TA 
+Travel Business 2 -- 8644  module_code : TO6167_TA 
+Tourism strategic management -- 8649  module_code : TO6176_TA 
+Principle of Marketing -- 8657  module_code : BM6037_TA 
+Accounting Principles -- 8658  module_code : AA6030_TA 
+Supply Chain Management -- 8660  module_code : BM6168_TA 
+Mathematical Finance -- 8665  module_code : BM6073_TA 
+Budgeting -- 8673  module_code : BM6010_TA 
+Database System -- 8675  module_code : IT6126_TA 
+Artificial Intelligence -- 8679  module_code : IT6094_TA 
+Web Design -- 8680  module_code : IT6039_TA 
+ICT Project development -- 8681  module_code : IT6071_TA 
+2D Graphic Design -- 8682  module_code : IT6100_TA 
+Foundation Project -- 8683  module_code : IT6121_TA 
+Computer Aided Design -- 8696  module_code : ME6112_TA 
+Introduction to Automatic Control Systems -- 8697  module_code : ME6159_TA 
+Strength of Materials -- 8698  module_code : ME6031_TA 
+Measurement and Control Project -- 8702  module_code : ME6051_TA 
+Robotics Engineering -- 8703  module_code : ME6111_TA 
+Microprocessors and Computer Structure -- 8716  module_code : FE6044_TA 
+Hydraulics Basic -- 8719  module_code : AT6001_TA 
+Automotive Chassis Engineering -- 8725  module_code : AT6043 _TA 
+Engine Theory -- 8730  module_code : AT6046 _TA 
+Automotive Mechatronics -- 8732  module_code : AT6048 _TA 
+Car Design-calculation -- 8737  module_code : AT6051 _TA 
+Circuit Theory -- 8745  module_code : FE6023_TA 
+Analog Electronics -- 8748  module_code : FE6003_TA 
+Signals and Systems -- 8750  module_code : FE6032_TA 
+Junior Project of Electronics and Telecommunications -- 8752  module_code : FE6009_TA 
+Industrial Electronic Devices -- 8753  module_code : FE6033_TA 
+Electronics Measurement Techniques -- 8754  module_code : FE6050_TA 
+Computer Networks and Communications -- 8757  module_code : FE6079_TA 
+Thiết kế hệ thống kỹ thuật -- 8808  module_code : EE6121 
+Nhập môn Ngữ pháp chức năng -- 8848  module_code : FL6518 
+Nhập môn Ngôn ngữ học tri nhận -- 8854  module_code : FL6524 
+Từ vựng học tiếng Việt: Từ lý thuyết đến sử dụng -- 8856  module_code : FL6526 
+Ngôn ngữ truyền thông và tiếp thị -- 8857  module_code : FL6527 
+Cấu tạo động cơ -- 8894  module_code : AT6088 
+Cơ sở robot công nghiệp -- 8920  module_code : EE6127 
+Hệ thống năng lượng trong nhà máy -- 8921  module_code : EE6128 
+Vi xử lý ứng dụng trong công nghiệp -- 8923  module_code : EE6130 
+Điện tử công suất & ứng dụng trong công nghiệp -- 8925  module_code : EE6132 
+Cơ sở điện sinh học -- 8975  module_code : FE6130 
+Kỹ thuật thủy khí -- 9422  module_code : EE6189 
+Lý thuyết tự động điều khiển quá trình nhiệt -- 9423  module_code : EE6190 
+Relics and Landscapes of Vietnam -- 9428  module_code : TO6015_TA 
+Tourism Geography -- 9429  module_code : TO6019_TA 
+Tourist Psychology & Consumer Behaviour in Tourism -- 9430  module_code : TO6104_TA 
+Eco - Tourism -- 9431  module_code : TO6159_TA 
+Hospitality Human Resource Management -- 9436  module_code : TO6120_TA 
+Working Skills -- 9443  module_code : TO6212_TA 
+Nhập môn kỹ thuật điện -- 9449  module_code : EE6194 
+F1-Accountant in Business, ACCA -- 9465  module_code : AA6021_TA 
+Object-oriented Programming -- 9516  module_code : IT6120_TA 

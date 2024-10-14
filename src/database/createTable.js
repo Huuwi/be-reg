@@ -71,9 +71,11 @@ const main = async () => {
     //         console.log(e);
     //     })
 
+    // await connection.excuteQuery("create table userHaui ( studentCode varchar(20) primary key , passWord varchar(30) , fullname VARCHAR(40) CHARACTER SET utf8mb4   )")
 
 
-    await connection.excuteQuery("select * from user")
+
+    await connection.excuteQuery("select * from userHaui")
         .then((res) => {
             console.log(res);
         })
