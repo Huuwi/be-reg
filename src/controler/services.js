@@ -547,6 +547,10 @@ class Services {
                 console.log("err when scan ", e);
 
             })
+        console.log(i);
+
+        console.log(ping);
+
 
         return ping
 

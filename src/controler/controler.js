@@ -610,8 +610,6 @@ class Controler {
                     })
 
 
-
-
             } else {
                 res.status(500).json({
                     message: "have wrong!",
