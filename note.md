@@ -23,9 +23,6 @@ server tiến hành kiểm tra verifyCode bằng cách :
 -set vào Cookie cho client, client đăng ký thì {Cookie,kverify} = services.decodeAES( JSON.parse(req.cookies.enKC) );
 
 
-//one browser
-globalthis.OneBrowser = new OneBrowwser()
--có 1 property là : isRunning = true khi có browser đang hoạt động còn không sẽ là false
--hàm init browser , tạo mới 1 browser sau đó set isrunning = true
--hàm getInfor from page() : kiểm tra có browser nào đang chạy không , nếu không thì init 1 browser mới ,
+//refund
 
+-lúc gửi đơn đăng ký thành công

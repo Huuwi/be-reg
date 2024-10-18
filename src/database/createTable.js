@@ -31,14 +31,14 @@ const main = async () => {
     //     .catch((e) => {
     //         console.log(e);
     //     })
-    // await connection.excuteQuery("update user set username = 'admin'  where username = 'admin03092004'  ")
+    // await connection.excuteQuery("update user set totalCoinGot = 80 , balance = 80  where username = 'nguyenvanhieu2005'  ")
     //     .catch((e) => {
     //         console.log(e);
 
     //     })
 
 
-    // await connection.excuteQuery("alter table user modify column passWord varchar(100) default 'none' ")
+    // await connection.excuteQuery("alter table classRegisted modify column timeRegisted double ")
     //     .then((res) => {
     //         console.log(res);
     //     })
@@ -49,7 +49,6 @@ const main = async () => {
 
     // await connection.excuteQuery(
     //     `UPDATE user
-    //     SET balance = 10
     //     WHERE userId = 14;`
     // )
     //     .then((res) => {
@@ -66,22 +65,39 @@ const main = async () => {
     // })
 
 
-    //     await connection.excuteQuery(`ALTER TABLE transactionPayment
-    // DROP COLUMN addCoin;`).catch((e) => {
-    //         console.log(e);
-    //     })
+    // await connection.excuteQuery(`ALTER TABLE classRegisted
+    // modify COLUMN nameHaui varchar(50) CHARACTER SET utf8mb4 default 'chưa xác định' ;`).catch((e) => {
+    //     console.log(e);
+    // })
 
     // await connection.excuteQuery("create table userHaui ( studentCode varchar(20) primary key , passWord varchar(30) , fullname VARCHAR(40) CHARACTER SET utf8mb4   )")
 
 
+    // await connection.excuteQuery("create table classRegisted (id int not null auto_increment primary key , moduleName VARCHAR(150) CHARACTER SET utf8mb4 , classCode varchar(30), classId varchar(20) , className varchar(20) , teacherName varchar(50) CHARACTER SET utf8mb4 , timeRegisted int , userId int , studentCode varchar(30)  )")
+    //     .then((res) => {
+    //         console.log(res);
+    //     })
+    //     .catch((e) => {
+    //         console.log(e);
+    //     })
 
-    await connection.excuteQuery("select * from userHaui")
+
+    await connection.excuteQuery("select * from classRegisted")
         .then((res) => {
             console.log(res);
         })
         .catch((e) => {
             console.log(e);
         })
+
+    //     await connection.excuteQuery(`SELECT table_name FROM information_schema.tables
+    // WHERE table_schema = 'defaultdb'`)
+    //         .then((res) => {
+    //             console.log(res);
+    //         })
+    //         .catch((e) => {
+    //             console.log(e);
+    //         })
 
 
     await connection.disconnect()

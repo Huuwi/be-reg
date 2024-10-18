@@ -51,6 +51,10 @@ api.post("/auth/removeClass", controler.removeClass)
 api.post("/auth/registerClass", controler.registerClass) // chưa hoàn thiện logic để trừ tiền tài khoản
 api.post("/auth/getInforClass", controler.getInforClass)
 api.post("/auth/pingHaui", controler.pingHaui)
+api.post("/auth/logoutAccount", controler.logoutAccount)
+api.post("/auth/getHistoryPayment", controler.getHistoryPayment)
+api.post("/auth/getHistoryRegisted", controler.getHistoryRegisted)
+
 
 
 //transaction api

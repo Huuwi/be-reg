@@ -221,6 +221,84 @@ class Controler {
     }
 
 
+    async logoutAccount(req, res) {
+        try {
+            const cookies = req.cookies;
+            for (let prop in cookies) {
+                res.clearCookie(prop);
+            }
+            res.status(200).json({
+                message: "ok"
+            })
+        } catch (error) {
+            console.log("error when logout", error);
+
+            res.status(500).json({
+                message: "have wrong!"
+            })
+        }
+
+
+    }
+
+
+    async getHistoryPayment(req, res) {
+        try {
+
+
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
+
+            let userName = await connection.excuteQuery(`select * from user where userId = ${userId}`)
+                .then((data) => {
+                    return data[0].username
+                })
+                .catch((err) => {
+                    throw new Error(err)
+                })
+
+
+            if (!userName) {
+                res.status(400).json({
+                    message: "not found user!!"
+                })
+                return
+            }
+
+
+            let dataPayment = await connection.excuteQuery(`select * from transactionPayment where username = '${userName}' `)
+                .then((data) => {
+
+                    data = data.map((e) => {
+                        let { id, userName, ...other } = e
+                        return other
+                    })
+
+                    return data
+                })
+                .catch((err) => {
+                    throw new Error(err)
+                })
+
+
+            res.status(200).json({
+                message: "ok",
+                dataPayment
+            })
+
+
+
+        } catch (error) {
+            console.log("error when getHistoryPayment : ", error);
+            res.status(500).json({
+                message: "have wrong!"
+            })
+
+        }
+
+    }
+
+
 
     async getInforUser(req, res) {
         try {
@@ -360,6 +438,8 @@ class Controler {
             let data = {}
             try {
                 data = JSON.parse(services.decodeAES(enKC))
+                console.log(services.decodeAES(enKC));
+
             } catch (error) {
                 res.status(400).json({
                     message: "data not valid!"
@@ -419,6 +499,8 @@ class Controler {
             }
 
             let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url)
+            // console.log({ nameHaui, kverify, Cookie });
+
 
             let enKC = services.encodeAES(JSON.stringify({ Cookie, kverify, studentCode, passWordHaui, nameHaui }));
 
@@ -549,7 +631,7 @@ class Controler {
 
             let { Cookie, kverify, nameHaui, passWordHaui, studentCode } = JSON.parse(services.decodeAES(enKC));
 
-            let { classCode } = req.body;
+            let { classCode, moduleId } = req.body;
 
             if (!classCode) {
                 res.status(400).json({
@@ -567,7 +649,8 @@ class Controler {
 
             let user = await connection.excuteQuery(`select * from user where userId = ${userId}`)
                 .then((data) => {
-                    return data[0];
+                    let { passWord, timeCreate, ...userData } = data[0];
+                    return userData
                 })
                 .catch((err) => {
                     throw new Error(err)
@@ -594,12 +677,11 @@ class Controler {
 
 
             if (result.Message == "Gửi đơn đăng ký thành công, vui lòng đợi kết quả xử lý!") {
+                let messageRefund = ""
 
-                res.status(200).json({
-                    message: "ok",
-                    result,
+                user.balance -= 49;
+                let time = Date.now()
 
-                })
 
                 await connection.excuteQuery(`update user set balance = ${balance - 49} where userId = ${userId}`)
                     .then(() => {
@@ -609,6 +691,83 @@ class Controler {
                         throw new Error(err)
                     })
 
+                if (moduleId) {
+
+
+                    let classesFromModuleId = await services.getInforClass(kverify, Cookie, moduleId) || [];
+
+                    if (!classesFromModuleId?.length) {
+
+                        messageRefund = "mã lớp không khớp với mã học phần"
+
+                        await connection.excuteQuery(`insert into classRegisted  (nameHaui, userId , timeRegisted , studentCode , moduleName ,classId, classCode , className ,teacherName ) values ( '${nameHaui}',  ${userId} ,${time} , '${studentCode}' , '${"chưa xác định"}' , '${classCode}' , '${"chưa xác định"}' , '${"chưa xác định"}' , '${"chưa xác định"}' )  `)
+                            .catch((e) => {
+                                console.log("err when save to db regiested : ", e);
+                            })
+
+
+                    } else {
+
+
+                        let classFound = classesFromModuleId.find((e) => {
+                            return e?.IndependentClassID == classCode
+                        })
+
+                        console.log("class found : ", classFound);
+
+                        if (classFound?.IndependentClassID) {
+                            let teacherName = "không xác định"
+
+                            try {
+
+                                teacherName = JSON.parse(classCode.GiaoVien)[0]?.Fullname
+
+                            } catch (error) {
+
+                                messageRefund = "có lỗi khi xử lý !"
+                                console.log("err khi parse tên giáo viên : ", error);
+
+                            }
+
+
+                            await connection.excuteQuery(`insert into classRegisted  (nameHaui, userId , timeRegisted , studentCode , moduleName ,classId, classCode , className ,teacherName ) values ( '${nameHaui}',  ${userId} ,${time} , '${studentCode}' , '${classFound?.ModuleName || "chưa xác định"}' , '${classCode}' , '${classFound?.ClassCode || "chưa xác định"}' , '${classFound?.ClassName || "chưa xác định"}' , '${teacherName}' )  `)
+                                .catch((e) => {
+                                    console.log("err when save to db regiested : ", e);
+
+                                })
+
+                            messageRefund = "ok"
+                        } else {
+
+
+                            await connection.excuteQuery(`insert into classRegisted  (nameHaui, userId , timeRegisted , studentCode , moduleName ,classId, classCode , className ,teacherName ) values ( '${nameHaui}',  ${userId} ,${time} , '${studentCode}' , '${"chưa xác định"}' , '${classCode}' , '${"chưa xác định"}' , '${"chưa xác định"}' , '${"chưa xác định"}' )  `)
+                                .catch((e) => {
+                                    console.log("err when save to db regiested : ", e);
+                                })
+                        }
+
+
+                    }
+
+
+                } else {
+                    messageRefund = "chưa gửi id học phần"
+
+                    await connection.excuteQuery(`insert into classRegisted  (nameHaui, userId , timeRegisted , studentCode , moduleName ,classId, classCode , className ,teacherName ) values ( '${nameHaui}',  ${userId} ,${time} , '${studentCode}' , '${"chưa xác định"}' , '${classCode}' , '${"chưa xác định"}' , '${"chưa xác định"}' , '${"chưa xác định"}' )  `)
+                        .catch((e) => {
+                            console.log("err when save to db regiested : ", e);
+                        })
+                }
+
+
+
+                res.status(200).json({
+                    message: "ok",
+                    result,
+                    userData: user,
+                    messageRefund
+
+                })
 
             } else {
                 res.status(500).json({
@@ -664,6 +823,46 @@ class Controler {
 
             console.log("err when getInforClass : ", error);
             // services.appendError500("error when getInforClass : " + error)
+        }
+
+
+    }
+
+    async getHistoryRegisted(req, res) {
+
+        try {
+
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
+
+            let historyRegisted = await connection.excuteQuery(`select * from classRegisted where userid = ${userId}`)
+                .then((res) => {
+                    let data = res.map((e) => {
+                        let { userId, studentCode, ...other } = e
+                        other.timeRegisted = services.formatDate(other.timeRegisted)
+                        return other
+                    })
+
+                    return data
+                })
+                .catch((e) => {
+                    console.log(e);
+                })
+
+            res.status(200).json({
+                message: "ok",
+                historyRegisted
+            })
+
+
+        } catch (error) {
+
+
+            console.log("err when getHistoryRegisted", error);
+            res.status(500).json({
+                message: "have wrong",
+            })
+
         }
 
 

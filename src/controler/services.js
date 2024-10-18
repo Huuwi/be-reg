@@ -303,6 +303,7 @@ class Services {
             // Trích xuất username
             let nameHaui = $('.user-name').text().trim();
             nameHaui = nameHaui.slice(0, Math.floor(nameHaui.length / 2))
+            // fs.appendFileSync("./test.txt", redirectResponse.data)
 
             // Trích xuất kverify từ script
             const kverifyMatch = redirectResponse.data.match(/var kverify = '(.*?)';/);
@@ -599,6 +600,33 @@ class Services {
         }
 
     }
+    formatDate(date) {
+        date = new Date(date)
+        let day = String(date.getDate()).padStart(2, '0');
+        let month = String(date.getMonth() + 1).padStart(2, '0'); // Tháng bắt đầu từ 0
+        let year = date.getFullYear();
+        let hours = String(date.getHours()).padStart(2, '0');
+        let minutes = String(date.getMinutes()).padStart(2, '0');
+        let seconds = String(date.getSeconds()).padStart(2, '0');
+
+        return `${day}-${month}-${year} ${hours}:${minutes}:${seconds}`;
+    }
+
+    convertStringToDateNow(s) {
+        // Chuyển đổi chuỗi sang định dạng Date
+        let dateParts = s.split(' ')[0].split('-');
+        let timeParts = s.split(' ')[1].split(':');
+
+        let date = new Date(Date.UTC(dateParts[2], dateParts[1] - 1, dateParts[0], timeParts[0], timeParts[1], timeParts[2]));
+
+        // Việt Nam là UTC+7
+        let vietnamTime = new Date(date.getTime() + (7 * 60 * 60 * 1000));
+
+        // Lấy giá trị theo mili giây
+        let timestamp = vietnamTime.getTime();
+        return timestamp
+    }
+
 
 
 }
