@@ -41,6 +41,8 @@ setInterval(async () => {
     try {
         const response = await axios.get(process.env.FONTEND_URL + "/ping");
         console.log("fontend response:", response.data);
+        const response2 = await axios.get(process.env.REFUND_SERVER_URL + "/ping");
+        console.log("refund response:", response2.data);
     } catch (error) {
         console.error("Error fetching from backend:", error.message);
     }

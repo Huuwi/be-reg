@@ -54,7 +54,7 @@ api.post("/auth/pingHaui", controler.pingHaui)
 api.post("/auth/logoutAccount", controler.logoutAccount)
 api.post("/auth/getHistoryPayment", controler.getHistoryPayment)
 api.post("/auth/getHistoryRegisted", controler.getHistoryRegisted)
-
+api.post("/auth/refund", controler.refund)
 
 
 //transaction api
