@@ -25,4 +25,21 @@ server tiến hành kiểm tra verifyCode bằng cách :
 
 //refund
 
--lúc gửi đơn đăng ký thành công
+-thêm thuộc tính tên HAUI cho bảng classRegisted // done
+-FE gửi yêu cầu backend trả dữ liệu về, loại bỏ studentCode và userId // done
+
+-giao diện FE cho phép người dùng đăng nhập tài khoản , mật khẩu HAUi để refund tiền
+-người dùng nhập tài khoản mật khẩu haui bấm refund
+-BE:
+
+-truy vấn bảng registedHaui lấy ra dữ liệu của bản ghi có id bằng id và userId = userId đc gửi lên {moduleCode , classCode , className , time}
+-nếu không tìm thấy bản ghi hợp lệ , báo userId và id môn học không khớp
+-kiểm tra nêu refund rồi thì k làm gì cả , trả về là đã refund vs message là : "cheat"
+
+
+-lấy tài khoản mật khẩu HAUi thực hiện login HAUI , sau đó lấy dữ liệu môn học đã đăng ký (5-50 đối tượng là căng)
+
+-tìm mảng môn học thỏa mãn : trùng tên module(mc = moduleCode) , trùng mã lớp (cc = classCode) , trùng tên lớp (cn = className)
+-từ mảng đó , tìm ra phần tử có thời gian gần date.now nhất (dùng hàm chuyển định dạng tm dang date.now() , find((e) => {return e = Min(classesInfor.map((el) => { return abs(servcies.convert(el.tm) - time) }) )  }) )
+-check status xem có đăng ký thành công chưa , nếu chưa thì refund cho userId , nếu rồi thì bỏ qua
+-chuyển is refund thành true

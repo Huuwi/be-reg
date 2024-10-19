@@ -868,141 +868,6 @@ class Controler {
     }
 
 
-    async refundSeft(req, res) {
-
-        try {
-            let decodeAccessToken = req.decodeAccessToken;
-            let userId = decodeAccessToken.userId; //get userId
-
-            let { studentCode, passWordHaui, id } = req.body
-
-            if (!studentCode || !passWordHaui || !id) {
-                res.status(400).json({
-                    message: "missing data!"
-                })
-                return
-            }
-
-            id = Number(id)
-            studentCode = Number(studentCode)
-            let registedClass = await connection.excuteQuery(`select * from classRegisted where userId = ${Number(userId)} and id = ${id || -1} and studentCode = '${studentCode}'`)
-                .then((data) => {
-                    return data[0];
-                })
-                .catch((e) => {
-                    console.log(e);
-                })
-
-            if (!registedClass) {
-                res.status(400).json({
-                    message: "dữ liệu gửi lên không chính xác! , sẽ ban nếu tiếp tục!"
-                })
-                return
-            }
-
-
-            if (registedClass?.isrefund) {
-                res.status(400).json({
-                    message: "id này đã hoàn xu rồi , sẽ ban nếu tiếp tục!"
-                })
-                return
-            }
-
-
-
-            let token_url = await services.getTokenUrlHaui(studentCode, passWordHaui)
-
-            if (!token_url.includes("token=")) {
-                res.status(400).json({
-                    message: "tài khoản mật khẩu HAUI không chính xác!"
-                })
-                return
-            }
-
-            let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url);
-
-
-            let listOrdered = await services.listOrdered(kverify, Cookie)
-                .then((data) => {
-                    return data
-                })
-                .catch((e) => {
-                    console.log(e);
-                });
-
-            if (!listOrdered?.length) {
-                res.status(400).json({
-                    message: "Không tìm thấy dữ liệu từng đăng ký!"
-                })
-                return
-            }
-
-
-            let listOrderedSameClass = listOrdered.filter((e) => {
-                return e.cc == registedClass.ClassCode
-            })
-
-
-            let timeArray = listOrderedSameClass.map((e) => {
-                return Math.abs(Number(services.convertStringToDateNow(e.tm) - registedClass.timeRegisted))
-            })
-
-            let minTime = Math.min(...timeArray)
-
-
-            let regited = listOrderedSameClass.find((e) => {
-                return Math.abs(Number(services.convertStringToDateNow(e.tm) - registedClass.timeRegisted) == minTime)
-            })
-
-
-
-            if (!regited) {
-                res.status(400).json({
-                    message: "Không tìm thấy dữ liệu lớp học"
-                })
-                return
-            }
-
-
-            if (regited.st == "Đăng ký thành công!") {
-
-                await connection.excuteQuery(`update classRegisted set isrefund = 1 where id = ${id}`)
-                    .catch((e) => {
-                        console.log(e);
-                    })
-
-                res.status(400).json({
-                    message: "Đăng ký này đã thành công . Không hoàn tiền!"
-                })
-
-            }
-            await connection.excuteQuery(`UPDATE user
-                SET balance = balance + 49
-                WHERE userId = ${userId}; `)
-            await connection.excuteQuery(`update classRegisted set isrefund = 1 where id = ${id}`)
-                .catch((e) => {
-                    console.log(e);
-                })
-
-
-
-
-            res.status(200).json({
-                message: "ok",
-            })
-
-
-        } catch (error) {
-            console.log(error);
-            res.status(500).json({
-                message: "have wrong!"
-            })
-
-        }
-
-
-    }
-
     async refund(req, res) {
 
         try {
@@ -1046,6 +911,40 @@ class Controler {
             })
             return
         }
+
+    }
+
+
+    async scan(req, res) {
+        //get decoded accesstoken
+        let decodeAccessToken = req.decodeAccessToken;
+        let userId = decodeAccessToken.userId; //get userId
+
+        if (globalThis.queueScanUserId.includes(userId)) {
+            res.status(400).json({
+                message: "processing"
+            })
+            return
+        }
+
+        let authData = {}
+        try {
+            authData = JSON.parse(services.decodeAES(enKC))
+        } catch (error) {
+            res.status(400).json({
+                message: "data not valid!"
+            })
+            return
+        }
+
+
+        globalThis.queueScanUserId.push(userId)
+
+
+        let { Cookie, kverify } = authData
+
+
+
 
     }
 
