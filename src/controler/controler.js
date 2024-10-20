@@ -895,9 +895,9 @@ class Controler {
                     return res.data
                 })
                 .catch((e) => {
-                    console.log(e.response.data);
+                    console.log(e);
                     res.status(400).json({
-                        message: e.response.data.message
+                        message: e?.response?.data?.message || "lỗi không xác định"
                     })
                     return
                 })
@@ -922,14 +922,38 @@ class Controler {
 
         if (globalThis.queueScanUserId.includes(userId)) {
             res.status(400).json({
-                message: "processing"
+                message: "Bạn đã yêu cầu trước đó. Vui lòng đợi hệ thống xử lý!"
             })
             return
         }
 
+
+        let balance = await connection.excuteQuery(`select balance from user where userId = ${userId}`)
+            .then((res) => {
+                return res[0].balance
+            })
+            .catch((e) => {
+                console.log(e);
+            })
+
+
+        if (Number(balance) < 3) {
+            res.status(400).json({
+                message: "Tài khoản phải có ít nhất 3 xu mới được phép scan!"
+            })
+            return
+        }
+        console.log("blance : ", balance);
+
+
+
         let authData = {}
+
+        let enKC = req?.cookies?.enKC;
         try {
+
             authData = JSON.parse(services.decodeAES(enKC))
+
         } catch (error) {
             res.status(400).json({
                 message: "data not valid!"
@@ -942,9 +966,38 @@ class Controler {
 
 
         let { Cookie, kverify } = authData
+        let dataScan = []
 
+        while (true) {
 
+            try {
+                let response = await axios.post(process.env.SCAN_SERVER_URL + "/scan", { kverify, Cookie })
+                console.log(response.data);
 
+                if (response?.data?.dataScan) {
+                    dataScan = response?.data?.dataScan;
+                    break
+                }
+            } catch (error) {
+                console.log(error?.response?.data?.message);
+            }
+
+            await services.sleep(10000)
+
+        }
+
+        res.status(200).json({
+            message: "ok",
+            dataScan
+        })
+        globalThis.queueScanUserId.splice(globalThis.queueScanUserId.indexOf(userId), 1);
+
+        await connection.excuteQuery(`update user set balance = balance - 3 where userId = ${userId}`)
+            .catch((e) => {
+                console.log(e);
+            })
+
+        return
 
     }
 
