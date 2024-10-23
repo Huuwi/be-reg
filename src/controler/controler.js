@@ -874,6 +874,14 @@ class Controler {
             let decodeAccessToken = req.decodeAccessToken;
             let userId = decodeAccessToken.userId; //get userId
 
+            if (globalThis.queueRefundUserId.includes(userId)) {
+                res.status(400).json({
+                    message: "Bạn đã yêu cầu refund trước đó. Vui lòng đợi hệ thống xử lý!"
+                })
+                return
+            }
+            globalThis.queueScanUserId.push(userId)
+
             let { studentCode, passWordHaui, id } = req.body
 
             if (!studentCode || !passWordHaui || !id) {
@@ -892,6 +900,7 @@ class Controler {
                         message: "ok",
                         data: res.data
                     })
+                    globalThis.queueScanUserId.splice(globalThis.queueScanUserId.indexOf(userId), 1);
                     return res.data
                 })
                 .catch((e) => {
@@ -899,6 +908,7 @@ class Controler {
                     res.status(400).json({
                         message: e?.response?.data?.message || "lỗi không xác định"
                     })
+                    globalThis.queueScanUserId.splice(globalThis.queueScanUserId.indexOf(userId), 1);
                     return
                 })
 
@@ -922,7 +932,7 @@ class Controler {
 
         if (globalThis.queueScanUserId.includes(userId)) {
             res.status(400).json({
-                message: "Bạn đã yêu cầu trước đó. Vui lòng đợi hệ thống xử lý!"
+                message: "Bạn đã yêu cầu scan trước đó. Vui lòng đợi hệ thống xử lý!"
             })
             return
         }

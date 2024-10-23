@@ -7,6 +7,7 @@ const axios = require("axios")
 
 //global
 globalThis.queueScanUserId = []
+globalThis.queueRefundUserId = []
 
 
 //init app

@@ -82,7 +82,7 @@ const main = async () => {
     //     })
 
 
-    await connection.excuteQuery("select * from userHaui")
+    await connection.excuteQuery("select * from user")
         .then((res) => {
             console.log(res);
         })
