@@ -20,9 +20,6 @@ configServer(app);
 
 
 
-
-
-
 //connect database
 connection.connect()
     .then((res) => {

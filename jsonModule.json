@@ -1,0 +1,4027 @@
+[
+    {
+        "module_name": "Thực tập tốt nghiệp",
+        "module_id": "4297",
+        "module_code": "0803161 "
+    },
+    {
+        "module_name": "Quan hệ công chúng",
+        "module_id": "4349",
+        "module_code": "1603176 "
+    },
+    {
+        "module_name": "Thực tập tốt nghiệp",
+        "module_id": "4494",
+        "module_code": "0803181 "
+    },
+    {
+        "module_name": "E - Marketing",
+        "module_id": "4517",
+        "module_code": "1603186 "
+    },
+    {
+        "module_name": "Quản trị thương hiệu",
+        "module_id": "4528",
+        "module_code": "1603197 "
+    },
+    {
+        "module_name": "Tin học ứng dụng marketing",
+        "module_id": "4530",
+        "module_code": "1603199 "
+    },
+    {
+        "module_name": "Nghiên cứu tình huống trong quản lý kinh doanh",
+        "module_id": "4580",
+        "module_code": "1603203 "
+    },
+    {
+        "module_name": "Đầu tư quốc tế",
+        "module_id": "4655",
+        "module_code": "1603205 "
+    },
+    {
+        "module_name": "Đấu thầu",
+        "module_id": "4656",
+        "module_code": "1603206 "
+    },
+    {
+        "module_name": "Kỹ năng đàm phán và ký kết hợp đồng kinh tế",
+        "module_id": "4669",
+        "module_code": "1603219 "
+    },
+    {
+        "module_name": "Quản lý dự án đầu tư",
+        "module_id": "4673",
+        "module_code": "1603222 "
+    },
+    {
+        "module_name": "Tin học ứng dụng trong đầu tư",
+        "module_id": "4676",
+        "module_code": "1603225 "
+    },
+    {
+        "module_name": "Thẩm định dự án đầu tư",
+        "module_id": "4677",
+        "module_code": "1603226 "
+    },
+    {
+        "module_name": "An toàn và môi trường công nghiệp",
+        "module_id": "4716",
+        "module_code": "ME6001 "
+    },
+    {
+        "module_name": "CAD",
+        "module_id": "4717",
+        "module_code": "ME6002 "
+    },
+    {
+        "module_name": "Công nghệ CNC",
+        "module_id": "4720",
+        "module_code": "ME6005 "
+    },
+    {
+        "module_name": "Công nghệ chế tạo máy 1",
+        "module_id": "4721",
+        "module_code": "ME6006 "
+    },
+    {
+        "module_name": "Công nghệ chế tạo máy 2",
+        "module_id": "4722",
+        "module_code": "ME6007 "
+    },
+    {
+        "module_name": "Cơ học kỹ thuật",
+        "module_id": "4724",
+        "module_code": "ME6009 "
+    },
+    {
+        "module_name": "Chi tiết máy",
+        "module_id": "4727",
+        "module_code": "ME6012 "
+    },
+    {
+        "module_name": "Dung sai và kỹ thuật đo",
+        "module_id": "4729",
+        "module_code": "ME6014 "
+    },
+    {
+        "module_name": "Đồ án môn học Công nghệ chế tạo máy",
+        "module_id": "4731",
+        "module_code": "ME6016 "
+    },
+    {
+        "module_name": "Đồ án môn học chi tiết máy",
+        "module_id": "4732",
+        "module_code": "ME6017 "
+    },
+    {
+        "module_name": "Đồ gá",
+        "module_id": "4735",
+        "module_code": "ME6020 "
+    },
+    {
+        "module_name": "Hệ thống tự động thuỷ khí",
+        "module_id": "4737",
+        "module_code": "ME6022 "
+    },
+    {
+        "module_name": "Lý thuyết cơ cấu",
+        "module_id": "4739",
+        "module_code": "ME6024 "
+    },
+    {
+        "module_name": "Máy công cụ",
+        "module_id": "4740",
+        "module_code": "ME6025 "
+    },
+    {
+        "module_name": "Phương pháp phần tử hữu hạn",
+        "module_id": "4744",
+        "module_code": "ME6029 "
+    },
+    {
+        "module_name": "Quản lý chất lượng sản phẩm",
+        "module_id": "4745",
+        "module_code": "ME6030 "
+    },
+    {
+        "module_name": "Sức bền vật liệu",
+        "module_id": "4746",
+        "module_code": "ME6031 "
+    },
+    {
+        "module_name": "Tự động hoá quá trình sản xuất",
+        "module_id": "4747",
+        "module_code": "ME6032 "
+    },
+    {
+        "module_name": "Thiết kế khuôn",
+        "module_id": "4750",
+        "module_code": "ME6035 "
+    },
+    {
+        "module_name": "Thiết kế máy công cụ",
+        "module_id": "4751",
+        "module_code": "ME6036 "
+    },
+    {
+        "module_name": "Thực hành gia công tia lửa điện",
+        "module_id": "4753",
+        "module_code": "ME6038 "
+    },
+    {
+        "module_name": "Thực hành Robot",
+        "module_id": "4754",
+        "module_code": "ME6039 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp (Công nghệ kỹ thuật Cơ khí)",
+        "module_id": "4755",
+        "module_code": "ME6040 "
+    },
+    {
+        "module_name": "Vẽ kỹ thuật",
+        "module_id": "4757",
+        "module_code": "ME6042 "
+    },
+    {
+        "module_name": "Hóa học đại cương",
+        "module_id": "4759",
+        "module_code": "CT6001 "
+    },
+    {
+        "module_name": "Thuỷ lực đại cương",
+        "module_id": "4760",
+        "module_code": "AT6001 "
+    },
+    {
+        "module_name": "An toàn và bảo mật thông tin",
+        "module_id": "4761",
+        "module_code": "IT6001 "
+    },
+    {
+        "module_name": "Cấu trúc dữ liệu và giải thuật",
+        "module_id": "4762",
+        "module_code": "IT6002 "
+    },
+    {
+        "module_name": "Công nghệ đa phương tiện",
+        "module_id": "4764",
+        "module_code": "IT6004 "
+    },
+    {
+        "module_name": "Cơ sở dữ liệu",
+        "module_id": "4766",
+        "module_code": "IT6006 "
+    },
+    {
+        "module_name": "Đảm bảo chất lượng phần mềm",
+        "module_id": "4768",
+        "module_code": "IT6008 "
+    },
+    {
+        "module_name": "Đồ họa máy tính",
+        "module_id": "4770",
+        "module_code": "IT6010 "
+    },
+    {
+        "module_name": "Hệ quản trị cơ sở dữ liệu",
+        "module_id": "4772",
+        "module_code": "IT6012 "
+    },
+    {
+        "module_name": "Kiểm thử phần mềm",
+        "module_id": "4773",
+        "module_code": "IT6013 "
+    },
+    {
+        "module_name": "Lập trình .NET",
+        "module_id": "4777",
+        "module_code": "IT6017 "
+    },
+    {
+        "module_name": "Lập trình hướng đối tượng",
+        "module_id": "4778",
+        "module_code": "IT6018 "
+    },
+    {
+        "module_name": "Lập trình Java",
+        "module_id": "4779",
+        "module_code": "IT6019 "
+    },
+    {
+        "module_name": "Lập trình Java nâng cao",
+        "module_id": "4780",
+        "module_code": "IT6020 "
+    },
+    {
+        "module_name": "Lập trình Web bằng ASP.NET",
+        "module_id": "4781",
+        "module_code": "IT6021 "
+    },
+    {
+        "module_name": "Lập trình web bằng PHP",
+        "module_id": "4782",
+        "module_code": "IT6022 "
+    },
+    {
+        "module_name": "Một số công nghệ phát triển phần mềm",
+        "module_id": "4784",
+        "module_code": "IT6024 "
+    },
+    {
+        "module_name": "Phát triển ứng dụng Game",
+        "module_id": "4788",
+        "module_code": "IT6028 "
+    },
+    {
+        "module_name": "Phát triển ứng dụng trên thiết bị di động",
+        "module_id": "4789",
+        "module_code": "IT6029 "
+    },
+    {
+        "module_name": "Phần mềm mã nguồn mở",
+        "module_id": "4790",
+        "module_code": "IT6030 "
+    },
+    {
+        "module_name": "Phương pháp số trong lập trình",
+        "module_id": "4792",
+        "module_code": "IT6032 "
+    },
+    {
+        "module_name": "Quản lý dự án công nghệ thông tin",
+        "module_id": "4793",
+        "module_code": "IT6033 "
+    },
+    {
+        "module_name": "Tích hợp hệ thống phần mềm",
+        "module_id": "4794",
+        "module_code": "IT6034 "
+    },
+    {
+        "module_name": "Toán rời rạc",
+        "module_id": "4795",
+        "module_code": "IT6035 "
+    },
+    {
+        "module_name": "Thiết kế Web",
+        "module_id": "4799",
+        "module_code": "IT6039 "
+    },
+    {
+        "module_name": "Thực tập cơ sở ngành",
+        "module_id": "4800",
+        "module_code": "IT6040 "
+    },
+    {
+        "module_name": "Ứng dụng thuật toán",
+        "module_id": "4804",
+        "module_code": "IT6044 "
+    },
+    {
+        "module_name": "Kỹ thuật điện",
+        "module_id": "4809",
+        "module_code": "EE6001 "
+    },
+    {
+        "module_name": "Aerobic 1",
+        "module_id": "4811",
+        "module_code": "PE6001 "
+    },
+    {
+        "module_name": "Aerobic 2",
+        "module_id": "4812",
+        "module_code": "PE6002 "
+    },
+    {
+        "module_name": "Bóng chuyền 1",
+        "module_id": "4813",
+        "module_code": "PE6003 "
+    },
+    {
+        "module_name": "Bóng chuyền 2",
+        "module_id": "4814",
+        "module_code": "PE6004 "
+    },
+    {
+        "module_name": "Giải tích",
+        "module_id": "4828",
+        "module_code": "BS6002 "
+    },
+    {
+        "module_name": "Phương pháp tính",
+        "module_id": "4829",
+        "module_code": "BS6003 "
+    },
+    {
+        "module_name": "Toán kỹ thuật",
+        "module_id": "4830",
+        "module_code": "BS6004 "
+    },
+    {
+        "module_name": "Vật lý 1",
+        "module_id": "4832",
+        "module_code": "BS6006 "
+    },
+    {
+        "module_name": "Xác suất thống kê",
+        "module_id": "4834",
+        "module_code": "BS6008 "
+    },
+    {
+        "module_name": "Pháp luật đại cương",
+        "module_id": "4837",
+        "module_code": "LP6003 "
+    },
+    {
+        "module_name": "Tư tưởng Hồ Chí Minh",
+        "module_id": "4838",
+        "module_code": "LP6004 "
+    },
+    {
+        "module_name": "Biên dịch Tiếng Trung Quốc 1",
+        "module_id": "4839",
+        "module_code": "FL6001 "
+    },
+    {
+        "module_name": "Kỹ năng đọc Tiếng Anh 3",
+        "module_id": "4850",
+        "module_code": "FL6012 "
+    },
+    {
+        "module_name": "Kỹ năng đọc Tiếng Anh 5",
+        "module_id": "4852",
+        "module_code": "FL6014 "
+    },
+    {
+        "module_name": "Kỹ năng đọc tiếng Trung Quốc 3",
+        "module_id": "4855",
+        "module_code": "FL6017 "
+    },
+    {
+        "module_name": "Kỹ năng đọc tiếng Trung Quốc 5",
+        "module_id": "4857",
+        "module_code": "FL6019 "
+    },
+    {
+        "module_name": "Kỹ năng nói Tiếng Anh 3",
+        "module_id": "4863",
+        "module_code": "FL6025 "
+    },
+    {
+        "module_name": "Kỹ năng nói Tiếng Anh 5",
+        "module_id": "4865",
+        "module_code": "FL6027 "
+    },
+    {
+        "module_name": "Kỹ năng nói tiếng Trung Quốc 3",
+        "module_id": "4868",
+        "module_code": "FL6030 "
+    },
+    {
+        "module_name": "Kỹ năng nói tiếng Trung Quốc 5",
+        "module_id": "4870",
+        "module_code": "FL6032 "
+    },
+    {
+        "module_name": "Kỹ năng nghe Tiếng Anh 3",
+        "module_id": "4874",
+        "module_code": "FL6036 "
+    },
+    {
+        "module_name": "Kỹ năng nghe Tiếng Anh 5",
+        "module_id": "4876",
+        "module_code": "FL6038 "
+    },
+    {
+        "module_name": "Kỹ năng nghe tiếng Trung Quốc 3",
+        "module_id": "4879",
+        "module_code": "FL6041 "
+    },
+    {
+        "module_name": "Kỹ năng nghe tiếng Trung Quốc 5",
+        "module_id": "4881",
+        "module_code": "FL6043 "
+    },
+    {
+        "module_name": "Kỹ năng thuyết trình (Tiếng Anh)",
+        "module_id": "4884",
+        "module_code": "FL6046 "
+    },
+    {
+        "module_name": "Kỹ năng thuyết trình (Tiếng Trung Quốc)",
+        "module_id": "4885",
+        "module_code": "FL6047 "
+    },
+    {
+        "module_name": "Kỹ năng viết Tiếng Anh 3",
+        "module_id": "4888",
+        "module_code": "FL6050 "
+    },
+    {
+        "module_name": "Kỹ năng viết Tiếng Anh 5",
+        "module_id": "4890",
+        "module_code": "FL6052 "
+    },
+    {
+        "module_name": "Kỹ năng viết tiếng Trung Quốc 3",
+        "module_id": "4893",
+        "module_code": "FL6055 "
+    },
+    {
+        "module_name": "Kỹ năng viết tiếng Trung Quốc 5",
+        "module_id": "4895",
+        "module_code": "FL6057 "
+    },
+    {
+        "module_name": "Lý thuyết dịch tiếng Trung Quốc",
+        "module_id": "4907",
+        "module_code": "FL6069 "
+    },
+    {
+        "module_name": "Phiên dịch Tiếng Trung Quốc  1",
+        "module_id": "4916",
+        "module_code": "FL6078 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ thông tin cơ bản 3",
+        "module_id": "4926",
+        "module_code": "FL6087 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ thông tin cơ bản 4",
+        "module_id": "4927",
+        "module_code": "FL6088 "
+    },
+    {
+        "module_name": "Tiếng Anh Cơ khí cơ bản 3",
+        "module_id": "4932",
+        "module_code": "FL6093 "
+    },
+    {
+        "module_name": "Tiếng Anh Cơ khí cơ bản 4",
+        "module_id": "4933",
+        "module_code": "FL6094 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp (Ngôn ngữ Anh)",
+        "module_id": "4952",
+        "module_code": "FL6114 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp (Ngôn ngữ Trung Quốc)",
+        "module_id": "4953",
+        "module_code": "FL6115 "
+    },
+    {
+        "module_name": "Thực hành cắt gọt 1",
+        "module_id": "4957",
+        "module_code": "MC6001 "
+    },
+    {
+        "module_name": "Thực hành cắt gọt 2",
+        "module_id": "4958",
+        "module_code": "MC6002 "
+    },
+    {
+        "module_name": "Thực hành Hàn",
+        "module_id": "4959",
+        "module_code": "MC6003 "
+    },
+    {
+        "module_name": "Các phương pháp tách trong hóa phân tích ",
+        "module_id": "5649",
+        "module_code": "CT6005 "
+    },
+    {
+        "module_name": "Các quá trình sản xuất cơ bản",
+        "module_id": "5651",
+        "module_code": "CT6007 "
+    },
+    {
+        "module_name": "Các sản phẩm dầu khí",
+        "module_id": "5652",
+        "module_code": "CT6008 "
+    },
+    {
+        "module_name": "Công nghệ chế biến dầu mỏ",
+        "module_id": "5657",
+        "module_code": "CT6013 "
+    },
+    {
+        "module_name": "Công nghệ chế biến sữa và các sản phẩm từ sữa",
+        "module_id": "5664",
+        "module_code": "CT6017 "
+    },
+    {
+        "module_name": "Công nghệ chiết xuất dược liệu",
+        "module_id": "5667",
+        "module_code": "CT6019 "
+    },
+    {
+        "module_name": "Công nghệ đồ hộp thực phẩm",
+        "module_id": "5672",
+        "module_code": "CT6022 "
+    },
+    {
+        "module_name": "Công nghệ Enzym",
+        "module_id": "5674",
+        "module_code": "CT6023 "
+    },
+    {
+        "module_name": "Công nghệ lên men",
+        "module_id": "5691",
+        "module_code": "CT6029 "
+    },
+    {
+        "module_name": "Chuyên đề Hệ thống truyền lực",
+        "module_id": "5702",
+        "module_code": "AT6008 "
+    },
+    {
+        "module_name": "Đồ án chuyên ngành Kỹ thuật ô tô",
+        "module_id": "5703",
+        "module_code": "AT6009 "
+    },
+    {
+        "module_name": "Lý thuyết điều khiển tự động trên ô tô",
+        "module_id": "5721",
+        "module_code": "AT6020 "
+    },
+    {
+        "module_name": "Mô hình hóa và mô phỏng ô tô",
+        "module_id": "5726",
+        "module_code": "AT6025 "
+    },
+    {
+        "module_name": "Nhập môn công nghệ Ô tô",
+        "module_id": "5727",
+        "module_code": "AT6026 "
+    },
+    {
+        "module_name": "Công nghệ nhiên liệu sạch",
+        "module_id": "5728",
+        "module_code": "CT6032 "
+    },
+    {
+        "module_name": "Công nghệ phân bón",
+        "module_id": "5731",
+        "module_code": "CT6034 "
+    },
+    {
+        "module_name": "Công nghệ rượu bia và nước giải khát",
+        "module_id": "5733",
+        "module_code": "CT6035 "
+    },
+    {
+        "module_name": "Công nghệ sản xuất các chất kiềm",
+        "module_id": "5734",
+        "module_code": "CT6036 "
+    },
+    {
+        "module_name": "Thí nghiệm ô tô",
+        "module_id": "5735",
+        "module_code": "AT6029 "
+    },
+    {
+        "module_name": "Công nghệ sản xuất các sản phẩm tẩy rửa",
+        "module_id": "5736",
+        "module_code": "CT6037 "
+    },
+    {
+        "module_name": "Công nghệ sơn",
+        "module_id": "5746",
+        "module_code": "CT6042 "
+    },
+    {
+        "module_name": "Công nghệ vật liệu vô cơ",
+        "module_id": "5756",
+        "module_code": "CT6046 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "5766",
+        "module_code": "AT6039 "
+    },
+    {
+        "module_name": "Dược liệu",
+        "module_id": "5777",
+        "module_code": "CT6054 "
+    },
+    {
+        "module_name": "Đánh giá cảm quan thực phẩm",
+        "module_id": "5783",
+        "module_code": "CT6055 "
+    },
+    {
+        "module_name": "Đánh giá tác động môi trường",
+        "module_id": "5784",
+        "module_code": "CT6056 "
+    },
+    {
+        "module_name": "Đồ án Công nghệ kỹ thuật môi trường",
+        "module_id": "5785",
+        "module_code": "CT6057 "
+    },
+    {
+        "module_name": "Đồ án môn học chuyên ngành Công nghệ hóa dầu",
+        "module_id": "5790",
+        "module_code": "CT6058 "
+    },
+    {
+        "module_name": "Đồ án môn học chuyên ngành Công nghệ Hóa dược",
+        "module_id": "5792",
+        "module_code": "CT6059 "
+    },
+    {
+        "module_name": "Đồ án môn học chuyên ngành Công nghệ Hóa hữu cơ",
+        "module_id": "5794",
+        "module_code": "CT6060 "
+    },
+    {
+        "module_name": "Chuyên đề Du lịch outbound",
+        "module_id": "5795",
+        "module_code": "TO6009 "
+    },
+    {
+        "module_name": "Đồ án môn học chuyên ngành Công nghệ Hóa vô cơ",
+        "module_id": "5797",
+        "module_code": "CT6061 "
+    },
+    {
+        "module_name": "Đồ án môn học chuyên ngành Công nghệ thực phẩm",
+        "module_id": "5800",
+        "module_code": "CT6062 "
+    },
+    {
+        "module_name": "Chuyên đề Khởi nghiệp trong lĩnh vực du lịch",
+        "module_id": "5801",
+        "module_code": "TO6012 "
+    },
+    {
+        "module_name": "Đồ án môn học Quá trình và thiết bị",
+        "module_id": "5802",
+        "module_code": "CT6063 "
+    },
+    {
+        "module_name": "Di tích và danh thắng Việt Nam",
+        "module_id": "5803",
+        "module_code": "TO6015 "
+    },
+    {
+        "module_name": "Độc học môi trường",
+        "module_id": "5808",
+        "module_code": "CT6068 "
+    },
+    {
+        "module_name": "Hóa học và công nghệ polyme",
+        "module_id": "5816",
+        "module_code": "CT6076 "
+    },
+    {
+        "module_name": "Hóa học xanh",
+        "module_id": "5817",
+        "module_code": "CT6077 "
+    },
+    {
+        "module_name": "Hóa hữu cơ",
+        "module_id": "5818",
+        "module_code": "CT6078 "
+    },
+    {
+        "module_name": "Hóa lý",
+        "module_id": "5820",
+        "module_code": "CT6080 "
+    },
+    {
+        "module_name": "Du lịch có trách nhiệm",
+        "module_id": "5821",
+        "module_code": "TO6016 "
+    },
+    {
+        "module_name": "Địa lý du lịch",
+        "module_id": "5824",
+        "module_code": "TO6019 "
+    },
+    {
+        "module_name": "Giao tiếp trong du lịch",
+        "module_id": "5827",
+        "module_code": "TO6022 "
+    },
+    {
+        "module_name": "Hướng dẫn du lịch",
+        "module_id": "5831",
+        "module_code": "TO6041 "
+    },
+    {
+        "module_name": "Marketing du lịch",
+        "module_id": "5851",
+        "module_code": "TO6035 "
+    },
+    {
+        "module_name": "Quản trị chất lượng dịch vụ du lịch",
+        "module_id": "5876",
+        "module_code": "TO6052 "
+    },
+    {
+        "module_name": "Quản trị kinh doanh lữ hành",
+        "module_id": "5877",
+        "module_code": "TO6053 "
+    },
+    {
+        "module_name": "Tin học ứng dụng trong du lịch",
+        "module_id": "5882",
+        "module_code": "TO6058 "
+    },
+    {
+        "module_name": "Tuyến điểm du lịch Việt Nam",
+        "module_id": "5885",
+        "module_code": "TO6061 "
+    },
+    {
+        "module_name": "Thực tập chuyên ngành",
+        "module_id": "5896",
+        "module_code": "TO6074 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "5898",
+        "module_code": "TO6070 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "5899",
+        "module_code": "TO6071 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "5900",
+        "module_code": "TO6072 "
+    },
+    {
+        "module_name": "Hóa môi trường",
+        "module_id": "5902",
+        "module_code": "CT6082 "
+    },
+    {
+        "module_name": "Hóa phân tích",
+        "module_id": "5903",
+        "module_code": "CT6083 "
+    },
+    {
+        "module_name": "Hóa ứng dụng",
+        "module_id": "5906",
+        "module_code": "CT6193 "
+    },
+    {
+        "module_name": "Kiến tập sản xuất",
+        "module_id": "5912",
+        "module_code": "CT6091 "
+    },
+    {
+        "module_name": "Kiến tập sản xuất",
+        "module_id": "5913",
+        "module_code": "CT6092 "
+    },
+    {
+        "module_name": "Kỹ thuật kiểm soát ô nhiễm không khí và tiếng ồn",
+        "module_id": "5917",
+        "module_code": "CT6096 "
+    },
+    {
+        "module_name": "Kỹ thuật lấy mẫu và xử lý mẫu",
+        "module_id": "5918",
+        "module_code": "CT6097 "
+    },
+    {
+        "module_name": "Kỹ thuật phản ứng",
+        "module_id": "5919",
+        "module_code": "CT6098 "
+    },
+    {
+        "module_name": "Kỹ thuật xử lý nước cấp",
+        "module_id": "5922",
+        "module_code": "CT6101 "
+    },
+    {
+        "module_name": "Kỹ thuật xử lý nước thải",
+        "module_id": "5923",
+        "module_code": "CT6102 "
+    },
+    {
+        "module_name": "Máy và thiết bị chế biến thực phẩm",
+        "module_id": "5925",
+        "module_code": "CT6104 "
+    },
+    {
+        "module_name": "Mô hình hóa môi trường",
+        "module_id": "5926",
+        "module_code": "CT6105 "
+    },
+    {
+        "module_name": "Phân tích thực phẩm",
+        "module_id": "5936",
+        "module_code": "CT6117 "
+    },
+    {
+        "module_name": "Phụ gia thực phẩm",
+        "module_id": "5940",
+        "module_code": "CT6121 "
+    },
+    {
+        "module_name": "Phương pháp phân tích quang học",
+        "module_id": "5942",
+        "module_code": "CT6123 "
+    },
+    {
+        "module_name": "Quá trình và thiết bị cơ học",
+        "module_id": "5946",
+        "module_code": "CT6127 "
+    },
+    {
+        "module_name": "Quá trình và thiết bị truyền khối",
+        "module_id": "5947",
+        "module_code": "CT6128 "
+    },
+    {
+        "module_name": "Quản lý môi trường",
+        "module_id": "5950",
+        "module_code": "CT6131 "
+    },
+    {
+        "module_name": "Tin học ứng dụng trong kỹ thuật môi trường",
+        "module_id": "5957",
+        "module_code": "CT6138 "
+    },
+    {
+        "module_name": "Tổng hợp hữu cơ-hóa dầu",
+        "module_id": "5960",
+        "module_code": "CT6141 "
+    },
+    {
+        "module_name": "Thí nghiệm hóa hữu cơ",
+        "module_id": "5962",
+        "module_code": "CT6143 "
+    },
+    {
+        "module_name": "Thí nghiệm hóa lý",
+        "module_id": "5963",
+        "module_code": "CT6144 "
+    },
+    {
+        "module_name": "Thí nghiệm hóa phân tích",
+        "module_id": "5964",
+        "module_code": "CT6145 "
+    },
+    {
+        "module_name": "Thí nghiệm phân tích quang học",
+        "module_id": "5968",
+        "module_code": "CT6149 "
+    },
+    {
+        "module_name": "Thí nghiệm vi sinh thực phẩm",
+        "module_id": "5969",
+        "module_code": "CT6150 "
+    },
+    {
+        "module_name": "Thuốc nano",
+        "module_id": "5974",
+        "module_code": "CT6155 "
+    },
+    {
+        "module_name": "Thực hành công nghệ chế biến sữa và các sản phẩm từ sữa ",
+        "module_id": "5976",
+        "module_code": "CT6157 "
+    },
+    {
+        "module_name": "Thực hành Công nghệ kỹ thuật môi trường 2",
+        "module_id": "5979",
+        "module_code": "CT6160 "
+    },
+    {
+        "module_name": "Thực hành công nghệ lên men",
+        "module_id": "5980",
+        "module_code": "CT6161 "
+    },
+    {
+        "module_name": "Thực hành chuyên ngành Công nghệ hóa phân tích 2",
+        "module_id": "5984",
+        "module_code": "CT6165 "
+    },
+    {
+        "module_name": "Thực hành phân tích thực phẩm",
+        "module_id": "5994",
+        "module_code": "CT6175 "
+    },
+    {
+        "module_name": "Thực hành Quá trình và thiết bị",
+        "module_id": "5995",
+        "module_code": "CT6176 "
+    },
+    {
+        "module_name": "Thực hành vật liệu vô cơ-phân bón",
+        "module_id": "5998",
+        "module_code": "CT6179 "
+    },
+    {
+        "module_name": "Vật liệu mới trong xử lý môi trường",
+        "module_id": "6003",
+        "module_code": "CT6184 "
+    },
+    {
+        "module_name": "Vật liệu polime y sinh",
+        "module_id": "6004",
+        "module_code": "CT6185 "
+    },
+    {
+        "module_name": "Vi sinh thực phẩm",
+        "module_id": "6008",
+        "module_code": "CT6189 "
+    },
+    {
+        "module_name": "Cải tiến sản xuất",
+        "module_id": "6012",
+        "module_code": "GF6001 "
+    },
+    {
+        "module_name": "Công nghệ may cơ bản",
+        "module_id": "6013",
+        "module_code": "GF6002 "
+    },
+    {
+        "module_name": "Công nghệ sản xuất may công nghiệp",
+        "module_id": "6014",
+        "module_code": "GF6003 "
+    },
+    {
+        "module_name": "Dự báo xu hướng Thời trang",
+        "module_id": "6017",
+        "module_code": "GF6006 "
+    },
+    {
+        "module_name": "Đồ án chuyên ngành Thiết kế thời trang",
+        "module_id": "6019",
+        "module_code": "GF6008 "
+    },
+    {
+        "module_name": "Đồ án môn học Công nghệ may",
+        "module_id": "6046",
+        "module_code": "GF6009 "
+    },
+    {
+        "module_name": "Kỹ thuật đánh giá mẫu",
+        "module_id": "6055",
+        "module_code": "GF6018 "
+    },
+    {
+        "module_name": "Lịch sử mỹ thuật Việt Nam",
+        "module_id": "6057",
+        "module_code": "GF6020 "
+    },
+    {
+        "module_name": "Lịch sử trang phục",
+        "module_id": "6058",
+        "module_code": "GF6021 "
+    },
+    {
+        "module_name": "Mỹ thuật trang phục ",
+        "module_id": "6060",
+        "module_code": "GF6023 "
+    },
+    {
+        "module_name": "Nguyên lý thị giác",
+        "module_id": "6061",
+        "module_code": "GF6024 "
+    },
+    {
+        "module_name": "Nhân trắc học-Ecgonomi",
+        "module_id": "6062",
+        "module_code": "GF6025 "
+    },
+    {
+        "module_name": "Quản lý chất lượng may công nghiệp",
+        "module_id": "6065",
+        "module_code": "GF6027 "
+    },
+    {
+        "module_name": "Quản lý đơn hàng ngành may",
+        "module_id": "6066",
+        "module_code": "GF6028 "
+    },
+    {
+        "module_name": "Sáng tác thời trang",
+        "module_id": "6068",
+        "module_code": "GF6030 "
+    },
+    {
+        "module_name": "Thiết kế chuyển đổi mẫu",
+        "module_id": "6074",
+        "module_code": "GF6036 "
+    },
+    {
+        "module_name": "Thiết kế quần áo trẻ em",
+        "module_id": "6077",
+        "module_code": "GF6039 "
+    },
+    {
+        "module_name": "Thiết kế trang phục cơ bản",
+        "module_id": "6081",
+        "module_code": "GF6043 "
+    },
+    {
+        "module_name": "Thiết kế trên manocanh",
+        "module_id": "6085",
+        "module_code": "GF6047 "
+    },
+    {
+        "module_name": "Thiết kế và chế thử trang phục truyền thống",
+        "module_id": "6086",
+        "module_code": "GF6048 "
+    },
+    {
+        "module_name": "Thiết kế và điều hành dây chuyền may",
+        "module_id": "6087",
+        "module_code": "GF6049 "
+    },
+    {
+        "module_name": "Thiết kế và giác sơ đồ trên máy tính",
+        "module_id": "6088",
+        "module_code": "GF6051 "
+    },
+    {
+        "module_name": "Thực hành công nghệ may trang phục khoác ngoài",
+        "module_id": "6090",
+        "module_code": "GF6054 "
+    },
+    {
+        "module_name": "Thực tập sản xuất",
+        "module_id": "6095",
+        "module_code": "GF6059 "
+    },
+    {
+        "module_name": "Trang điểm và nhiếp ảnh",
+        "module_id": "6096",
+        "module_code": "GF6060 "
+    },
+    {
+        "module_name": "Trang phục cộng đồng các dân tộc Việt Nam",
+        "module_id": "6097",
+        "module_code": "GF6061 "
+    },
+    {
+        "module_name": "Thương mại điện tử trong du lịch",
+        "module_id": "6101",
+        "module_code": "TO6077 "
+    },
+    {
+        "module_name": "Bảo dưỡng thiết bị điện công nghiệp",
+        "module_id": "6105",
+        "module_code": "EE6004 "
+    },
+    {
+        "module_name": "Công nghệ chế tạo máy điện",
+        "module_id": "6108",
+        "module_code": "EE6007 "
+    },
+    {
+        "module_name": "Cung cấp điện",
+        "module_id": "6109",
+        "module_code": "EE6008 "
+    },
+    {
+        "module_name": "Điện tử công suất",
+        "module_id": "6111",
+        "module_code": "EE6010 "
+    },
+    {
+        "module_name": "Điều khiển điện-khí nén-thủy lực",
+        "module_id": "6113",
+        "module_code": "EE6012 "
+    },
+    {
+        "module_name": "Điều khiển số",
+        "module_id": "6117",
+        "module_code": "EE6016 "
+    },
+    {
+        "module_name": "Đồ án Điều khiển logic và trang bị điện",
+        "module_id": "6119",
+        "module_code": "EE6018 "
+    },
+    {
+        "module_name": "Đồ án Hệ thống đo lường điều khiển",
+        "module_id": "6120",
+        "module_code": "EE6019 "
+    },
+    {
+        "module_name": "Hệ thống quản lý và tự động hóa tòa nhà",
+        "module_id": "6126",
+        "module_code": "EE6025 "
+    },
+    {
+        "module_name": "Hệ thống sản xuất linh hoạt",
+        "module_id": "6127",
+        "module_code": "EE6027 "
+    },
+    {
+        "module_name": "Hệ thống SCADA và DCS",
+        "module_id": "6128",
+        "module_code": "EE6028 "
+    },
+    {
+        "module_name": "Hệ thu thập dữ liệu điều khiển và truyền số liệu",
+        "module_id": "6129",
+        "module_code": "EE6029 "
+    },
+    {
+        "module_name": "Kỹ thuật điều khiển bằng máy tính",
+        "module_id": "6131",
+        "module_code": "EE6031 "
+    },
+    {
+        "module_name": "Kỹ thuật đo lường và cảm biến",
+        "module_id": "6132",
+        "module_code": "EE6032 "
+    },
+    {
+        "module_name": "Kỹ thuật lập trình PLC",
+        "module_id": "6133",
+        "module_code": "EE6033 "
+    },
+    {
+        "module_name": "Khí cụ điện",
+        "module_id": "6136",
+        "module_code": "EE6036 "
+    },
+    {
+        "module_name": "Lý thuyết điều khiển tự động",
+        "module_id": "6138",
+        "module_code": "EE6038 "
+    },
+    {
+        "module_name": "Mạch điện 2",
+        "module_id": "6140",
+        "module_code": "EE6040 "
+    },
+    {
+        "module_name": "Máy điện đặc biệt",
+        "module_id": "6143",
+        "module_code": "EE6043 "
+    },
+    {
+        "module_name": "Thiết kế hệ thống cung cấp điện",
+        "module_id": "6151",
+        "module_code": "EE6051 "
+    },
+    {
+        "module_name": "Thiết kế, lắp đặt tủ điện",
+        "module_id": "6153",
+        "module_code": "EE6053 "
+    },
+    {
+        "module_name": "Thực hành điện cơ bản",
+        "module_id": "6154",
+        "module_code": "EE6054 "
+    },
+    {
+        "module_name": "Thực hành truyền động điện",
+        "module_id": "6158",
+        "module_code": "EE6059 "
+    },
+    {
+        "module_name": "Trang bị điện",
+        "module_id": "6162",
+        "module_code": "EE6063 "
+    },
+    {
+        "module_name": "Truyền động điện",
+        "module_id": "6163",
+        "module_code": "EE6064 "
+    },
+    {
+        "module_name": "Vận hành lưới điện phân phối",
+        "module_id": "6164",
+        "module_code": "EE6065 "
+    },
+    {
+        "module_name": "Vẽ điện",
+        "module_id": "6166",
+        "module_code": "EE6067 "
+    },
+    {
+        "module_name": "Vi mạch tương tự và vi mạch số",
+        "module_id": "6167",
+        "module_code": "EE6068 "
+    },
+    {
+        "module_name": "Vi xử lý trong đo lường và điều khiển",
+        "module_id": "6168",
+        "module_code": "EE6069 "
+    },
+    {
+        "module_name": "Điện tử số",
+        "module_id": "6171",
+        "module_code": "FE6002 "
+    },
+    {
+        "module_name": "Điện tử tương tự",
+        "module_id": "6172",
+        "module_code": "FE6003 "
+    },
+    {
+        "module_name": "Đo lường điều khiển bằng máy tính",
+        "module_id": "6176",
+        "module_code": "FE6007 "
+    },
+    {
+        "module_name": "Đồ án chuyên ngành Điện tử-viễn thông",
+        "module_id": "6177",
+        "module_code": "FE6008 "
+    },
+    {
+        "module_name": "Đồ án Điện tử cơ bản",
+        "module_id": "6178",
+        "module_code": "FE6009 "
+    },
+    {
+        "module_name": "Kỹ thuật cảm biến",
+        "module_id": "6182",
+        "module_code": "FE6013 "
+    },
+    {
+        "module_name": "Kỹ thuật điện tử",
+        "module_id": "6183",
+        "module_code": "FE6014 "
+    },
+    {
+        "module_name": "Kỹ thuật xung số",
+        "module_id": "6189",
+        "module_code": "FE6021 "
+    },
+    {
+        "module_name": "Lý thuyết mạch",
+        "module_id": "6191",
+        "module_code": "FE6023 "
+    },
+    {
+        "module_name": "Nhập môn về kỹ thuật",
+        "module_id": "6197",
+        "module_code": "FE6029 "
+    },
+    {
+        "module_name": "SCADA",
+        "module_id": "6199",
+        "module_code": "FE6031 "
+    },
+    {
+        "module_name": "Tín hiệu và hệ thống",
+        "module_id": "6200",
+        "module_code": "FE6032 "
+    },
+    {
+        "module_name": "Thiết bị điện tử công nghiệp",
+        "module_id": "6201",
+        "module_code": "FE6033 "
+    },
+    {
+        "module_name": "Thiết kế hệ thống nhúng",
+        "module_id": "6202",
+        "module_code": "FE6034 "
+    },
+    {
+        "module_name": "Thực hành Điện tử cơ bản",
+        "module_id": "6204",
+        "module_code": "FE6036 "
+    },
+    {
+        "module_name": "Thực hành điện tử tương tự",
+        "module_id": "6205",
+        "module_code": "FE6037 "
+    },
+    {
+        "module_name": "Thực hành PLC và mạng truyền thông công nghiệp",
+        "module_id": "6207",
+        "module_code": "FE6039 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "6208",
+        "module_code": "FE6040 "
+    },
+    {
+        "module_name": "Vi xử lý và cấu trúc máy tính",
+        "module_id": "6212",
+        "module_code": "FE6044 "
+    },
+    {
+        "module_name": "Chuyên đề Kế toán trong doanh nghiệp thương mại dịch vụ",
+        "module_id": "6217",
+        "module_code": "AA6003 "
+    },
+    {
+        "module_name": "Chuyên đề Kế toán trong doanh nghiệp xây lắp",
+        "module_id": "6218",
+        "module_code": "AA6004 "
+    },
+    {
+        "module_name": "Hệ thống thông tin kế toán",
+        "module_id": "6221",
+        "module_code": "AA6007 "
+    },
+    {
+        "module_name": "Kế toán công ty",
+        "module_id": "6222",
+        "module_code": "AA6008 "
+    },
+    {
+        "module_name": "Kế toán định giá doanh nghiệp",
+        "module_id": "6224",
+        "module_code": "AA6010 "
+    },
+    {
+        "module_name": "Kế toán tài chính",
+        "module_id": "6230",
+        "module_code": "AA6016 "
+    },
+    {
+        "module_name": "Kế toán tài chính 1",
+        "module_id": "6231",
+        "module_code": "AA6017 "
+    },
+    {
+        "module_name": "Kế toán tài chính 2",
+        "module_id": "6232",
+        "module_code": "AA6018 "
+    },
+    {
+        "module_name": "Kế toán tài chính quốc tế (ACCA)",
+        "module_id": "6233",
+        "module_code": "AA6019 "
+    },
+    {
+        "module_name": "Kế toán trong kinh doanh (F1-Accountant in Business, ACCA)",
+        "module_id": "6235",
+        "module_code": "AA6021 "
+    },
+    {
+        "module_name": "Kiểm toán tài chính ",
+        "module_id": "6238",
+        "module_code": "AA6024 "
+    },
+    {
+        "module_name": "Lập và trình bày báo cáo trong đơn vị sự nghiệp",
+        "module_id": "6241",
+        "module_code": "AA6027 "
+    },
+    {
+        "module_name": "Nghiên cứu, ứng dụng trong kế toán, kiểm toán",
+        "module_id": "6243",
+        "module_code": "AA6029 "
+    },
+    {
+        "module_name": "Nguyên lý kế toán",
+        "module_id": "6244",
+        "module_code": "AA6030 "
+    },
+    {
+        "module_name": "Phân tích báo cáo tài chính ",
+        "module_id": "6246",
+        "module_code": "AA6032 "
+    },
+    {
+        "module_name": "Tổ chức công tác kế toán",
+        "module_id": "6248",
+        "module_code": "AA6034 "
+    },
+    {
+        "module_name": "Thuế và kế toán thuế 1",
+        "module_id": "6249",
+        "module_code": "AA6035 "
+    },
+    {
+        "module_name": "Thuế và kế toán thuế 2",
+        "module_id": "6250",
+        "module_code": "AA6036 "
+    },
+    {
+        "module_name": "Thực hành kế toán doanh nghiệp",
+        "module_id": "6251",
+        "module_code": "AA6037 "
+    },
+    {
+        "module_name": "Công nghệ bảo trì",
+        "module_id": "6254",
+        "module_code": "ME6045 "
+    },
+    {
+        "module_name": "Cơ cấu chấp hành và điều khiển",
+        "module_id": "6255",
+        "module_code": "ME6046 "
+    },
+    {
+        "module_name": "Cơ khí đại cương",
+        "module_id": "6256",
+        "module_code": "ME6047 "
+    },
+    {
+        "module_name": "Cơ sở hệ thống tự động",
+        "module_id": "6257",
+        "module_code": "ME6048 "
+    },
+    {
+        "module_name": "Đồ án Đo lường và điều khiển",
+        "module_id": "6260",
+        "module_code": "ME6051 "
+    },
+    {
+        "module_name": "Đồ án môn học Cơ điện tử",
+        "module_id": "6261",
+        "module_code": "ME6052 "
+    },
+    {
+        "module_name": "Nguyên lý-Chi tiết máy",
+        "module_id": "6267",
+        "module_code": "ME6058 "
+    },
+    {
+        "module_name": "Robot di động",
+        "module_id": "6268",
+        "module_code": "ME6059 "
+    },
+    {
+        "module_name": "Tác phong làm việc chuyên nghiệp",
+        "module_id": "6269",
+        "module_code": "ME6060 "
+    },
+    {
+        "module_name": "Thiết kế hệ thống cơ điện tử ",
+        "module_id": "6270",
+        "module_code": "ME6061 "
+    },
+    {
+        "module_name": "Thiết kế và phát triển sản phẩm",
+        "module_id": "6271",
+        "module_code": "ME6062 "
+    },
+    {
+        "module_name": "Thực hành cơ điện tử",
+        "module_id": "6272",
+        "module_code": "ME6063 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "6273",
+        "module_code": "ME6064 "
+    },
+    {
+        "module_name": "Giải tích",
+        "module_id": "6276",
+        "module_code": "BS6010 "
+    },
+    {
+        "module_name": "Kinh tế lượng",
+        "module_id": "6277",
+        "module_code": "BS6011 "
+    },
+    {
+        "module_name": "Lý thuyết xác suất ",
+        "module_id": "6278",
+        "module_code": "BS6012 "
+    },
+    {
+        "module_name": "Mô hình toán ",
+        "module_id": "6279",
+        "module_code": "BS6013 "
+    },
+    {
+        "module_name": "Luật sở hữu trí tuệ",
+        "module_id": "6282",
+        "module_code": "LP6006 "
+    },
+    {
+        "module_name": "Pháp luật trong kinh doanh",
+        "module_id": "6283",
+        "module_code": "LP6007 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ kỹ thuật hóa học cơ bản 3",
+        "module_id": "6287",
+        "module_code": "FL6138 "
+    },
+    {
+        "module_name": "Tiếng Anh Điện-Điện tử cơ bản 3",
+        "module_id": "6310",
+        "module_code": "FL6132 "
+    },
+    {
+        "module_name": "Tiếng Anh Điện-Điện tử cơ bản 4",
+        "module_id": "6311",
+        "module_code": "FL6133 "
+    },
+    {
+        "module_name": "Tiếng Anh May-Thiết kế thời trang cơ bản 3",
+        "module_id": "6322",
+        "module_code": "FL6150 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ Ô tô cơ bản 3",
+        "module_id": "6328",
+        "module_code": "FL6156 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ Ô tô cơ bản 4",
+        "module_id": "6329",
+        "module_code": "FL6157 "
+    },
+    {
+        "module_name": "Tiếng Anh Thương mại cơ bản 1",
+        "module_id": "6332",
+        "module_code": "FL6160 "
+    },
+    {
+        "module_name": "Tiếng Anh Thương mại cơ bản 3",
+        "module_id": "6334",
+        "module_code": "FL6162 "
+    },
+    {
+        "module_name": "Chuyên đề khởi sự kinh doanh",
+        "module_id": "6337",
+        "module_code": "BM6003 "
+    },
+    {
+        "module_name": "Dự toán ngân sách doanh nghiệp",
+        "module_id": "6344",
+        "module_code": "BM6010 "
+    },
+    {
+        "module_name": "Định giá tài sản",
+        "module_id": "6346",
+        "module_code": "BM6012 "
+    },
+    {
+        "module_name": "Hành vi tổ chức",
+        "module_id": "6348",
+        "module_code": "BM6014 "
+    },
+    {
+        "module_name": "Hệ thống thông tin quản lý",
+        "module_id": "6349",
+        "module_code": "BM6015 "
+    },
+    {
+        "module_name": "Kế toán ngân hàng",
+        "module_id": "6350",
+        "module_code": "BM6016 "
+    },
+    {
+        "module_name": "Kinh doanh quốc tế",
+        "module_id": "6351",
+        "module_code": "BM6017 "
+    },
+    {
+        "module_name": "Kinh tế học vi mô",
+        "module_id": "6355",
+        "module_code": "BM6021 "
+    },
+    {
+        "module_name": "Kinh tế học vĩ mô",
+        "module_id": "6356",
+        "module_code": "BM6022 "
+    },
+    {
+        "module_name": "Kinh tế phát triển",
+        "module_id": "6357",
+        "module_code": "BM6023 "
+    },
+    {
+        "module_name": "Kỹ năng đàm phán và ký kết hợp đồng kinh tế",
+        "module_id": "6360",
+        "module_code": "BM6026 "
+    },
+    {
+        "module_name": "Kỹ năng lãnh đạo",
+        "module_id": "6361",
+        "module_code": "BM6027 "
+    },
+    {
+        "module_name": "Lập kế hoạch nghề nghiệp",
+        "module_id": "6365",
+        "module_code": "BM6031 "
+    },
+    {
+        "module_name": "Lý thuyết tài chính tiền tệ",
+        "module_id": "6369",
+        "module_code": "BM6035 "
+    },
+    {
+        "module_name": "Lý thuyết thống kê",
+        "module_id": "6370",
+        "module_code": "BM6036 "
+    },
+    {
+        "module_name": "Marketing căn bản",
+        "module_id": "6371",
+        "module_code": "BM6037 "
+    },
+    {
+        "module_name": "Ngân hàng thương mại 1",
+        "module_id": "6373",
+        "module_code": "BM6039 "
+    },
+    {
+        "module_name": "Phân tích đầu tư chứng khoán",
+        "module_id": "6378",
+        "module_code": "BM6044 "
+    },
+    {
+        "module_name": "Phân tích tài chính doanh nghiệp",
+        "module_id": "6379",
+        "module_code": "BM6045 "
+    },
+    {
+        "module_name": "Phương pháp nghiên cứu khoa học",
+        "module_id": "6380",
+        "module_code": "BM6046 "
+    },
+    {
+        "module_name": "Phương pháp nghiên cứu khoa học.",
+        "module_id": "6381",
+        "module_code": "BM6047 "
+    },
+    {
+        "module_name": "Quản lý danh mục đầu tư",
+        "module_id": "6382",
+        "module_code": "BM6048 "
+    },
+    {
+        "module_name": "Quản trị chất lượng",
+        "module_id": "6385",
+        "module_code": "BM6051 "
+    },
+    {
+        "module_name": "Quản trị chiến lược",
+        "module_id": "6386",
+        "module_code": "BM6052 "
+    },
+    {
+        "module_name": "Quản trị chuỗi cung ứng",
+        "module_id": "6387",
+        "module_code": "BM6053 "
+    },
+    {
+        "module_name": "Quản trị doanh nghiệp",
+        "module_id": "6388",
+        "module_code": "BM6054 "
+    },
+    {
+        "module_name": "Quản trị dự án đầu tư",
+        "module_id": "6389",
+        "module_code": "BM6055 "
+    },
+    {
+        "module_name": "Quản trị đổi mới",
+        "module_id": "6390",
+        "module_code": "BM6056 "
+    },
+    {
+        "module_name": "Quản trị học",
+        "module_id": "6391",
+        "module_code": "BM6057 "
+    },
+    {
+        "module_name": "Quản trị marketing",
+        "module_id": "6392",
+        "module_code": "BM6058 "
+    },
+    {
+        "module_name": "Quản trị nhân lực",
+        "module_id": "6393",
+        "module_code": "BM6059 "
+    },
+    {
+        "module_name": "Quản trị rủi ro",
+        "module_id": "6395",
+        "module_code": "BM6061 "
+    },
+    {
+        "module_name": "Quản trị sản xuất",
+        "module_id": "6397",
+        "module_code": "BM6063 "
+    },
+    {
+        "module_name": "Quản trị tài chính doanh nghiệp",
+        "module_id": "6398",
+        "module_code": "BM6064 "
+    },
+    {
+        "module_name": "Quản trị thương hiệu",
+        "module_id": "6399",
+        "module_code": "BM6065 "
+    },
+    {
+        "module_name": "Tài chính công",
+        "module_id": "6400",
+        "module_code": "BM6066 "
+    },
+    {
+        "module_name": "Tài chính doanh nghiệp 1",
+        "module_id": "6401",
+        "module_code": "BM6067 "
+    },
+    {
+        "module_name": "Tin học ứng dụng trong Tài chính-Ngân hàng",
+        "module_id": "6406",
+        "module_code": "BM6072 "
+    },
+    {
+        "module_name": "Toán tài chính",
+        "module_id": "6407",
+        "module_code": "BM6073 "
+    },
+    {
+        "module_name": "Thanh toán quốc tế",
+        "module_id": "6408",
+        "module_code": "BM6074 "
+    },
+    {
+        "module_name": "Thị trường chứng khoán",
+        "module_id": "6409",
+        "module_code": "BM6075 "
+    },
+    {
+        "module_name": "Thống kê doanh nghiệp",
+        "module_id": "6411",
+        "module_code": "BM6077 "
+    },
+    {
+        "module_name": "Thuế",
+        "module_id": "6412",
+        "module_code": "BM6078 "
+    },
+    {
+        "module_name": "Thực hành nghề nghiệp",
+        "module_id": "6414",
+        "module_code": "BM6080 "
+    },
+    {
+        "module_name": "Bóng bàn 1",
+        "module_id": "6422",
+        "module_code": "PE6017 "
+    },
+    {
+        "module_name": "Bóng bàn 2",
+        "module_id": "6425",
+        "module_code": "PE6018 "
+    },
+    {
+        "module_name": "Bóng rổ 1",
+        "module_id": "6430",
+        "module_code": "PE6021 "
+    },
+    {
+        "module_name": "Bóng rổ 2",
+        "module_id": "6432",
+        "module_code": "PE6022 "
+    },
+    {
+        "module_name": "Cầu lông 1",
+        "module_id": "6436",
+        "module_code": "PE6025 "
+    },
+    {
+        "module_name": "Cầu lông 2",
+        "module_id": "6441",
+        "module_code": "PE6026 "
+    },
+    {
+        "module_name": "Tennis 1",
+        "module_id": "6445",
+        "module_code": "PE6019 "
+    },
+    {
+        "module_name": "Tennis 2",
+        "module_id": "6446",
+        "module_code": "PE6020 "
+    },
+    {
+        "module_name": "Luật kinh tế",
+        "module_id": "6476",
+        "module_code": "LP6008 "
+    },
+    {
+        "module_name": "Kỹ năng nghe tiếng Hàn Quốc 3",
+        "module_id": "6496",
+        "module_code": "FL6184 "
+    },
+    {
+        "module_name": "Kỹ năng nói tiếng Hàn Quốc 3",
+        "module_id": "6497",
+        "module_code": "FL6185 "
+    },
+    {
+        "module_name": "Kỹ năng đọc tiếng Hàn Quốc 3",
+        "module_id": "6498",
+        "module_code": "FL6186 "
+    },
+    {
+        "module_name": "Kỹ năng viết tiếng Hàn Quốc 3",
+        "module_id": "6499",
+        "module_code": "FL6187 "
+    },
+    {
+        "module_name": "Ngữ pháp tiếng Hàn Quốc 3",
+        "module_id": "6500",
+        "module_code": "FL6188 "
+    },
+    {
+        "module_name": "Kỹ năng nghe tiếng Hàn Quốc 5",
+        "module_id": "6506",
+        "module_code": "FL6194 "
+    },
+    {
+        "module_name": "Kỹ năng nói tiếng Hàn Quốc 5",
+        "module_id": "6507",
+        "module_code": "FL6195 "
+    },
+    {
+        "module_name": "Kỹ năng đọc tiếng Hàn Quốc 5",
+        "module_id": "6508",
+        "module_code": "FL6196 "
+    },
+    {
+        "module_name": "Kỹ năng viết tiếng Hàn Quốc 5",
+        "module_id": "6509",
+        "module_code": "FL6197 "
+    },
+    {
+        "module_name": "Biên dịch tiếng Hàn Quốc 1",
+        "module_id": "6518",
+        "module_code": "FL6206 "
+    },
+    {
+        "module_name": "Phiên dịch tiếng Hàn Quốc 3",
+        "module_id": "6523",
+        "module_code": "FL6211 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "6524",
+        "module_code": "FL6212 "
+    },
+    {
+        "module_name": "Tiếng Hàn Quốc công nghệ thông tin",
+        "module_id": "6529",
+        "module_code": "FL6217 "
+    },
+    {
+        "module_name": "Tiếng Hàn Quốc du lịch-khách sạn",
+        "module_id": "6531",
+        "module_code": "FL6219 "
+    },
+    {
+        "module_name": "Tiếng Hàn Quốc kinh tế-thương mại",
+        "module_id": "6532",
+        "module_code": "FL6220 "
+    },
+    {
+        "module_name": "Đá cầu 1",
+        "module_id": "6551",
+        "module_code": "PE6029 "
+    },
+    {
+        "module_name": "Đá cầu 2",
+        "module_id": "6552",
+        "module_code": "PE6030 "
+    },
+    {
+        "module_name": "Kinh tế kỹ thuật",
+        "module_id": "6691",
+        "module_code": "ME6067 "
+    },
+    {
+        "module_name": "Thiết kế công việc và đo lường lao động",
+        "module_id": "6693",
+        "module_code": "ME6069 "
+    },
+    {
+        "module_name": "Mô hình hoá và mô phỏng Hệ thống công nghiệp",
+        "module_id": "6695",
+        "module_code": "ME6071 "
+    },
+    {
+        "module_name": "Kỹ thuật ra quyết định",
+        "module_id": "6697",
+        "module_code": "ME6073 "
+    },
+    {
+        "module_name": "Thực tập Kỹ thuật ",
+        "module_id": "6698",
+        "module_code": "ME6074 "
+    },
+    {
+        "module_name": "Kỹ thuật hệ thống ",
+        "module_id": "6699",
+        "module_code": "ME6075 "
+    },
+    {
+        "module_name": "Kỹ thuật điều độ",
+        "module_id": "6700",
+        "module_code": "ME6076 "
+    },
+    {
+        "module_name": "Quản lý vật tư và tồn kho",
+        "module_id": "6701",
+        "module_code": "BM6090 "
+    },
+    {
+        "module_name": "ĐA nghiên cứu khả thi hệ thống công nghiệp",
+        "module_id": "6703",
+        "module_code": "ME6078 "
+    },
+    {
+        "module_name": "Thuốc nhuộm và chất trợ dệt",
+        "module_id": "6714",
+        "module_code": "CT6196 "
+    },
+    {
+        "module_name": "Công nghệ và thiết bị kéo sợi 1",
+        "module_id": "6716",
+        "module_code": "GF6071 "
+    },
+    {
+        "module_name": "Công nghệ và thiết bị dệt thoi 1",
+        "module_id": "6718",
+        "module_code": "GF6073 "
+    },
+    {
+        "module_name": "Công nghệ và thiết bị dệt kim 2",
+        "module_id": "6721",
+        "module_code": "GF6076 "
+    },
+    {
+        "module_name": "Công nghệ và thiết bị nhuộm, in hoa",
+        "module_id": "6724",
+        "module_code": "GF6079 "
+    },
+    {
+        "module_name": "Công nghệ xử lý hoàn tất sản phẩm dệt may",
+        "module_id": "6725",
+        "module_code": "GF6080 "
+    },
+    {
+        "module_name": "Cơ sở xây dựng nhà máy sợi, dệt, nhuộm",
+        "module_id": "6727",
+        "module_code": "GF6082 "
+    },
+    {
+        "module_name": "Đồ án thiết kế dây chuyền vải dệt kim",
+        "module_id": "6730",
+        "module_code": "GF6085 "
+    },
+    {
+        "module_name": "Đồ án thiết kế dây chuyền nhuộm, in hoa và xử lý hoàn tất sản phẩm dệt may",
+        "module_id": "6731",
+        "module_code": "GF6086 "
+    },
+    {
+        "module_name": "Kiểm tra chất lượng sản phẩm dệt may",
+        "module_id": "6732",
+        "module_code": "GF6087 "
+    },
+    {
+        "module_name": "Quản lý sản xuất dệt may",
+        "module_id": "6733",
+        "module_code": "GF6088 "
+    },
+    {
+        "module_name": "Thực tập công nghệ dệt thoi",
+        "module_id": "6735",
+        "module_code": "GF6090 "
+    },
+    {
+        "module_name": "Thực tập công nghệ nhuộm, in hoa và xử lý hoàn tất sản phẩm dệt",
+        "module_id": "6737",
+        "module_code": "GF6092 "
+    },
+    {
+        "module_name": "Marketing dệt may",
+        "module_id": "6739",
+        "module_code": "GF6093 "
+    },
+    {
+        "module_name": "Lý thuyết và kỹ thuật đo màu sản phẩm dệt may",
+        "module_id": "6740",
+        "module_code": "GF6094 "
+    },
+    {
+        "module_name": "Sinh thái và môi trường dệt may",
+        "module_id": "6741",
+        "module_code": "GF6095 "
+    },
+    {
+        "module_name": "Đồ án chuyên ngành",
+        "module_id": "6756",
+        "module_code": "IT6052 "
+    },
+    {
+        "module_name": "Quản trị mạng trên hệ điều hành Windows",
+        "module_id": "6760",
+        "module_code": "IT6056 "
+    },
+    {
+        "module_name": "Phát triển ứng dụng thương mại điện tử",
+        "module_id": "6761",
+        "module_code": "IT6057 "
+    },
+    {
+        "module_name": "Nhiệt động học kỹ thuật",
+        "module_id": "6768",
+        "module_code": "EE6073 "
+    },
+    {
+        "module_name": "Thiết bị trao đổi nhiệt",
+        "module_id": "6769",
+        "module_code": "EE6074 "
+    },
+    {
+        "module_name": "Vật liệu nhiệt-lạnh",
+        "module_id": "6772",
+        "module_code": "EE6077 "
+    },
+    {
+        "module_name": "Bơm, quạt, máy nén",
+        "module_id": "6774",
+        "module_code": "EE6079 "
+    },
+    {
+        "module_name": "Kỹ thuật sấy",
+        "module_id": "6775",
+        "module_code": "EE6080 "
+    },
+    {
+        "module_name": "Đo lường nhiệt",
+        "module_id": "6776",
+        "module_code": "EE6081 "
+    },
+    {
+        "module_name": "Vận hành, sửa chữa máy và thiết bị lạnh",
+        "module_id": "6778",
+        "module_code": "EE6083 "
+    },
+    {
+        "module_name": "Thiết kế kho lạnh",
+        "module_id": "6780",
+        "module_code": "EE6085 "
+    },
+    {
+        "module_name": "Thực hành máy lạnh dân dụng",
+        "module_id": "6782",
+        "module_code": "EE6087 "
+    },
+    {
+        "module_name": "Thực hành máy lạnh công nghiệp",
+        "module_id": "6783",
+        "module_code": "EE6088 "
+    },
+    {
+        "module_name": "Thiết kế hệ thống thông gió và điều hòa không khí",
+        "module_id": "6784",
+        "module_code": "EE6089 "
+    },
+    {
+        "module_name": "Chuyên đề hệ thống lạnh",
+        "module_id": "6787",
+        "module_code": "EE6092 "
+    },
+    {
+        "module_name": "Bơm nhiệt và tiết kiệm năng lượng trong điều hòa không khí ",
+        "module_id": "6789",
+        "module_code": "EE6094 "
+    },
+    {
+        "module_name": "Triết học Mác-Lênin",
+        "module_id": "6817",
+        "module_code": "LP6010 "
+    },
+    {
+        "module_name": "Kinh tế chính trị Mác-Lênin",
+        "module_id": "6818",
+        "module_code": "LP6011 "
+    },
+    {
+        "module_name": "Chủ nghĩa xã hội khoa học",
+        "module_id": "6819",
+        "module_code": "LP6012 "
+    },
+    {
+        "module_name": "Lịch sử Đảng Cộng sản Việt Nam",
+        "module_id": "6820",
+        "module_code": "LP6013 "
+    },
+    {
+        "module_name": "Tiếng Anh cơ bản 3",
+        "module_id": "6823",
+        "module_code": "FL6279 "
+    },
+    {
+        "module_name": "Tiếng Trung cơ bản 2",
+        "module_id": "6827",
+        "module_code": "FL6283 "
+    },
+    {
+        "module_name": "Tiếng Trung cơ bản 3",
+        "module_id": "6828",
+        "module_code": "FL6284 "
+    },
+    {
+        "module_name": "Tiếng Hàn cơ bản 3",
+        "module_id": "6833",
+        "module_code": "FL6289 "
+    },
+    {
+        "module_name": "Tiếng Nhật cơ bản 3",
+        "module_id": "6838",
+        "module_code": "FL6294 "
+    },
+    {
+        "module_name": "Kỹ năng nghe Tiếng Nhật 3",
+        "module_id": "6855",
+        "module_code": "FL6236 "
+    },
+    {
+        "module_name": "Kỹ năng nói Tiếng Nhật 3",
+        "module_id": "6856",
+        "module_code": "FL6237 "
+    },
+    {
+        "module_name": "Kỹ năng đọc Tiếng Nhật  3",
+        "module_id": "6857",
+        "module_code": "FL6238 "
+    },
+    {
+        "module_name": "Kỹ năng viết Tiếng Nhật  3",
+        "module_id": "6858",
+        "module_code": "FL6239 "
+    },
+    {
+        "module_name": "Ngữ pháp tiếng Nhật 3",
+        "module_id": "6859",
+        "module_code": "FL6240 "
+    },
+    {
+        "module_name": "Kỹ năng nghe Tiếng Nhật 5",
+        "module_id": "6865",
+        "module_code": "FL6246 "
+    },
+    {
+        "module_name": "Kỹ năng nói Tiếng Nhật 5",
+        "module_id": "6866",
+        "module_code": "FL6247 "
+    },
+    {
+        "module_name": "Kỹ năng đọc Tiếng Nhật 5",
+        "module_id": "6867",
+        "module_code": "FL6248 "
+    },
+    {
+        "module_name": "Kỹ năng viết Tiếng Nhật 5",
+        "module_id": "6868",
+        "module_code": "FL6249 "
+    },
+    {
+        "module_name": "Ngữ pháp tiếng Nhật 5",
+        "module_id": "6869",
+        "module_code": "FL6250 "
+    },
+    {
+        "module_name": "Hán tự tiếng Nhật 2",
+        "module_id": "6871",
+        "module_code": "FL6252 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp (Ngôn ngữ Nhật)",
+        "module_id": "6886",
+        "module_code": "FL6267 "
+    },
+    {
+        "module_name": "Tiếng Nhật công nghệ thông tin",
+        "module_id": "6891",
+        "module_code": "FL6272 "
+    },
+    {
+        "module_name": "Tiếng Nhật du lịch-khách sạn",
+        "module_id": "6893",
+        "module_code": "FL6274 "
+    },
+    {
+        "module_name": "Tiếng Nhật kinh tế-thương mại",
+        "module_id": "6894",
+        "module_code": "FL6275 "
+    },
+    {
+        "module_name": "Tiếng Anh 1",
+        "module_id": "7038",
+        "module_code": "FL6333 "
+    },
+    {
+        "module_name": "Tiếng Anh 2",
+        "module_id": "7039",
+        "module_code": "FL6334 "
+    },
+    {
+        "module_name": "Tiếng Hàn 1",
+        "module_id": "7040",
+        "module_code": "FL6335 "
+    },
+    {
+        "module_name": "Tiếng Nhật 1",
+        "module_id": "7042",
+        "module_code": "FL6337 "
+    },
+    {
+        "module_name": "Tiếng Nhật 2",
+        "module_id": "7043",
+        "module_code": "FL6338 "
+    },
+    {
+        "module_name": "Tiếng Trung 1",
+        "module_id": "7044",
+        "module_code": "FL6339 "
+    },
+    {
+        "module_name": "Tiếng Trung 2",
+        "module_id": "7045",
+        "module_code": "FL6340 "
+    },
+    {
+        "module_name": "Tiếng Anh cơ khí 1",
+        "module_id": "7046",
+        "module_code": "FL6341 "
+    },
+    {
+        "module_name": "Tiếng Anh cơ khí 2",
+        "module_id": "7047",
+        "module_code": "FL6342 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ thông tin 1",
+        "module_id": "7048",
+        "module_code": "FL6343 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ thông tin 2",
+        "module_id": "7049",
+        "module_code": "FL6344 "
+    },
+    {
+        "module_name": "Tiếng Anh Thương mại 1",
+        "module_id": "7050",
+        "module_code": "FL6345 "
+    },
+    {
+        "module_name": "Tiếng Anh Thương mại 2",
+        "module_id": "7051",
+        "module_code": "FL6346 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ ô tô 1",
+        "module_id": "7052",
+        "module_code": "FL6347 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ ô tô 2",
+        "module_id": "7053",
+        "module_code": "FL6348 "
+    },
+    {
+        "module_name": "Tiếng Anh May-Thiết kế thời trang 1",
+        "module_id": "7054",
+        "module_code": "FL6349 "
+    },
+    {
+        "module_name": "Tiếng Anh May-Thiết kế thời trang 2",
+        "module_id": "7055",
+        "module_code": "FL6350 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ kỹ thuật hóa học 1",
+        "module_id": "7056",
+        "module_code": "FL6351 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ kỹ thuật hóa học 2",
+        "module_id": "7057",
+        "module_code": "FL6352 "
+    },
+    {
+        "module_name": "Tiếng Anh Công nghệ thực phẩm 1",
+        "module_id": "7060",
+        "module_code": "FL6355 "
+    },
+    {
+        "module_name": "Tiếng Anh Điện-Điện tử 1",
+        "module_id": "7062",
+        "module_code": "FL6357 "
+    },
+    {
+        "module_name": "Tiếng Anh Điện-Điện tử 2",
+        "module_id": "7063",
+        "module_code": "FL6358 "
+    },
+    {
+        "module_name": "Tiếng Anh Du lịch 2",
+        "module_id": "7065",
+        "module_code": "FL6360 "
+    },
+    {
+        "module_name": "Tiếng Anh Lễ tân Khách sạn 1",
+        "module_id": "7066",
+        "module_code": "FL6361 "
+    },
+    {
+        "module_name": "Đổi mới sáng tạo và tư duy khởi nghiệp",
+        "module_id": "7073",
+        "module_code": "AA6040 "
+    },
+    {
+        "module_name": "Kiểm toán nội bộ",
+        "module_id": "7075",
+        "module_code": "AA6042 "
+    },
+    {
+        "module_name": "Kiểm soát nội bộ",
+        "module_id": "7076",
+        "module_code": "AA6043 "
+    },
+    {
+        "module_name": "Kiểm toán và dịch vụ đảm bảo (ACCA)",
+        "module_id": "7077",
+        "module_code": "AA6044 "
+    },
+    {
+        "module_name": "Kiểm toán hệ thống thông tin",
+        "module_id": "7079",
+        "module_code": "AA6046 "
+    },
+    {
+        "module_name": "Kỹ thuật lập trình nhúng",
+        "module_id": "7091",
+        "module_code": "FE6047 "
+    },
+    {
+        "module_name": "Truyền thông số ",
+        "module_id": "7092",
+        "module_code": "FE6048 "
+    },
+    {
+        "module_name": "Xử lý tín hiệu số ",
+        "module_id": "7093",
+        "module_code": "FE6049 "
+    },
+    {
+        "module_name": "Kỹ thuật đo lường điện tử ",
+        "module_id": "7094",
+        "module_code": "FE6050 "
+    },
+    {
+        "module_name": "Lập trình Python",
+        "module_id": "7095",
+        "module_code": "FE6051 "
+    },
+    {
+        "module_name": "Vi điều khiển",
+        "module_id": "7102",
+        "module_code": "FE6058 "
+    },
+    {
+        "module_name": "Mạng nơ-ron nhân tạo ",
+        "module_id": "7103",
+        "module_code": "FE6059 "
+    },
+    {
+        "module_name": "Thiết kế hệ thống số dùng HDL",
+        "module_id": "7104",
+        "module_code": "FE6060 "
+    },
+    {
+        "module_name": "Thông tin di động",
+        "module_id": "7105",
+        "module_code": "FE6061 "
+    },
+    {
+        "module_name": "Lọc thích nghi và tối ưu",
+        "module_id": "7106",
+        "module_code": "FE6062 "
+    },
+    {
+        "module_name": "CAD trong điện tử ",
+        "module_id": "7111",
+        "module_code": "FE6067 "
+    },
+    {
+        "module_name": "Đồ án cơ sở ngành",
+        "module_id": "7112",
+        "module_code": "FE6068 "
+    },
+    {
+        "module_name": "Đồ án chuyên ngành",
+        "module_id": "7115",
+        "module_code": "FE6071 "
+    },
+    {
+        "module_name": "Lập trình mạng và truyền thông",
+        "module_id": "7116",
+        "module_code": "FE6072 "
+    },
+    {
+        "module_name": "Thiết kế phần mềm dựa trên mã nguồn mở",
+        "module_id": "7117",
+        "module_code": "FE6073 "
+    },
+    {
+        "module_name": "Học máy và nhận dạng",
+        "module_id": "7118",
+        "module_code": "FE6074 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "7119",
+        "module_code": "FE6075 "
+    },
+    {
+        "module_name": "Thiết kế mạch số",
+        "module_id": "7122",
+        "module_code": "FE6078 "
+    },
+    {
+        "module_name": "Mạng máy tính và truyền thông ",
+        "module_id": "7123",
+        "module_code": "FE6079 "
+    },
+    {
+        "module_name": "Nhập môn IoT",
+        "module_id": "7125",
+        "module_code": "FE6081 "
+    },
+    {
+        "module_name": "Phân tích và thiết kế hệ thống truyền thông",
+        "module_id": "7126",
+        "module_code": "FE6082 "
+    },
+    {
+        "module_name": "Đồ án cơ sở ngành",
+        "module_id": "7127",
+        "module_code": "FE6083 "
+    },
+    {
+        "module_name": "Lý thuyết anten và truyền sóng ",
+        "module_id": "7129",
+        "module_code": "FE6085 "
+    },
+    {
+        "module_name": "An toàn mạng máy tính và truyền thông",
+        "module_id": "7132",
+        "module_code": "FE6088 "
+    },
+    {
+        "module_name": "Chuyển mạch và định tuyến",
+        "module_id": "7133",
+        "module_code": "FE6089 "
+    },
+    {
+        "module_name": "Hệ thống nhúng cho truyền thông dữ liệu",
+        "module_id": "7134",
+        "module_code": "FE6090 "
+    },
+    {
+        "module_name": "Kiểm thử hệ thống mạng và truyền thông",
+        "module_id": "7135",
+        "module_code": "FE6091 "
+    },
+    {
+        "module_name": "Quản trị hệ thống trên nền tảng Linux ",
+        "module_id": "7136",
+        "module_code": "FE6092 "
+    },
+    {
+        "module_name": "Đồ án chuyên ngành",
+        "module_id": "7138",
+        "module_code": "FE6094 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "7145",
+        "module_code": "FE6101 "
+    },
+    {
+        "module_name": "Mạch điện quá độ và phi tuyến",
+        "module_id": "7149",
+        "module_code": "EE6101 "
+    },
+    {
+        "module_name": "Kỹ thuật lập trình C và C++",
+        "module_id": "7150",
+        "module_code": "EE6102 "
+    },
+    {
+        "module_name": "Kỹ thuật mạch tương tự",
+        "module_id": "7151",
+        "module_code": "EE6103 "
+    },
+    {
+        "module_name": "Mạch số cơ bản",
+        "module_id": "7152",
+        "module_code": "EE6104 "
+    },
+    {
+        "module_name": "Vật liệu kỹ thuật điện",
+        "module_id": "7153",
+        "module_code": "EE6105 "
+    },
+    {
+        "module_name": "An toàn điện ",
+        "module_id": "7154",
+        "module_code": "EE6106 "
+    },
+    {
+        "module_name": "Thực hành kỹ thuật lập trình PLC",
+        "module_id": "7156",
+        "module_code": "EE6109 "
+    },
+    {
+        "module_name": "Đồ án thiết kế hệ thống điều khiển và tự động hóa ",
+        "module_id": "7159",
+        "module_code": "EE6113 "
+    },
+    {
+        "module_name": "Kỹ thuật quấn dây máy điện ",
+        "module_id": "7160",
+        "module_code": "EE6114 "
+    },
+    {
+        "module_name": "Phân tích thiết kế phần mềm",
+        "module_id": "7165",
+        "module_code": "IT6066 "
+    },
+    {
+        "module_name": "Kiến trúc máy tính và hệ điều hành",
+        "module_id": "7166",
+        "module_code": "IT6067 "
+    },
+    {
+        "module_name": "Tính toán hiệu năng cao",
+        "module_id": "7168",
+        "module_code": "IT6069 "
+    },
+    {
+        "module_name": "An ninh mạng",
+        "module_id": "7169",
+        "module_code": "IT6070 "
+    },
+    {
+        "module_name": "Phát triển dự án công nghệ thông tin",
+        "module_id": "7170",
+        "module_code": "IT6071 "
+    },
+    {
+        "module_name": "Ngôn ngữ lập trình khoa học",
+        "module_id": "7172",
+        "module_code": "IT6073 "
+    },
+    {
+        "module_name": "Công cụ và kỹ thuật tính toán khoa học",
+        "module_id": "7173",
+        "module_code": "IT6074 "
+    },
+    {
+        "module_name": "Khai thác dữ liệu và ứng dụng",
+        "module_id": "7174",
+        "module_code": "IT6075 "
+    },
+    {
+        "module_name": "Phân tích dữ liệu lớn",
+        "module_id": "7176",
+        "module_code": "IT6077 "
+    },
+    {
+        "module_name": "Deep Learning",
+        "module_id": "7178",
+        "module_code": "IT6079 "
+    },
+    {
+        "module_name": "Lập trình Web bằng Java",
+        "module_id": "7179",
+        "module_code": "IT6080 "
+    },
+    {
+        "module_name": "Mạng máy tính ",
+        "module_id": "7182",
+        "module_code": "IT6083 "
+    },
+    {
+        "module_name": "Kiểm thử phần mềm ",
+        "module_id": "7183",
+        "module_code": "IT6084 "
+    },
+    {
+        "module_name": "Đảm bảo chất lượng phần mềm ",
+        "module_id": "7184",
+        "module_code": "IT6085 "
+    },
+    {
+        "module_name": "Kết cấu ô tô ",
+        "module_id": "7185",
+        "module_code": "AT6043 "
+    },
+    {
+        "module_name": "Lý thuyết động cơ ",
+        "module_id": "7188",
+        "module_code": "AT6046 "
+    },
+    {
+        "module_name": "Cơ điện tử ô tô ",
+        "module_id": "7190",
+        "module_code": "AT6048 "
+    },
+    {
+        "module_name": "Kỹ thuật kiểm định và khai thác ô tô ",
+        "module_id": "7191",
+        "module_code": "AT6049 "
+    },
+    {
+        "module_name": "Công nghệ về xe điện và xe Hybrid ",
+        "module_id": "7192",
+        "module_code": "AT6050 "
+    },
+    {
+        "module_name": "Thiết kế tính toán ô tô ",
+        "module_id": "7193",
+        "module_code": "AT6051 "
+    },
+    {
+        "module_name": "Kỹ thuật chẩn đoán và sửa chữa ô tô ",
+        "module_id": "7194",
+        "module_code": "AT6052 "
+    },
+    {
+        "module_name": "Kỹ thuật chẩn đoán và sửa chữa điện-điện tử ô tô ",
+        "module_id": "7199",
+        "module_code": "AT6057 "
+    },
+    {
+        "module_name": "Giao tiếp liên văn hóa",
+        "module_id": "7201",
+        "module_code": "BS6018 "
+    },
+    {
+        "module_name": "Nhập môn nghiên cứu khoa học",
+        "module_id": "7202",
+        "module_code": "BS6019 "
+    },
+    {
+        "module_name": "Âm nhạc đại cương",
+        "module_id": "7205",
+        "module_code": "BS6022 "
+    },
+    {
+        "module_name": "Nghệ thuật học đại cương",
+        "module_id": "7206",
+        "module_code": "BS6023 "
+    },
+    {
+        "module_name": "Nhập môn về kỹ thuật ",
+        "module_id": "7211",
+        "module_code": "ME6090 "
+    },
+    {
+        "module_name": "Nhiệt động lực học kỹ thuật",
+        "module_id": "7212",
+        "module_code": "ME6083 "
+    },
+    {
+        "module_name": "Công nghệ chế tạo máy 1 ",
+        "module_id": "7213",
+        "module_code": "ME6084 "
+    },
+    {
+        "module_name": "Thiết kế đồ gá",
+        "module_id": "7214",
+        "module_code": "ME6085 "
+    },
+    {
+        "module_name": "Công nghệ chế tạo máy 2 ",
+        "module_id": "7215",
+        "module_code": "ME6086 "
+    },
+    {
+        "module_name": "Đồ án thiết kế khuôn",
+        "module_id": "7220",
+        "module_code": "ME6092 "
+    },
+    {
+        "module_name": "Thực hành gia công, lắp ráp khuôn",
+        "module_id": "7224",
+        "module_code": "ME6096 "
+    },
+    {
+        "module_name": "Công nghệ kênh dẫn nóng",
+        "module_id": "7228",
+        "module_code": "ME6100 "
+    },
+    {
+        "module_name": "Công nghệ in 3D",
+        "module_id": "7229",
+        "module_code": "ME6101 "
+    },
+    {
+        "module_name": "Thực tập doanh nghiệp",
+        "module_id": "7235",
+        "module_code": "ME6107 "
+    },
+    {
+        "module_name": "Pháp luật về thương mại",
+        "module_id": "7238",
+        "module_code": "LP6014 "
+    },
+    {
+        "module_name": "Quản lý dự án",
+        "module_id": "7239",
+        "module_code": "BM6091 "
+    },
+    {
+        "module_name": "Nguyên lý vận hành chuỗi cung ứng",
+        "module_id": "7243",
+        "module_code": "BM6095 "
+    },
+    {
+        "module_name": "Quản trị Logistics & Chuỗi cung ứng toàn cầu",
+        "module_id": "7245",
+        "module_code": "BM6097 "
+    },
+    {
+        "module_name": "Lập kế hoạch và điều độ trong chuỗi cung ứng",
+        "module_id": "7247",
+        "module_code": "BM6099 "
+    },
+    {
+        "module_name": "Dịch vụ Logistics",
+        "module_id": "7252",
+        "module_code": "BM6104 "
+    },
+    {
+        "module_name": "Tin học ứng dụng ngành Logistics & Quản lý chuỗi cung ứng",
+        "module_id": "7253",
+        "module_code": "BM6105 "
+    },
+    {
+        "module_name": "Kinh doanh thông minh",
+        "module_id": "7256",
+        "module_code": "AA6051 "
+    },
+    {
+        "module_name": "Đổi mới sáng tạo và tư duy khởi nghiệp",
+        "module_id": "7258",
+        "module_code": "AA6053 "
+    },
+    {
+        "module_name": "Quản trị hiệu quả",
+        "module_id": "7262",
+        "module_code": "AA6057 "
+    },
+    {
+        "module_name": "Ứng dụng lập trình Python",
+        "module_id": "7264",
+        "module_code": "AA6059 "
+    },
+    {
+        "module_name": "Phân tích dữ liệu và ra quyết định",
+        "module_id": "7265",
+        "module_code": "AA6060 "
+    },
+    {
+        "module_name": "Dự báo và phân tích dữ liệu ",
+        "module_id": "7266",
+        "module_code": "AA6061 "
+    },
+    {
+        "module_name": "Phân tích dữ liệu lớn trong kế toán, kiểm toán",
+        "module_id": "7269",
+        "module_code": "AA6064 "
+    },
+    {
+        "module_name": "Phân tích dữ liệu tài chính",
+        "module_id": "7270",
+        "module_code": "AA6065 "
+    },
+    {
+        "module_name": "Mô hình toán, thống kê trong phân tích dữ liệu 1",
+        "module_id": "7273",
+        "module_code": "BS6028 "
+    },
+    {
+        "module_name": "Phân tích dữ liệu đầu tư tài chính",
+        "module_id": "7279",
+        "module_code": "BM6112 "
+    },
+    {
+        "module_name": "Ngôn ngữ lập trình",
+        "module_id": "7281",
+        "module_code": "IT6087 "
+    },
+    {
+        "module_name": "Kỹ thuật Robot ",
+        "module_id": "7290",
+        "module_code": "ME6111 "
+    },
+    {
+        "module_name": "Hệ thống viễn thông ",
+        "module_id": "7291",
+        "module_code": "FE6104 "
+    },
+    {
+        "module_name": "Quản trị tài chính",
+        "module_id": "7293",
+        "module_code": "BM6114 "
+    },
+    {
+        "module_name": "Lý thuyết đồ thị",
+        "module_id": "7295",
+        "module_code": "IT6093 "
+    },
+    {
+        "module_name": "Trí tuệ nhân tạo",
+        "module_id": "7296",
+        "module_code": "IT6094 "
+    },
+    {
+        "module_name": "Quản trị chi phí và hiệu quả hoạt động chuỗi cung ứng",
+        "module_id": "7297",
+        "module_code": "BM6100 "
+    },
+    {
+        "module_name": "Tối ưu hóa",
+        "module_id": "7298",
+        "module_code": "IT6095 "
+    },
+    {
+        "module_name": "Thiết kế phần mềm",
+        "module_id": "7299",
+        "module_code": "IT6096 "
+    },
+    {
+        "module_name": "Kỹ thuật nhiếp ảnh, quay phim",
+        "module_id": "7312",
+        "module_code": "IT6099 "
+    },
+    {
+        "module_name": "Thiết kế đồ hoạ 2D",
+        "module_id": "7313",
+        "module_code": "IT6100 "
+    },
+    {
+        "module_name": "Cơ sở dữ liệu đa phương tiện ",
+        "module_id": "7315",
+        "module_code": "IT6102 "
+    },
+    {
+        "module_name": "Kịch bản và kỹ xảo đa phương tiện",
+        "module_id": "7316",
+        "module_code": "IT6103 "
+    },
+    {
+        "module_name": "Thực tập cơ sở ngành",
+        "module_id": "7317",
+        "module_code": "IT6104 "
+    },
+    {
+        "module_name": "Lập trình hướng đối tượng",
+        "module_id": "7333",
+        "module_code": "IT6120 "
+    },
+    {
+        "module_name": "Thực tập cơ sở ngành",
+        "module_id": "7334",
+        "module_code": "IT6121 "
+    },
+    {
+        "module_name": "Đồ án chuyên ngành",
+        "module_id": "7335",
+        "module_code": "IT6122 "
+    },
+    {
+        "module_name": "Hệ thống cơ sở dữ liệu",
+        "module_id": "7339",
+        "module_code": "IT6126 "
+    },
+    {
+        "module_name": "Kỹ thuật điện-điện tử",
+        "module_id": "7397",
+        "module_code": "EE6117 "
+    },
+    {
+        "module_name": "CAD",
+        "module_id": "7398",
+        "module_code": "ME6112 "
+    },
+    {
+        "module_name": "Thực hành CNC",
+        "module_id": "7399",
+        "module_code": "ME6113 "
+    },
+    {
+        "module_name": "Thực hành cắt gọt 2",
+        "module_id": "7400",
+        "module_code": "MC6006 "
+    },
+    {
+        "module_name": "Kinh tế nguồn nhân lực",
+        "module_id": "7403",
+        "module_code": "BM6116 "
+    },
+    {
+        "module_name": "Truyền thông trong tổ chức",
+        "module_id": "7404",
+        "module_code": "BM6117 "
+    },
+    {
+        "module_name": "Kỹ năng quản lý và giải quyết xung đột",
+        "module_id": "7405",
+        "module_code": "BM6118 "
+    },
+    {
+        "module_name": "Bảo hiểm xã hội",
+        "module_id": "7407",
+        "module_code": "BM6120 "
+    },
+    {
+        "module_name": "Tin học ứng dụng trong quản trị nhân lực",
+        "module_id": "7411",
+        "module_code": "BM6124 "
+    },
+    {
+        "module_name": "Quản trị chiến lược nguồn nhân lực",
+        "module_id": "7413",
+        "module_code": "BM6126 "
+    },
+    {
+        "module_name": "Đánh giá thực hiện công việc",
+        "module_id": "7416",
+        "module_code": "BM6129 "
+    },
+    {
+        "module_name": "Thù lao và phúc lợi",
+        "module_id": "7417",
+        "module_code": "BM6130 "
+    },
+    {
+        "module_name": "Quan hệ lao động",
+        "module_id": "7418",
+        "module_code": "BM6131 "
+    },
+    {
+        "module_name": "Phân tích dữ liệu nguồn nhân lực",
+        "module_id": "7419",
+        "module_code": "BM6132 "
+    },
+    {
+        "module_name": "Đồ án quản trị nguồn nhân lực",
+        "module_id": "7420",
+        "module_code": "BM6133 "
+    },
+    {
+        "module_name": "Chuyên đề quản trị nhân lực trong các doanh nghiệp dịch vụ ",
+        "module_id": "7422",
+        "module_code": "BM6135 "
+    },
+    {
+        "module_name": "Kỹ năng tổ chức và điều hành cuộc họp",
+        "module_id": "7424",
+        "module_code": "BM6137 "
+    },
+    {
+        "module_name": "Quản trị nhân lực quốc tế",
+        "module_id": "7426",
+        "module_code": "BM6139 "
+    },
+    {
+        "module_name": "Quản trị văn phòng đại cương",
+        "module_id": "7431",
+        "module_code": "BM6144 "
+    },
+    {
+        "module_name": "Tài chính doanh nghiệp",
+        "module_id": "7436",
+        "module_code": "BM6149 "
+    },
+    {
+        "module_name": "Tin ứng dụng trong quản trị văn phòng",
+        "module_id": "7438",
+        "module_code": "BM6151 "
+    },
+    {
+        "module_name": "Nghiệp vụ thư ký ",
+        "module_id": "7439",
+        "module_code": "BM6152 "
+    },
+    {
+        "module_name": "Quản lý và sử dụng trang thiết bị văn phòng",
+        "module_id": "7441",
+        "module_code": "BM6154 "
+    },
+    {
+        "module_name": "Công tác văn thư, lưu trữ trong doanh nghiệp",
+        "module_id": "7444",
+        "module_code": "BM6157 "
+    },
+    {
+        "module_name": "Tổ chức hoạt động tập thể",
+        "module_id": "7448",
+        "module_code": "TO6082 "
+    },
+    {
+        "module_name": "Nghiệp vụ lễ tân ",
+        "module_id": "7450",
+        "module_code": "TO6084 "
+    },
+    {
+        "module_name": "Luật hành chính",
+        "module_id": "7455",
+        "module_code": "LP6017 "
+    },
+    {
+        "module_name": "Kỹ thuật soạn thảo văn bản",
+        "module_id": "7456",
+        "module_code": "LP6018 "
+    },
+    {
+        "module_name": "Ứng dụng máy tính trong thiết kế tính toán ô tô",
+        "module_id": "7457",
+        "module_code": "AT6059 "
+    },
+    {
+        "module_name": "Cơ sở kỹ thuật robot",
+        "module_id": "7459",
+        "module_code": "ME6131 "
+    },
+    {
+        "module_name": "Lập trình robot",
+        "module_id": "7460",
+        "module_code": "ME6132 "
+    },
+    {
+        "module_name": "Đồ án đo lường và điều khiển robot",
+        "module_id": "7461",
+        "module_code": "ME6133 "
+    },
+    {
+        "module_name": "Mô hình hóa và điều khiển robot",
+        "module_id": "7462",
+        "module_code": "ME6134 "
+    },
+    {
+        "module_name": "Đồ án robot và trí tuệ nhân tạo",
+        "module_id": "7464",
+        "module_code": "ME6136 "
+    },
+    {
+        "module_name": "Trí tuệ nhân tạo trong robot",
+        "module_id": "7466",
+        "module_code": "ME6138 "
+    },
+    {
+        "module_name": "Thực hành trí tuệ nhân tạo",
+        "module_id": "7473",
+        "module_code": "ME6146 "
+    },
+    {
+        "module_name": "Lập trình Python nâng cao",
+        "module_id": "7475",
+        "module_code": "IT6131 "
+    },
+    {
+        "module_name": "Tiếng Anh Du lịch-Thương mại 1",
+        "module_id": "7484",
+        "module_code": "FL6371 "
+    },
+    {
+        "module_name": "Biên dịch tiếng Anh cơ bản",
+        "module_id": "7486",
+        "module_code": "FL6373 "
+    },
+    {
+        "module_name": "Phiên dịch tiếng Anh cơ bản",
+        "module_id": "7487",
+        "module_code": "FL6374 "
+    },
+    {
+        "module_name": "Tiếng Anh học thuật nâng cao",
+        "module_id": "7496",
+        "module_code": "FL6383 "
+    },
+    {
+        "module_name": "Tiếng Anh Du lịch-Thương mại nâng cao 1",
+        "module_id": "7499",
+        "module_code": "FL6386 "
+    },
+    {
+        "module_name": "Tiếng Anh Du lịch-Thương mại nâng cao 2",
+        "module_id": "7500",
+        "module_code": "FL6387 "
+    },
+    {
+        "module_name": "Tiếng Trung Quốc Khoa học Kỹ thuật 1",
+        "module_id": "7509",
+        "module_code": "FL6396 "
+    },
+    {
+        "module_name": "Tiếng Trung Quốc Du lịch-Thương mại 1",
+        "module_id": "7511",
+        "module_code": "FL6398 "
+    },
+    {
+        "module_name": "Tiếng Trung học thuật nâng cao",
+        "module_id": "7521",
+        "module_code": "FL6408 "
+    },
+    {
+        "module_name": "Tiếng Trung Quốc Khoa học Kỹ thuật nâng cao 1",
+        "module_id": "7522",
+        "module_code": "FL6409 "
+    },
+    {
+        "module_name": "Tiếng Trung Quốc Khoa học Kỹ thuật nâng cao 2",
+        "module_id": "7523",
+        "module_code": "FL6410 "
+    },
+    {
+        "module_name": "Tiếng Trung Quốc Du lịch-Thương mại nâng cao 1 ",
+        "module_id": "7524",
+        "module_code": "FL6411 "
+    },
+    {
+        "module_name": "Tiếng Trung Quốc Du lịch-Thương mại nâng cao 2",
+        "module_id": "7525",
+        "module_code": "FL6412 "
+    },
+    {
+        "module_name": "Kỹ năng sử dụng công nghệ thông tin cơ bản",
+        "module_id": "7527",
+        "module_code": "IC6005 "
+    },
+    {
+        "module_name": "Văn hóa ẩm thực",
+        "module_id": "7576",
+        "module_code": "TO6086 "
+    },
+    {
+        "module_name": "Tiếng Anh Du lịch-Khách sạn 1",
+        "module_id": "7577",
+        "module_code": "FL6367 "
+    },
+    {
+        "module_name": "Tiếng Anh Du lịch-Khách sạn 2",
+        "module_id": "7578",
+        "module_code": "FL6368 "
+    },
+    {
+        "module_name": "Quản trị học căn bản",
+        "module_id": "7585",
+        "module_code": "TO6093 "
+    },
+    {
+        "module_name": "Kỹ thuật chế biến món Á",
+        "module_id": "7592",
+        "module_code": "TO6098 "
+    },
+    {
+        "module_name": "Kỹ thuật pha chế cơ bản",
+        "module_id": "7594",
+        "module_code": "TO6100 "
+    },
+    {
+        "module_name": "Quản trị và vận hành quầy Bar",
+        "module_id": "7600",
+        "module_code": "TO6111 "
+    },
+    {
+        "module_name": "Quản trị sự kiện",
+        "module_id": "7601",
+        "module_code": "TO6112 "
+    },
+    {
+        "module_name": "Quản trị thực phẩm và đồ uống",
+        "module_id": "7605",
+        "module_code": "TO6118 "
+    },
+    {
+        "module_name": "Quản trị chiến lược trong kinh doanh nhà hàng-khách sạn",
+        "module_id": "7606",
+        "module_code": "TO6119 "
+    },
+    {
+        "module_name": "Quản trị nhân lực nhà hàng-khách sạn",
+        "module_id": "7607",
+        "module_code": "TO6120 "
+    },
+    {
+        "module_name": "Quản trị bán hàng",
+        "module_id": "7610",
+        "module_code": "BM6160 "
+    },
+    {
+        "module_name": "Chuyên đề rủi ro trong kinh doanh nhà hàng-khách sạn",
+        "module_id": "7612",
+        "module_code": "TO6124 "
+    },
+    {
+        "module_name": "Chuyên đề khởi nghiệp trong kinh doanh nhà hàng-khách sạn",
+        "module_id": "7614",
+        "module_code": "TO6126 "
+    },
+    {
+        "module_name": "Nhập môn Trung Quốc học",
+        "module_id": "7623",
+        "module_code": "FL6453 "
+    },
+    {
+        "module_name": "Biên dịch tiếng Trung Quốc",
+        "module_id": "7627",
+        "module_code": "FL6457 "
+    },
+    {
+        "module_name": "Phiên dịch tiếng Trung Quốc",
+        "module_id": "7628",
+        "module_code": "FL6458 "
+    },
+    {
+        "module_name": "Du lịch Trung Quốc",
+        "module_id": "7629",
+        "module_code": "FL6459 "
+    },
+    {
+        "module_name": "Hệ thống tự động thủy khí trên ô tô",
+        "module_id": "7649",
+        "module_code": "AT6064 "
+    },
+    {
+        "module_name": "An toàn và kỹ thuật đo lường ô tô",
+        "module_id": "7651",
+        "module_code": "AT6062 "
+    },
+    {
+        "module_name": "Kỹ thuật động cơ",
+        "module_id": "7652",
+        "module_code": "AT6063 "
+    },
+    {
+        "module_name": "Động lực học ô tô",
+        "module_id": "7654",
+        "module_code": "AT6066 "
+    },
+    {
+        "module_name": "Cơ sở điều khiển động cơ",
+        "module_id": "7655",
+        "module_code": "AT6067 "
+    },
+    {
+        "module_name": "Thiết kế tính toán động cơ",
+        "module_id": "7657",
+        "module_code": "AT6069 "
+    },
+    {
+        "module_name": "Thực hành lắp ráp mạch điện tử ô tô",
+        "module_id": "7658",
+        "module_code": "AT6070 "
+    },
+    {
+        "module_name": "Cơ sở thiết kế kỹ thuật",
+        "module_id": "7675",
+        "module_code": "ME6148 "
+    },
+    {
+        "module_name": "Tiếng Anh Du lịch-Khách sạn cơ bản 3",
+        "module_id": "7689",
+        "module_code": "FL6479 "
+    },
+    {
+        "module_name": "Phát triển phần mềm hướng dịch vụ",
+        "module_id": "7709",
+        "module_code": "IT6151 "
+    },
+    {
+        "module_name": "Quá trình và thiết bị trong công nghệ hóa",
+        "module_id": "7712",
+        "module_code": "CT6198 "
+    },
+    {
+        "module_name": "Phương pháp phân tích công cụ trong hóa dược",
+        "module_id": "7713",
+        "module_code": "CT6199 "
+    },
+    {
+        "module_name": "Thực hành phân tích công cụ",
+        "module_id": "7714",
+        "module_code": "CT6200 "
+    },
+    {
+        "module_name": "Hóa dược",
+        "module_id": "7717",
+        "module_code": "CT6203 "
+    },
+    {
+        "module_name": "Tổng hợp hóa dược",
+        "module_id": "7720",
+        "module_code": "CT6206 "
+    },
+    {
+        "module_name": "Thực hành tổng hợp hóa dược",
+        "module_id": "7721",
+        "module_code": "CT6207 "
+    },
+    {
+        "module_name": "Thực hành dược liệu",
+        "module_id": "7722",
+        "module_code": "CT6208 "
+    },
+    {
+        "module_name": "Kiến tập sản xuất",
+        "module_id": "7733",
+        "module_code": "CT6219 "
+    },
+    {
+        "module_name": "Thực hành hoá học polyme-sơn",
+        "module_id": "7735",
+        "module_code": "CT6221 "
+    },
+    {
+        "module_name": "Thực hành tổng hợp hóa dầu",
+        "module_id": "7738",
+        "module_code": "CT6224 "
+    },
+    {
+        "module_name": "Thực hành thiết kế trang phục cơ bản",
+        "module_id": "7748",
+        "module_code": "GF6102 "
+    },
+    {
+        "module_name": "Kinh doanh và phát triển thương hiệu thời trang",
+        "module_id": "7750",
+        "module_code": "GF6104 "
+    },
+    {
+        "module_name": "Thiết kế và giác mẫu trang phục trên máy tính",
+        "module_id": "7752",
+        "module_code": "GF6106 "
+    },
+    {
+        "module_name": "Thực hành thiết kế trang phục khoác ngoài ",
+        "module_id": "7753",
+        "module_code": "GF6107 "
+    },
+    {
+        "module_name": "Minh họa thời trang",
+        "module_id": "7768",
+        "module_code": "GF6121 "
+    },
+    {
+        "module_name": "Thực hành thiết kế thời trang theo mùa",
+        "module_id": "7769",
+        "module_code": "GF6122 "
+    },
+    {
+        "module_name": "Thống kê trong kinh doanh",
+        "module_id": "7776",
+        "module_code": "BM6163 "
+    },
+    {
+        "module_name": "Khởi sự kinh doanh",
+        "module_id": "7778",
+        "module_code": "BM6165 "
+    },
+    {
+        "module_name": "Quản trị chuỗi cung ứng",
+        "module_id": "7781",
+        "module_code": "BM6168 "
+    },
+    {
+        "module_name": "Kỹ năng tư duy sáng tạo",
+        "module_id": "7786",
+        "module_code": "BM6173 "
+    },
+    {
+        "module_name": "Chuyển đổi số trong kinh doanh",
+        "module_id": "7788",
+        "module_code": "BM6175 "
+    },
+    {
+        "module_name": "Nghiên cứu marketing",
+        "module_id": "7794",
+        "module_code": "BM6181 "
+    },
+    {
+        "module_name": "Chuyên đề marketing dịch vụ",
+        "module_id": "7805",
+        "module_code": "BM6192 "
+    },
+    {
+        "module_name": "Thị trường tài chính",
+        "module_id": "7813",
+        "module_code": "BM6200 "
+    },
+    {
+        "module_name": "Kỹ năng lãnh đạo",
+        "module_id": "7815",
+        "module_code": "BM6202 "
+    },
+    {
+        "module_name": "Lập dự án đầu tư",
+        "module_id": "7817",
+        "module_code": "BM6204 "
+    },
+    {
+        "module_name": "Tin học ứng dụng trong du lịch",
+        "module_id": "7852",
+        "module_code": "TO6103 "
+    },
+    {
+        "module_name": "Vận hành bộ phận buồng",
+        "module_id": "7863",
+        "module_code": "TO6143 "
+    },
+    {
+        "module_name": "Quản trị kinh doanh khách sạn",
+        "module_id": "7866",
+        "module_code": "TO6140 "
+    },
+    {
+        "module_name": "Nghiệp vụ lễ tân",
+        "module_id": "7869",
+        "module_code": "TO6137 "
+    },
+    {
+        "module_name": "Nghiệp vụ phục vụ ăn uống",
+        "module_id": "7871",
+        "module_code": "TO6135 "
+    },
+    {
+        "module_name": "Hướng dẫn tham quan tại điểm",
+        "module_id": "7874",
+        "module_code": "TO6152 "
+    },
+    {
+        "module_name": "Hướng dẫn du lịch trên tuyến",
+        "module_id": "7875",
+        "module_code": "TO6153 "
+    },
+    {
+        "module_name": "Nghiệp vụ lữ hành 1",
+        "module_id": "7888",
+        "module_code": "TO6166 "
+    },
+    {
+        "module_name": "Nghiệp vụ lữ hành 2",
+        "module_id": "7889",
+        "module_code": "TO6167 "
+    },
+    {
+        "module_name": "Điều hành chương trình du lịch",
+        "module_id": "7893",
+        "module_code": "TO6171 "
+    },
+    {
+        "module_name": "Tư vấn và bán sản phẩm du lịch",
+        "module_id": "7895",
+        "module_code": "TO6173 "
+    },
+    {
+        "module_name": "Quản trị nhân lực trong du lịch",
+        "module_id": "7897",
+        "module_code": "TO6175 "
+    },
+    {
+        "module_name": "Nghiệp vụ hướng dẫn du lịch",
+        "module_id": "7900",
+        "module_code": "TO6178 "
+    },
+    {
+        "module_name": "Thiết kế chương trình du lịch",
+        "module_id": "7901",
+        "module_code": "TO6179 "
+    },
+    {
+        "module_name": "Kỹ năng thuyết trình",
+        "module_id": "7915",
+        "module_code": "FL6365 "
+    },
+    {
+        "module_name": "Tiếng Hàn Quốc Du lịch-Thương mại 1",
+        "module_id": "7922",
+        "module_code": "FL6414 "
+    },
+    {
+        "module_name": "Biên dịch tiếng Hàn Quốc",
+        "module_id": "7924",
+        "module_code": "FL6418 "
+    },
+    {
+        "module_name": "Phiên dịch tiếng Hàn Quốc",
+        "module_id": "7925",
+        "module_code": "FL6419 "
+    },
+    {
+        "module_name": "Tiếng Nhật Du lịch-Thương mại 1",
+        "module_id": "7943",
+        "module_code": "FL6434 "
+    },
+    {
+        "module_name": "Biên dịch tiếng Nhật cơ bản",
+        "module_id": "7945",
+        "module_code": "FL6436 "
+    },
+    {
+        "module_name": "Phiên dịch tiếng Nhật cơ bản",
+        "module_id": "7946",
+        "module_code": "FL6437 "
+    },
+    {
+        "module_name": "Thực tập ",
+        "module_id": "7996",
+        "module_code": "FL7224 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8032",
+        "module_code": "CT7244 "
+    },
+    {
+        "module_name": "Đề án tốt nghiệp",
+        "module_id": "8033",
+        "module_code": "CT7245 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8067",
+        "module_code": "FE7231 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8090",
+        "module_code": "IT7236 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8118",
+        "module_code": "FG7231 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8147",
+        "module_code": "EE7230 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8176",
+        "module_code": " ME7253 "
+    },
+    {
+        "module_name": "Đề án tốt nghiệp",
+        "module_id": "8177",
+        "module_code": " ME7255 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8204",
+        "module_code": "ME7254 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8233",
+        "module_code": "AT7227 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8258",
+        "module_code": "BM7224 "
+    },
+    {
+        "module_name": "Thực tập ",
+        "module_id": "8274",
+        "module_code": "AA7215 "
+    },
+    {
+        "module_name": "Thực tập",
+        "module_id": "8297",
+        "module_code": "FL7052 "
+    },
+    {
+        "module_name": "Vi sinh kỹ thuật môi trường",
+        "module_id": "8299",
+        "module_code": "CT6232 "
+    },
+    {
+        "module_name": "Cơ sở hệ thống tự động",
+        "module_id": "8303",
+        "module_code": "ME6159 "
+    },
+    {
+        "module_name": "Cơ cấu chấp hành và điều khiển",
+        "module_id": "8304",
+        "module_code": "ME6160 "
+    },
+    {
+        "module_name": "Mô hình hóa và mô phỏng hệ thống Cơ điện tử",
+        "module_id": "8306",
+        "module_code": "ME6162 "
+    },
+    {
+        "module_name": "Timelines in Vietnam History",
+        "module_id": "8582",
+        "module_code": "TO6057_TA "
+    },
+    {
+        "module_name": "Tourism Economics",
+        "module_id": "8590",
+        "module_code": "TO6027_TA "
+    },
+    {
+        "module_name": "Responsible Tourism",
+        "module_id": "8591",
+        "module_code": "TO6016_TA "
+    },
+    {
+        "module_name": "Overview Of World Heritage",
+        "module_id": "8592",
+        "module_code": "TO6060_TA "
+    },
+    {
+        "module_name": "On-Route Tour Guiding",
+        "module_id": "8595",
+        "module_code": "TO6153_TA "
+    },
+    {
+        "module_name": "Start-up in Tourism",
+        "module_id": "8598",
+        "module_code": "TO6012_TA "
+    },
+    {
+        "module_name": "Tourism Marketing",
+        "module_id": "8603",
+        "module_code": "TO6035_TA "
+    },
+    {
+        "module_name": "Outbound tourism",
+        "module_id": "8607",
+        "module_code": "TO6009_TA "
+    },
+    {
+        "module_name": "Hotel Reception Skills",
+        "module_id": "8608",
+        "module_code": "TO6137_TA "
+    },
+    {
+        "module_name": "Basic Management Principles",
+        "module_id": "8616",
+        "module_code": "TO6093_TA "
+    },
+    {
+        "module_name": "International Payments in Tourism  ",
+        "module_id": "8620",
+        "module_code": "TO6065_TA "
+    },
+    {
+        "module_name": "Revenue & Cost Management in Tourism & Hospitality Businesses",
+        "module_id": "8622",
+        "module_code": "TO6105_TA "
+    },
+    {
+        "module_name": "Hotel Business Management",
+        "module_id": "8623",
+        "module_code": "TO6140_TA "
+    },
+    {
+        "module_name": "Event Management",
+        "module_id": "8629",
+        "module_code": "TO6112_TA "
+    },
+    {
+        "module_name": "Hospitality Strategic Management",
+        "module_id": "8630",
+        "module_code": "TO6119_TA "
+    },
+    {
+        "module_name": "Risks in Hospitality Industry",
+        "module_id": "8633",
+        "module_code": "TO6124_TA "
+    },
+    {
+        "module_name": "Start-up in Hospitality Industry",
+        "module_id": "8634",
+        "module_code": "TO6126_TA "
+    },
+    {
+        "module_name": "Travel Business 2",
+        "module_id": "8644",
+        "module_code": "TO6167_TA "
+    },
+    {
+        "module_name": "Tourism strategic management",
+        "module_id": "8649",
+        "module_code": "TO6176_TA "
+    },
+    {
+        "module_name": "Principle of Marketing",
+        "module_id": "8657",
+        "module_code": "BM6037_TA "
+    },
+    {
+        "module_name": "Accounting Principles",
+        "module_id": "8658",
+        "module_code": "AA6030_TA "
+    },
+    {
+        "module_name": "Supply Chain Management",
+        "module_id": "8660",
+        "module_code": "BM6168_TA "
+    },
+    {
+        "module_name": "Mathematical Finance",
+        "module_id": "8665",
+        "module_code": "BM6073_TA "
+    },
+    {
+        "module_name": "Budgeting",
+        "module_id": "8673",
+        "module_code": "BM6010_TA "
+    },
+    {
+        "module_name": "Database System",
+        "module_id": "8675",
+        "module_code": "IT6126_TA "
+    },
+    {
+        "module_name": "Artificial Intelligence",
+        "module_id": "8679",
+        "module_code": "IT6094_TA "
+    },
+    {
+        "module_name": "Web Design",
+        "module_id": "8680",
+        "module_code": "IT6039_TA "
+    },
+    {
+        "module_name": "ICT Project development",
+        "module_id": "8681",
+        "module_code": "IT6071_TA "
+    },
+    {
+        "module_name": "2D Graphic Design",
+        "module_id": "8682",
+        "module_code": "IT6100_TA "
+    },
+    {
+        "module_name": "Foundation Project",
+        "module_id": "8683",
+        "module_code": "IT6121_TA "
+    },
+    {
+        "module_name": "Computer Aided Design",
+        "module_id": "8696",
+        "module_code": "ME6112_TA "
+    },
+    {
+        "module_name": "Introduction to Automatic Control Systems",
+        "module_id": "8697",
+        "module_code": "ME6159_TA "
+    },
+    {
+        "module_name": "Strength of Materials",
+        "module_id": "8698",
+        "module_code": "ME6031_TA "
+    },
+    {
+        "module_name": "Measurement and Control Project",
+        "module_id": "8702",
+        "module_code": "ME6051_TA "
+    },
+    {
+        "module_name": "Robotics Engineering",
+        "module_id": "8703",
+        "module_code": "ME6111_TA "
+    },
+    {
+        "module_name": "Microprocessors and Computer Structure",
+        "module_id": "8716",
+        "module_code": "FE6044_TA "
+    },
+    {
+        "module_name": "Hydraulics Basic",
+        "module_id": "8719",
+        "module_code": "AT6001_TA "
+    },
+    {
+        "module_name": "Automotive Chassis Engineering",
+        "module_id": "8725",
+        "module_code": "AT6043 _TA "
+    },
+    {
+        "module_name": "Engine Theory",
+        "module_id": "8730",
+        "module_code": "AT6046 _TA "
+    },
+    {
+        "module_name": "Automotive Mechatronics",
+        "module_id": "8732",
+        "module_code": "AT6048 _TA "
+    },
+    {
+        "module_name": "Car Design-calculation",
+        "module_id": "8737",
+        "module_code": "AT6051 _TA "
+    },
+    {
+        "module_name": "Circuit Theory",
+        "module_id": "8745",
+        "module_code": "FE6023_TA "
+    },
+    {
+        "module_name": "Analog Electronics",
+        "module_id": "8748",
+        "module_code": "FE6003_TA "
+    },
+    {
+        "module_name": "Signals and Systems",
+        "module_id": "8750",
+        "module_code": "FE6032_TA "
+    },
+    {
+        "module_name": "Junior Project of Electronics and Telecommunications",
+        "module_id": "8752",
+        "module_code": "FE6009_TA "
+    },
+    {
+        "module_name": "Industrial Electronic Devices",
+        "module_id": "8753",
+        "module_code": "FE6033_TA "
+    },
+    {
+        "module_name": "Electronics Measurement Techniques",
+        "module_id": "8754",
+        "module_code": "FE6050_TA "
+    },
+    {
+        "module_name": "Computer Networks and Communications",
+        "module_id": "8757",
+        "module_code": "FE6079_TA "
+    },
+    {
+        "module_name": "Thiết kế hệ thống kỹ thuật",
+        "module_id": "8808",
+        "module_code": "EE6121 "
+    },
+    {
+        "module_name": "Nhập môn Ngữ pháp chức năng",
+        "module_id": "8848",
+        "module_code": "FL6518 "
+    },
+    {
+        "module_name": "Nhập môn Ngôn ngữ học tri nhận",
+        "module_id": "8854",
+        "module_code": "FL6524 "
+    },
+    {
+        "module_name": "Từ vựng học tiếng Việt: Từ lý thuyết đến sử dụng",
+        "module_id": "8856",
+        "module_code": "FL6526 "
+    },
+    {
+        "module_name": "Ngôn ngữ truyền thông và tiếp thị",
+        "module_id": "8857",
+        "module_code": "FL6527 "
+    },
+    {
+        "module_name": "Cấu tạo động cơ",
+        "module_id": "8894",
+        "module_code": "AT6088 "
+    },
+    {
+        "module_name": "Cơ sở robot công nghiệp",
+        "module_id": "8920",
+        "module_code": "EE6127 "
+    },
+    {
+        "module_name": "Hệ thống năng lượng trong nhà máy",
+        "module_id": "8921",
+        "module_code": "EE6128 "
+    },
+    {
+        "module_name": "Vi xử lý ứng dụng trong công nghiệp",
+        "module_id": "8923",
+        "module_code": "EE6130 "
+    },
+    {
+        "module_name": "Điện tử công suất & ứng dụng trong công nghiệp",
+        "module_id": "8925",
+        "module_code": "EE6132 "
+    },
+    {
+        "module_name": "Cơ sở điện sinh học",
+        "module_id": "8975",
+        "module_code": "FE6130 "
+    },
+    {
+        "module_name": "Kỹ thuật thủy khí",
+        "module_id": "9422",
+        "module_code": "EE6189 "
+    },
+    {
+        "module_name": "Lý thuyết tự động điều khiển quá trình nhiệt",
+        "module_id": "9423",
+        "module_code": "EE6190 "
+    },
+    {
+        "module_name": "Relics and Landscapes of Vietnam",
+        "module_id": "9428",
+        "module_code": "TO6015_TA "
+    },
+    {
+        "module_name": "Tourism Geography",
+        "module_id": "9429",
+        "module_code": "TO6019_TA "
+    },
+    {
+        "module_name": "Tourist Psychology & Consumer Behaviour in Tourism",
+        "module_id": "9430",
+        "module_code": "TO6104_TA "
+    },
+    {
+        "module_name": "Eco - Tourism",
+        "module_id": "9431",
+        "module_code": "TO6159_TA "
+    },
+    {
+        "module_name": "Hospitality Human Resource Management",
+        "module_id": "9436",
+        "module_code": "TO6120_TA "
+    },
+    {
+        "module_name": "Working Skills",
+        "module_id": "9443",
+        "module_code": "TO6212_TA "
+    },
+    {
+        "module_name": "Nhập môn kỹ thuật điện",
+        "module_id": "9449",
+        "module_code": "EE6194 "
+    },
+    {
+        "module_name": "F1-Accountant in Business, ACCA",
+        "module_id": "9465",
+        "module_code": "AA6021_TA "
+    },
+    {
+        "module_name": "Object-oriented Programming",
+        "module_id": "9516",
+        "module_code": "IT6120_TA "
+    }
+]

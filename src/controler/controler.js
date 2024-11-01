@@ -185,6 +185,7 @@ class Controler {
             let access_token = services.generatorAccessToken({
                 userId: user.userId
             })
+
             let refresh_token = services.generatorRefreshToken({
                 userId: user.userId
             })
