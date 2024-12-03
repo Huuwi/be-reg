@@ -696,7 +696,8 @@ class Controler {
 
                     let classesFromModuleId = await services.getInforClass(kverify, Cookie, moduleId) || [];
 
-                    if (!classesFromModuleId?.length) {
+
+                    if (!classesFromModuleId?.data?.length) {
 
                         messageRefund = "mã lớp không khớp với mã học phần"
 
@@ -709,18 +710,17 @@ class Controler {
                     } else {
 
 
-                        let classFound = classesFromModuleId.find((e) => {
+                        let classFound = classesFromModuleId?.data?.find((e) => {
                             return e?.IndependentClassID == classCode
                         })
 
-                        console.log("class found : ", classFound);
 
                         if (classFound?.IndependentClassID) {
                             let teacherName = "không xác định"
 
                             try {
 
-                                teacherName = JSON.parse(classCode.GiaoVien)[0]?.Fullname
+                                teacherName = JSON.parse(classFound.GiaoVien)[0]?.Fullname
 
                             } catch (error) {
 
@@ -730,7 +730,7 @@ class Controler {
                             }
 
 
-                            await connection.excuteQuery(`insert into classRegisted  (nameHaui, userId , timeRegisted , studentCode , moduleName ,classId, classCode , className ,teacherName ) values ( '${nameHaui}',  ${userId} ,${time} , '${studentCode}' , '${classFound?.ModuleName || "chưa xác định"}' , '${classCode}' , '${classFound?.ClassCode || "chưa xác định"}' , '${classFound?.ClassName || "chưa xác định"}' , '${teacherName}' )  `)
+                            await connection.excuteQuery(`insert into classRegisted  (nameHaui, userId , timeRegisted , studentCode , moduleName ,classId, classCode , className ,teacherName ) values ( '${nameHaui}',  ${userId} ,${time} , '${studentCode}' , '${classFound?.ModulesName || "chưa xác định"}' , '${classCode}' , '${classFound?.ClassCode || "chưa xác định"}' , '${classFound?.ClassName || "chưa xác định"}' , '${teacherName}' )  `)
                                 .catch((e) => {
                                     console.log("err when save to db regiested : ", e);
 
@@ -896,13 +896,13 @@ class Controler {
             studentCode = Number(studentCode)
             userId = Number(userId)
             await axios.post(process.env.REFUND_SERVER_URL + "/refund", { userId, studentCode, passWordHaui, id })
-                .then((res) => {
+                .then((respone) => {
                     res.status(200).json({
                         message: "ok",
                         data: res.data
                     })
                     globalThis.queueScanUserId.splice(globalThis.queueScanUserId.indexOf(userId), 1);
-                    return res.data
+                    return respone.data
                 })
                 .catch((e) => {
                     console.log(e);
@@ -954,8 +954,6 @@ class Controler {
             })
             return
         }
-        console.log("blance : ", balance);
-
 
 
         let authData = {}
@@ -1047,15 +1045,6 @@ class Controler {
                 return
             }
 
-            // let curCount = fs.readFileSync("./src/logs/countIdtrans.txt", "utf-8")
-            // console.log(curCount);
-
-            // if (curCount) {
-            //     curCount = JSON.parse(curCount).count
-            //     curCount++;
-            //     fs.appendFileSync("./src/logs/countIdtrans.txt", JSON.stringify({ count: curCount }))
-            // }
-
             let d = Date.now()
             let orderCode = Number(d.toString().slice(2) + Math.floor(Math.random() * Math.pow(10, Math.floor(Math.random() * 4))).toString());
 
@@ -1070,14 +1059,13 @@ class Controler {
             let dataFromCreatePaymentLink = await services.create_payment_link({ orderCode, amount, description, cancelUrl, returnUrl })
 
             if (!dataFromCreatePaymentLink?.data?.paymentLinkId) {
-                res.status(500).json({
+                return res.status(500).json({
                     message: "chưa thể khởi tạo giao dịch"
                 })
-                return
             }
 
 
-            res.status(200).json({
+            return res.status(200).json({
                 message: "ok",
                 dataFromCreatePaymentLink
             })
@@ -1139,11 +1127,8 @@ class Controler {
             }
 
 
-
-
             //nếu thành công , kiểm tra xem bảng giao dịch đã có giao dịch nào có Id như này chưa?
             //nếu có transid như này rồi , thì trả về , giao dịch này đã được thực hiện trước đó , return
-
 
 
             let lastPayment = await connection.excuteQuery(`select * from transactionPayment where id = '${checkPayment?.data?.id}'`)
@@ -1158,7 +1143,6 @@ class Controler {
                 })
                 return
             }
-
 
 
             // tính toán xem user này đã lên lv mới hay chưa , nếu lên rồi thì trả về 1 kết quả là upLv = true

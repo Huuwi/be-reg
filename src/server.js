@@ -17,6 +17,8 @@ const app = express();
 //config server
 configServer(app);
 
+//skip cerificate ssl
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 
 
 
@@ -48,7 +50,7 @@ setInterval(async () => {
         console.log("refund response:", response2.data);
 
         const response3 = await axios.get(process.env.SCAN_SERVER_URL + "/ping");
-        console.log("refund response:", response3.data);
+        console.log("scan response:", response3.data);
     } catch (error) {
         console.error("Error fetching from backend:", error.message);
     }
