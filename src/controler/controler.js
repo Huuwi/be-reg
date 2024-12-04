@@ -34,7 +34,7 @@ class Controler {
             const regex = /^[a-zA-Z0-9]*$/
             if (!regex.test(userName) || !regex.test(passWord)) {
                 res.status(400).json({
-                    message: "username and password can't include special character"
+                    message: "can't include special character"
                 });
                 return;
             }
@@ -140,7 +140,7 @@ class Controler {
             const regex = /^[a-zA-Z0-9]*$/
             if (!regex.test(userName) || !regex.test(passWord)) {
                 res.status(400).json({
-                    message: "username and password can't include special character"
+                    message: "can't include special character"
                 });
                 return;
             }
@@ -593,6 +593,14 @@ class Controler {
 
             let { classCode } = req.body;
 
+            const regex = /^[a-zA-Z0-9]*$/
+            if (!regex.test(classCode)) {
+                res.status(400).json({
+                    message: "can't include special character"
+                });
+                return;
+            }
+
             if (!classCode) {
                 res.status(400).json({
                     message: "can't find classCode , try again!"
@@ -620,8 +628,6 @@ class Controler {
 
             let enKC = req?.cookies?.enKC;
 
-
-
             if (!enKC) {
                 res.status(400).json({
                     message: "can't find your Haui account , you should login Haui account again!"
@@ -632,6 +638,16 @@ class Controler {
             let { Cookie, kverify, nameHaui, passWordHaui, studentCode } = JSON.parse(services.decodeAES(enKC));
 
             let { classCode, moduleId } = req.body;
+
+
+            const regex = /^[a-zA-Z0-9]*$/
+            if (!regex.test(classCode) || !regex.test(moduleId)) {
+                res.status(400).json({
+                    message: "can't include special character"
+                });
+                return;
+            }
+
 
             if (!classCode) {
                 res.status(400).json({
@@ -885,6 +901,17 @@ class Controler {
 
             let { studentCode, passWordHaui, id } = req.body
 
+
+
+            const regex = /^[a-zA-Z0-9]*$/
+            if (!regex.test(id)) {
+                res.status(400).json({
+                    message: "can't include special character"
+                });
+                return;
+            }
+
+
             if (!studentCode || !passWordHaui || !id) {
                 res.status(400).json({
                     message: "missing data!"
@@ -1109,6 +1136,14 @@ class Controler {
             }
 
             let dataCheckPayment = JSON.parse(services.decodeRSA(edt))
+
+            const regex = /^[a-zA-Z0-9]*$/
+            if (!regex.test(dataCheckPayment.Referral)) {
+                res.status(400).json({
+                    message: "can't include special character"
+                });
+                return;
+            }
 
 
             let checkPayment = await services.checkPayMent(dataCheckPayment.transId)
