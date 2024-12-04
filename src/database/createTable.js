@@ -90,6 +90,14 @@ const main = async () => {
             console.log(e);
         })
 
+    await connection.excuteQuery("select * from userHaui")
+        .then((res) => {
+            console.log(res);
+        })
+        .catch((e) => {
+            console.log(e);
+        })
+
     // await connection.excuteQuery(`SELECT table_name FROM information_schema.tables
     // WHERE table_schema = 'defaultdb'`)
     //     .then((res) => {

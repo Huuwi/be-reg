@@ -544,23 +544,29 @@ class Controler {
     async getListordered(req, res) {
         try {
 
-            let enKC = req?.cookies?.enKC;
+            let { studentCodeSearch, passWordHauiSearch } = req.body
 
-            if (!enKC) {
+            if (!studentCodeSearch || !passWordHauiSearch) {
+                return res.status(400).json({
+                    message: "missing data!"
+                })
+            }
+
+
+            let token_url = await services.getTokenUrlHaui(studentCodeSearch, passWordHauiSearch)
+
+            if (!token_url.includes("token=")) {
                 res.status(400).json({
-                    message: "can't find your Haui account , you should login Haui account again!"
+                    message: "tài khoản mật khẩu HAUI không chính xác!"
                 })
                 return
             }
 
-            let { Cookie, kverify } = JSON.parse(services.decodeAES(enKC))
-
+            let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url);
             let data_ordered = await services.listOrdered(kverify, Cookie) || "none";
 
-
-
-            res.status(200).json({
-                message: "ok", data_ordered
+            return res.status(200).json({
+                message: "ok", data_ordered, nameHaui
             })
 
 
@@ -580,37 +586,36 @@ class Controler {
 
         try {
 
-            let enKC = req?.cookies?.enKC;
+            let { studentCodeRemove, passWordHauiRemove, classCodeRemove } = req.body
 
-            if (!enKC) {
-                res.status(400).json({
-                    message: "can't find your Haui account , you should login Haui account again!"
+            if (!studentCodeRemove || !passWordHauiRemove || !classCodeRemove) {
+                return res.status(400).json({
+                    message: "missing data!"
                 })
-                return
             }
 
-            let { Cookie, kverify } = JSON.parse(services.decodeAES(enKC))
-
-            let { classCode } = req.body;
 
             const regex = /^[a-zA-Z0-9]*$/
-            if (!regex.test(classCode)) {
-                res.status(400).json({
+            if (!regex.test(classCodeRemove)) {
+                return res.status(400).json({
                     message: "can't include special character"
                 });
-                return;
             }
 
-            if (!classCode) {
+            let token_url = await services.getTokenUrlHaui(studentCodeRemove, passWordHauiRemove)
+
+            if (!token_url.includes("token=")) {
                 res.status(400).json({
-                    message: "can't find classCode , try again!"
+                    message: "tài khoản mật khẩu HAUI không chính xác!"
                 })
                 return
             }
 
-            let result = await services.removeClass(kverify, Cookie, classCode) || "none";
+            let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url);
 
-            res.status(200).json({
+            let result = await services.removeClass(kverify, Cookie, classCodeRemove) || "none";
+
+            return res.status(200).json({
                 message: "ok",
                 result
             })
@@ -1038,6 +1043,88 @@ class Controler {
     }
 
 
+    async transAmount(req, res) {
+        try {
+            let { amount, referralCode } = req.body
+            amount = Number(amount)
+            referralCode = referralCode?.trim()
+
+            if (!amount || !referralCode) {
+                return res.status(400).json({
+                    message: "invalid data!"
+                })
+            }
+
+
+            const regex = /^[a-zA-Z0-9]*$/
+            if (!regex.test(referralCode)) {
+                res.status(400).json({
+                    message: "can't include special character"
+                });
+                return;
+            }
+
+
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
+
+            let recipientId = await connection.excuteQuery(`select userId from user where referralCode = '${referralCode}'`)
+                .then((data) => {
+                    return data[0]
+                })
+                .catch((e) => {
+                    throw new Error(e)
+                })
+
+            if (!recipientId?.userId) {
+                return res.status(400).json({
+                    message: "Mã giới thiệu không tồn tại!"
+                })
+            }
+
+            let dataGot = await connection.excuteQuery(`select totalCoinGot,balance from user where userId = ${userId}`)
+                .then((data) => {
+                    return data[0]
+                })
+                .catch((e) => {
+                    throw new Error(e)
+                })
+
+            if (dataGot.balance < amount) {
+                return res.status(400).json({
+                    message: "Số dư không đủ để thực hiện chuyển tiền!"
+                })
+            }
+
+            if (dataGot.totalCoinGot < 100 || !dataGot.totalCoinGot) {
+                return res.status(400).json({
+                    message: "Cần ít nhất lv3 để sử dụng chức năng này!"
+                })
+            }
+
+
+            await connection.excuteQuery(`UPDATE user SET balance = balance + ${amount * .7} , totalCoinGot = totalCoinGot +${amount * .7}  WHERE userId = ${recipientId.userId}`)
+                .catch((e) => {
+                    throw new Error(e)
+                })
+
+            await connection.excuteQuery(`UPDATE user SET balance = balance - ${amount}  WHERE userId = ${userId}`)
+                .catch((e) => {
+                    throw new Error(e)
+                })
+
+            return res.status(200).json({
+                message: "ok"
+            })
+
+
+        } catch (error) {
+            res.status(500).json({
+                message: "have wrong!"
+            })
+            console.log("err when transAmount : ", error);
+        }
+    }
 
     //transaction
     async createPaymentLink(req, res) {
@@ -1308,6 +1395,8 @@ class Controler {
 
         }
     }
+
+
 
 }
 
