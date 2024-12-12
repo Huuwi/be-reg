@@ -379,6 +379,8 @@ class Services {
             let solver = await this.capsolver(siteKey, token_url).then(token => {
                 return token
             });
+            // console.log(solver);
+
 
             if (!solver.state) {
                 return {
@@ -386,6 +388,8 @@ class Services {
                     message: "Gặp sự cố về mạng! Vui lòng đăng nhập lại.(Không trừ tiền)"//captcha fasle
                 }
             }
+            // console.log(token_url);
+
 
 
             const url = `https://sv.haui.edu.vn/sso?token=${token}`;
@@ -395,9 +399,11 @@ class Services {
                 __VIEWSTATE: viewState,
                 __VIEWSTATEGENERATOR: viewStateGenerator,
                 __EVENTVALIDATION: eventValidation,
-                'g-recaptcha-response': solver,
+                'g-recaptcha-response': solver.captchaRespone,
                 ctl00$butLogin: "Xác thực"
             });
+            // console.log(data1);
+
 
             // Cấu hình headers
             const headers = {
@@ -455,7 +461,7 @@ class Services {
             // Trích xuất kverify từ script
             const kverifyMatch = redirectResponse.match(/var kverify = '(.*?)';/);
             const kverify = kverifyMatch ? kverifyMatch[1] : '';
-            await connection.excuteQuery("update user set balance = balance - 1  where userId = ? ", [userId])
+            await connection.excuteQuery(`update user set balance = balance - 1  where userId = ${userId} `)
                 .catch((e) => {
                     console.log(e);
                 })
