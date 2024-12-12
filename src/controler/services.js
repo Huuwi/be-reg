@@ -552,7 +552,7 @@ class Services {
 
             await axios.post(url, payload, config)
                 .then(response => {
-                    console.log(response);
+                    // console.log(response);
 
                     reslove(response.data)
                 })
