@@ -56,6 +56,9 @@ api.post("/auth/getHistoryPayment", controler.getHistoryPayment)
 api.post("/auth/getHistoryRegisted", controler.getHistoryRegisted)
 api.post("/auth/refund", controler.refund)
 api.post("/auth/scan", controler.scan)
+api.post("/auth/getListOfThisHaui", controler.getListOfThisHaui)
+api.post("/auth/removeClassOfThisHaui", controler.removeClassOfThisHaui)
+
 api.post("/auth/transAmount", controler.transAmount)
 
 //transaction api

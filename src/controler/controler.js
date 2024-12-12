@@ -592,6 +592,94 @@ class Controler {
         }
     }
 
+    async getListOfThisHaui(req, res) {
+        try {
+
+            let enKC = req?.cookies?.enKC;
+
+            if (!enKC) {
+                res.status(400).json({
+                    message: "can't find your Haui account , you should login Haui account again!"
+                })
+                return
+            }
+
+            let data = {}
+            try {
+                data = JSON.parse(services.decodeAES(enKC))
+            } catch (error) {
+                res.status(400).json({
+                    message: "data not valid!"
+                })
+                return
+            }
+            let { Cookie, kverify } = data
+
+            let data_ordered = await services.listOrdered(kverify, Cookie) || "none";
+
+            return res.status(200).json({
+                message: "ok", data_ordered
+            })
+
+        } catch (error) {
+            console.log("err when getListOfThisHaui : ", error);
+            return res.status(500).json({
+                message: "have wrong!"
+            })
+        }
+
+
+    }
+    async removeClassOfThisHaui(req, res) {
+        try {
+
+            let enKC = req?.cookies?.enKC;
+            let classCode = req.body.classCode
+            if (!classCode) {
+                return res.status(400).json({
+                    message: "missing data!"
+                })
+            }
+            classCode = Number(classCode)
+            if (!classCode) {
+                return res.status(400).json({
+                    message: "data not valid!"
+                })
+            }
+
+            if (!enKC) {
+                res.status(400).json({
+                    message: "can't find your Haui account , you should login Haui account again!"
+                })
+                return
+            }
+
+            let data = {}
+            try {
+                data = JSON.parse(services.decodeAES(enKC))
+            } catch (error) {
+                res.status(400).json({
+                    message: "data not valid!"
+                })
+                return
+            }
+            let { Cookie, kverify } = data
+
+            let result = await services.removeClass(kverify, Cookie, classCode) || "none"
+
+            return res.status(200).json({
+                message: "ok", result
+            })
+
+        } catch (error) {
+            console.log("err when removeClassOfThisHaui : ", error);
+            return res.status(500).json({
+                message: "have wrong!"
+            })
+        }
+
+    }
+
 
     async removeClass(req, res) {
 
