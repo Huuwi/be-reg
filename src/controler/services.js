@@ -6,6 +6,8 @@ const qs = require('qs');
 const { CookieJar } = require('tough-cookie');
 const { wrapper } = require('axios-cookiejar-support');
 const cheerio = require('cheerio');
+const { connect } = require("http2");
+const { connection } = require("../database/connection");
 
 
 class Services {
@@ -264,9 +266,69 @@ class Services {
     }
 
 
-    async dataFomTokenUrl(token_url) {
-        try {
 
+
+
+
+    async capsolver(site_key, site_url, api_key = process.env.API_KEY_CAP_SOLVER) {
+        const payload = {
+            clientKey: api_key,
+            task: {
+                type: 'ReCaptchaV2TaskProxyLess',
+                websiteKey: site_key,
+                websiteURL: site_url
+            }
+        };
+
+        try {
+            const res = await axios.post("https://api.capsolver.com/createTask", payload);
+            const task_id = res.data.taskId;
+            if (!task_id) {
+                console.log("Failed to create task:", res.data);
+                return {
+                    state: false,
+                    captchaRespone: ""
+                }
+            }
+            // console.log("Got taskId:", task_id);
+
+            while (true) {
+                await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
+
+                const getResultPayload = { clientKey: api_key, taskId: task_id };
+                const resp = await axios.post("https://api.capsolver.com/getTaskResult", getResultPayload);
+                const status = resp.data.status;
+
+                if (status === "ready") {
+                    return {
+                        state: true,
+                        captchaRespone: resp.data.solution.gRecaptchaResponse
+                    }
+                }
+                if (status === "failed" || resp.data.errorId) {
+                    console.log("Solve failed! response:", resp.data);
+                    return {
+                        state: false,
+                        captchaRespone: ""
+                    }
+                }
+            }
+        } catch (error) {
+            console.error("Error:", error);
+        }
+    }
+
+
+
+
+    async dataFomTokenUrl(token_url, userId) {
+        try {
+            if (!token_url.includes("token=")) {
+                return {
+                    state: false,
+                    message: "Tài khoản mật khẩu haui chưa chính xác"
+                }
+            }
             const jar = new CookieJar();
             const axiosInstance = wrapper(
                 axios.create({
@@ -279,44 +341,132 @@ class Services {
             );
 
             // Bước 1: Gửi yêu cầu đầu tiên với token
-            const initialResponse = await axiosInstance.get(token_url);
+            const initialResponse = await axiosInstance.get(token_url)
+                .then((res) => {
+                    return res.data
+                })
+
+            const $ = cheerio.load(initialResponse);
+            const viewState = $('#__VIEWSTATE').val();
+            const viewStateGenerator = $('#__VIEWSTATEGENERATOR').val();
+            const siteKey = $('.g-recaptcha').attr('data-sitekey');
+            const eventValidation = $('#__EVENTVALIDATION').val();
+            let token = token_url.split("?token=")[1]
+
+            let user = await connection.excuteQuery(`select * from user where userId = ${userId}`)
+                .then((data) => {
+                    return data[0]
+                })
+                .catch((err) => {
+                    throw new Error(err)
+                })
+            let balance = user?.balance;
+
+            if (!balance) {
+                return {
+                    state: false,
+                    message: "Số dư không hợp lệ!"
+                }
+            }
+            if (balance < 1) {
+                return {
+                    state: false,
+                    message: "Cần ít nhất 1 xu để thực hiện chức năng này!"
+                }
+            }
+
+
+            let solver = await this.capsolver(siteKey, token_url).then(token => {
+                return token
+            });
+
+            if (!solver.state) {
+                return {
+                    state: false,
+                    message: "Gặp sự cố về mạng! Vui lòng đăng nhập lại.(Không trừ tiền)"//captcha fasle
+                }
+            }
+
+
+            const url = `https://sv.haui.edu.vn/sso?token=${token}`;
+
+            // Các tham số cần gửi đi trong body
+            const data1 = qs.stringify({
+                __VIEWSTATE: viewState,
+                __VIEWSTATEGENERATOR: viewStateGenerator,
+                __EVENTVALIDATION: eventValidation,
+                'g-recaptcha-response': solver,
+                ctl00$butLogin: "Xác thực"
+            });
+
+            // Cấu hình headers
+            const headers = {
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+                'Accept-Encoding': 'gzip, deflate, br, zstd',
+                'Accept-Language': 'en-US,en;q=0.9',
+                'Cache-Control': 'max-age=0',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Origin': 'https://sv.haui.edu.vn',
+                'Referer': token_url,
+                'Sec-CH-UA': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
+                'Sec-CH-UA-Mobile': '?0',
+                'Sec-CH-UA-Platform': '"Windows"',
+                'Sec-Fetch-Dest': 'document',
+                'Sec-Fetch-Mode': 'navigate',
+                'Sec-Fetch-Site': 'same-origin',
+                'Sec-Fetch-User': '?1',
+                'Upgrade-Insecure-Requests': '1',
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+            };
+
+            await axiosInstance.post(url, data1, { headers })
+                .then(response => {
+                    // console.log('Response:', response);
+                })
+                .catch(error => {
+                    throw new Error(error)
+                });
+
 
 
             // Bước 2: Thực hiện chuyển hướng thủ công đến "/"
-            const redirectResponse = await axiosInstance.get('https://sv.haui.edu.vn/');
-
-            // In ra dữ liệu cuối cùng
-
-            // Bước 3: Lấy cookie từ response cuối cùng
+            const redirectResponse = await axiosInstance.get('https://sv.haui.edu.vn/')
+                .then((res) => {
+                    return res.data
+                })
+                .catch((e) => {
+                    console.log(e);
+                })
             const finalCookies = jar.toJSON();
             const Cookie = finalCookies.cookies
                 .map(({ key, value }) => `${key}=${value}`)
                 .join('; ');
 
 
-
             //extract data
 
             // Load HTML vào Cheerio
-            const $ = cheerio.load(redirectResponse.data);
+            const $1 = cheerio.load(redirectResponse);
 
             // Trích xuất username
-            let nameHaui = $('.user-name').text().trim();
+            let nameHaui = $1('.user-name').text().trim();
             nameHaui = nameHaui.slice(0, Math.floor(nameHaui.length / 2))
-            // fs.appendFileSync("./test.txt", redirectResponse.data)
 
             // Trích xuất kverify từ script
-            const kverifyMatch = redirectResponse.data.match(/var kverify = '(.*?)';/);
+            const kverifyMatch = redirectResponse.match(/var kverify = '(.*?)';/);
             const kverify = kverifyMatch ? kverifyMatch[1] : '';
-
-
-
-            return { nameHaui, kverify, Cookie }
-
-
+            await connection.excuteQuery("update user set balance = balance - 1  where userId = ? ", [userId])
+                .catch((e) => {
+                    console.log(e);
+                })
+            return { nameHaui, kverify, Cookie, state: true, message: "ok" }
 
         } catch (error) {
             console.error('Có lỗi xảy ra:', error);
+            return {
+                state: false,
+                message: "unknown error!"
+            }
         }
 
 
@@ -396,6 +546,8 @@ class Services {
 
             await axios.post(url, payload, config)
                 .then(response => {
+                    console.log(response);
+
                     reslove(response.data)
                 })
                 .catch(error => {

@@ -484,6 +484,9 @@ class Controler {
 
         try {
 
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
+
             let { userNameHaui: studentCode, passWordHaui } = req.body;
 
 
@@ -498,7 +501,10 @@ class Controler {
                 return
             }
 
-            let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url)
+            let { nameHaui, kverify, Cookie, state, message } = await services.dataFomTokenUrl(token_url, userId);
+            if (!state) {
+                return res.status(400).json({ message })
+            }
             // console.log({ nameHaui, kverify, Cookie });
 
 
@@ -543,6 +549,8 @@ class Controler {
 
     async getListordered(req, res) {
         try {
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
 
             let { studentCodeSearch, passWordHauiSearch } = req.body
 
@@ -562,7 +570,10 @@ class Controler {
                 return
             }
 
-            let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url);
+            let { nameHaui, kverify, Cookie, state, message } = await services.dataFomTokenUrl(token_url, userId);
+            if (!state) {
+                return res.status(400).json({ message })
+            }
             let data_ordered = await services.listOrdered(kverify, Cookie) || "none";
 
             return res.status(200).json({
@@ -585,7 +596,8 @@ class Controler {
     async removeClass(req, res) {
 
         try {
-
+            let decodeAccessToken = req.decodeAccessToken;
+            let userId = decodeAccessToken.userId; //get userId
             let { studentCodeRemove, passWordHauiRemove, classCodeRemove } = req.body
 
             if (!studentCodeRemove || !passWordHauiRemove || !classCodeRemove) {
@@ -611,7 +623,10 @@ class Controler {
                 return
             }
 
-            let { nameHaui, kverify, Cookie } = await services.dataFomTokenUrl(token_url);
+            let { nameHaui, kverify, Cookie, state, message } = await services.dataFomTokenUrl(token_url, userId);
+            if (!state) {
+                return res.status(400).json({ message })
+            }
 
             let result = await services.removeClass(kverify, Cookie, classCodeRemove) || "none";
 
