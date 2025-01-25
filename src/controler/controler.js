@@ -3,6 +3,7 @@ const { connection } = require('../database/connection.js')
 const Services = require('./services.js')
 const bcrypt = require("bcryptjs")
 const fs = require("fs")
+const { error } = require('console')
 
 
 const services = new Services()
@@ -453,8 +454,9 @@ class Controler {
             let ping = await services.scan(kverify, Cookie, 7207);
 
             if (ping?.err !== 0) {
-                res.status(400).json({
-                    message: "data not valid!!!"
+                res.status(200).json({
+                    message: "don't have any class",
+                    err: true
                 })
                 return
             }
@@ -462,7 +464,8 @@ class Controler {
             res.status(200).json({
                 message: "ok",
                 err: ping.err,
-                nameHaui: data?.nameHaui
+                nameHaui: data?.nameHaui,
+                err: false
             })
 
 
@@ -500,6 +503,9 @@ class Controler {
                 })
                 return
             }
+
+            console.log(token_url);
+
 
             let { nameHaui, kverify, Cookie, state, message } = await services.dataFomTokenUrl(token_url, userId);
             if (!state) {

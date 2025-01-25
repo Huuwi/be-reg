@@ -425,47 +425,41 @@ class Services {
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
             };
 
-            await axiosInstance.post(url, data1, { headers })
-                .then(response => {
-                    // console.log('Response:', response);
-                })
-                .catch(error => {
-                    throw new Error(error)
-                });
-
-
+            // Bước 1: Gửi yêu cầu POST để đăng nhập
+            const loginResponse = await axiosInstance.post(url, data1, { headers });
+            console.log('Login successful.');
 
             // Bước 2: Thực hiện chuyển hướng thủ công đến "/"
-            const redirectResponse = await axiosInstance.get('https://sv.haui.edu.vn/')
-                .then((res) => {
-                    return res.data
-                })
-                .catch((e) => {
-                    console.log(e);
-                })
+            const redirectResponse = await axiosInstance.get('https://sv.haui.edu.vn/');
+            console.log('Redirect successful.');
+
+
+            // Lấy cookie từ jar nếu cần sử dụng trong các bước tiếp theo
             const finalCookies = jar.toJSON();
             const Cookie = finalCookies.cookies
                 .map(({ key, value }) => `${key}=${value}`)
                 .join('; ');
 
+            // Bước 3: Load HTML vào Cheerio để trích xuất dữ liệu
+            const $1 = cheerio.load(redirectResponse.data);
 
-            //extract data
-
-            // Load HTML vào Cheerio
-            const $1 = cheerio.load(redirectResponse);
-
-            // Trích xuất username
+            // Trích xuất tên người dùng từ `.user-name`
             let nameHaui = $1('.user-name').text().trim();
-            nameHaui = nameHaui.slice(0, Math.floor(nameHaui.length / 2))
+            nameHaui = nameHaui.slice(0, Math.floor(nameHaui.length / 2)); // Lấy nửa đầu của tên
 
             // Trích xuất kverify từ script
-            const kverifyMatch = redirectResponse.match(/var kverify = '(.*?)';/);
+            const kverifyMatch = redirectResponse.data.match(/var kverify = '(.*?)';/);
             const kverify = kverifyMatch ? kverifyMatch[1] : '';
-            await connection.excuteQuery(`update user set balance = balance - 1  where userId = ${userId} `)
-                .catch((e) => {
-                    console.log(e);
-                })
-            return { nameHaui, kverify, Cookie, state: true, message: "ok" }
+
+            // Bước 4: Cập nhật số dư trong cơ sở dữ liệu
+            await connection
+                .excuteQuery(`UPDATE user SET balance = balance - 1 WHERE userId = ${userId}`)
+                .then(() => console.log(`Balance updated for userId ${userId}`))
+                .catch((e) => console.error('Database update error:', e));
+
+
+            // Bước 5: Trả về dữ liệu cuối cùng
+            return { nameHaui, kverify, Cookie, state: true, message: 'ok' };
 
         } catch (error) {
             console.error('Có lỗi xảy ra:', error);
